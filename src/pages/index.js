@@ -20,7 +20,6 @@ class Index extends Component {
     super(props);
     this.state = {
       isMouseTooltipVisible: false,
-      window: window,
     };
 
 
@@ -196,6 +195,7 @@ class Index extends Component {
   render() {
  
     var images  = this.props.data.allImageSharp.nodes;
+    const isBrowser = typeof window !== `undefined`
 
     return (
       <Layout>
@@ -300,14 +300,17 @@ class Index extends Component {
             <div className="col-sm-12 col-md-12 col-lg-6 founder">
               {
                 images.map((image, index) =>
-                  this.state.window.innerWidth > 900
-                  ?
-                    image.fluid.src.includes("founder_marla.png")
-                    ? <Img fluid={image.fluid} key={index}/>
-                    : ""
-                  : image.fluid.src.includes("marlamobile.png")
-                    ? <Img fluid={image.fluid} key={index}/>
-                    : ""
+                  isBrowser
+                  ? window.innerWidth > 900
+                    ?
+                      image.fluid.src.includes("founder_marla.png")
+                      ? <Img fluid={image.fluid} key={index}/>
+                      : ""
+                    : image.fluid.src.includes("marlamobile.png")
+                      ? <Img fluid={image.fluid} key={index}/>
+                      : ""
+                  : " " 
+                  
                 )
               }
               <div className="founder__data" id="founder__data">
