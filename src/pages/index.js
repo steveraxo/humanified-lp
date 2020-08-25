@@ -268,8 +268,8 @@ class Index extends Component {
             </div>
           </div>
         </div>
-      </section>
-      <section className="mission__section" id="mission">
+
+      <div className="mission__section" id="mission">
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-6 mission__title" id="mission__title">
@@ -291,6 +291,8 @@ class Index extends Component {
             </div>
           </div>
         </div>
+      </div>
+   
       </section>
 
 
