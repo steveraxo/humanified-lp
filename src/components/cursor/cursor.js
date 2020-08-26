@@ -11,7 +11,7 @@ export default class cursor extends Component {
     const videos = [...document.querySelectorAll("video")]
     const iframes = [...document.querySelectorAll("iframe")]
     const hoveredElements = [...document.querySelectorAll(".hover__transition")]
-
+    const slides = [...document.querySelectorAll(".feature__slide")] ;
 
     const allElements = aLinks
       .concat(buttons)
@@ -20,6 +20,7 @@ export default class cursor extends Component {
       .concat(videos)
       .concat(iframes)
       .concat(hoveredElements)
+      .concat(slides)
 
     allElements.forEach(function(element) {
       element.addEventListener("mouseenter", function() {

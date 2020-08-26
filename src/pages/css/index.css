@@ -1,3 +1,6 @@
+body{
+    overflow-x : none;
+}
 @media (max-width: 4000px){
     .container-fluid{
         max-width: 1500px;
@@ -466,10 +469,8 @@ section{
 .founder{
     position: relative;
 }
+
 .founder__data{
-    position: absolute;
-    bottom: 20%;
-    right: 1%;
     background: #2C13DD;
     border-radius: 100%;
     height: 209px;
@@ -478,6 +479,23 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+@media (max-width: 4000px){
+    .founder__data{
+        position: absolute;
+        bottom: 20%;
+        right: 8%;
+    }
+    #www__info h3 {
+        margin-bottom: 110px;
+    }
+}
+@media (max-width: 2000px){
+    .founder__data{
+        position: absolute;
+        bottom: 20%;
+        right: 1%;
+    }
 }
 .founder__data h4{
     font-family: Montserrat;
@@ -795,20 +813,20 @@ section{
     display: contents;
 }
 #features{
-    background: #1C1A1B;
+    background: #1c1b1c;
     position: relative;
     padding: 0;
 }
 #features svg{
     width: 100%;
-    position: relative;
+    position: absolute;
     z-index: 1;
     margin-top: -220px;
 }
 #download{
     background: #1C1A1B;
     position: relative;
-    padding: 200px 160px;
+    padding: 270px 160px 200px;
 }
 #download h3{
     font-family: Montserrat;
@@ -1074,6 +1092,125 @@ section{
 #wwd__wrapper__title__two.mobile{
     display: none;
 }
+.feature__slide .feature__title h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 100%;
+    /* or 60px */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+}
+.feature__description{
+    position: relative;
+    left: 90px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.feature__slide .feature__description p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 38px;
+    /* or 173% */
+    color: #FFFFFF;
+    height: 0;
+    overflow: hidden;
+    max-width: 420px;
+    transition: height 0.6s cubic-bezier(0.83, 0, 0.17, 1);;
+}
+.feature__slide{
+    opacity: 0.5;
+    transition: opacity 0.6s cubic-bezier(0.83, 0, 0.17, 1);;
+
+}
+.feature__slide.active{
+    opacity: 1;
+}
+.feature__slide.active .feature__description p{
+    display: flex;
+    height: 120px;
+}
+.slider__phones__wrapper{
+    position: relative;
+    z-index: 9;
+}
+.phone__slide{
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    left: -100px;
+    right: 0px;
+    top: unset;
+    bottom: 0px;
+    transition: all 0.4s cubic-bezier(0.83, 0, 0.17, 1);
+
+}
+.slider{
+    padding: 0px;
+}
+.phone__slide img{
+    max-height: 800px;
+    animation: float 6s ease-in-out infinite;
+}
+#features__top{
+    background: #FFC4DD;
+}
+.phone__slide.active{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 170px;
+    opacity: 1;
+    right: 0px;
+    top: 40px;
+    bottom: 0px;
+}
+.slider__wrapper{
+    position: relative;
+    z-index: 9;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 50px;
+}
+.feature__slide *{
+    pointer-events: none;
+}
+.feature__title {
+    display: flex;
+}
+.feature__slide{
+    width: 100%;
+}
+#features  .feature__title svg {
+    position: relative;
+    width: auto;
+    left: unset;
+    right: unset;
+    top: 15px;
+    bottom: unset;
+    margin: 0 20px;
+}
+
+.slider{
+    padding: 190px 0;
+}
+.slider__mobile{
+    position: relative;
+    z-index: 9;
+    top: 420px;
+    display: none;
+}
 @media (max-width: 1700px){
     #mission__description {
         top: 390px;
@@ -1140,10 +1277,10 @@ section{
         font-size: 45px;
     }
     #features {
-        margin-top: -220px;
+        margin-top: -100px;
     }
     #download{
-        margin-top: -250px;
+        margin-top: 0px;
     }
     #download h3 {
         font-size: 18px;
@@ -1217,10 +1354,21 @@ section{
         padding-top: 30px;
     }
     #features {
-        margin-top: -310px;
+        margin-top: -180px;
     }
     #mission__title h2 {
         margin-top: -22px;
+    }
+    .feature__slide .feature__description p {
+        font-size: 16px;
+        line-height: 27px;
+        max-width: 330px;
+    }
+    .feature__slide.active .feature__description p {
+        height: 90px;
+    }
+    .phone__slide img {
+        max-height: 630px;
     }
 }
 
@@ -1330,7 +1478,23 @@ section{
         display: flex;
     }
     #download {
-        margin-top: -600px;
+        margin-top: -300px;
+    }
+    #features {
+        margin-top: -110px;
+    }
+    .feature__slide .feature__title h3 {
+        font-size: 23px;
+        line-height: 100%;
+    }
+    .slider {
+        padding: 115px 0 350px;
+    }
+    .feature__slide .feature__description p {
+        max-width: 220px;
+    }
+    .feature__slide.active .feature__description p {
+        height: 110px;
     }
     #right__mobile {
         top: 130px;
@@ -1429,6 +1593,47 @@ section{
     }
 }
 @media (max-width: 800px){
+    .slider__mobile{
+        display: block;
+        padding: 0 280px;
+        position: relative;
+        margin-top: -60px;
+    }
+    .feature__title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #features .feature__title svg {
+        left: 0px;
+        right: unset;
+        top: 0px;
+        bottom: unset;
+        margin: 0;
+    }
+    .feature__slide .feature__title h3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .feature__description {
+        left: 0px;
+    }
+    #features svg {
+        margin-top: 0px;
+        width: 1550px;
+        position: relative!important;
+        left: -50%;
+        top: 150px;
+    }
+    .feature__title {
+        flex-direction: column;
+    }
+    .phone__slide {
+        position: absolute;
+    }
+    .slider {
+        padding: 0 0 1450px;
+        margin-top: -1030px;
+    }
     #mission__title h2 {
         margin-top: 0px!important;
     }
@@ -1638,10 +1843,10 @@ section{
         flex-direction: column-reverse;
     }
     #download {
-        margin-top: -1100px;
+        margin-top: -1080px;
     }
     #right__mobile {
-        top: 0px;
+        top: 0px; 
     }
     #down__subtitle{
         top: 0;
@@ -1717,9 +1922,55 @@ section{
     }
     #right__mobile{
         left: 0px;
+
     }
+    .phone__slide.active{
+        left: 0px;
+        bottom: -360px;
+    }
+    .phone__slide{
+        
+        bottom: -360px;
+
+    }
+
 }
 @media(max-width: 600px){
+    .phone__slide.active{
+        left: 0px;
+        bottom: -300px;
+    }
+    .phone__slide{
+        
+        bottom: -300px;
+
+    }
+    .wwd__wrapper svg {
+        position: relative;
+        top: -10px;
+    }
+    .slider {
+        margin-top: -820px;
+    }
+    .slider__mobile {
+        padding: 0 100px;
+        margin-top: -110px;
+        margin-bottom: 90px;
+    }
+    #download {
+        margin-top: -1019px;
+    }
+    #www__info h3 {
+        margin-bottom: 140px;
+    }
+    .phone__slide img {
+        width: 275px;
+    }
+    #features svg {
+        width: 1210px;
+        left: -110%;
+        top: 280px;
+    }
     .mission__section {
         padding: 0 20px;
     }
@@ -2030,5 +2281,60 @@ section{
         text-align: left;
         left: 0;
         padding-right: 20px;
+    }
+}
+@media (max-width: 414px){
+    #features svg {
+        left: -96%;
+    }
+    .slider__mobile {
+        padding: 0 120px;
+    }
+}
+@media (max-width: 375px){
+    #features svg {
+        left: -109%;
+    }
+    .slider__mobile {
+        padding: 0 100px;
+    }
+}
+@media (max-width: 360px){
+    #features svg {
+        left: -137%;
+    }
+    .slider__mobile {
+        padding: 0 70px;
+    }
+    #contact h4 {
+        font-size: 29px;
+    }
+    .app__links{
+        flex-direction: column;
+    }
+    #download .app__links > div {
+        margin: -10px 15px 0 0;
+    }
+    #mission__title h2 {
+        font-size: 32px;
+    }
+    .homepage__header h1 {
+        font-size: 30px;
+    }
+    .play__button {
+        margin: 50px 0 40px;
+    }
+    .app__links > div {
+        margin: -10px;
+    }
+    .navigation__header.mobile ul a {
+        font-size: 26px;
+        line-height: 12px;
+    }
+    .navigation__header.mobile li {
+        margin: 15px 0;
+    }
+    #footer {
+        padding: 120px 20px 80px!important;
     }
 }
