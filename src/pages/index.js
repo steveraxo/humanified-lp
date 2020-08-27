@@ -1250,8 +1250,8 @@ class Index extends Component {
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-6">
               <h3>CONTACT US </h3>
-              <h4>Join us and be <br/> a changemaker!</h4>
-              <p>lorem ipsum dolor sit amet, consectetur adipiscing elitlorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+              <h4>Join us and <br/> become <br/>  Humanified.</h4>
+              <p> Want to collaborate? Have a cause you want to feature? Looking for more information? Let us know what’s on your mind.</p>
 
               <div className="social__links">
                 <h5>FOLLOW US ON <br/> SOCIAL MEDIA </h5>
