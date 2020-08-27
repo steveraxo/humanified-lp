@@ -333,7 +333,7 @@ class Index extends Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-6 mission__title" id="mission__title">
-              <p >OUR MISION</p>
+              <p >OUR MISSION</p>
               <h2>
               
                 <span>We Simplify</span>
