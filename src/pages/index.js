@@ -68,6 +68,15 @@ class Index extends Component {
   playVideo(){
     var mediaVideo = document.getElementById("homepage__header__video");
 
+    mediaVideo.onended = function() {
+      mediaVideo.classList.remove("playing");
+    };
+    
+    // if video status is changed to "paused", then change control button to "Continue Play"
+    mediaVideo.onpause = function() {
+      mediaVideo.classList.remove("playing");
+    };
+
     if (mediaVideo.paused) {
       mediaVideo.play();
       document.querySelectorAll(".hero__wrapper")[0].classList.add("fade__out");
@@ -961,7 +970,7 @@ class Index extends Component {
                   }
                 </div>
             </div>
-            <div className="col-sm-12 col-md-12 col-lg-6 right slider__wrapper desktop">
+            <div className="col-sm-12 col-md-12 col-lg-6 right slider__wrapper ">
               <div className="slider__one">
                   <div className="feature__slide active" onClick={this.showFeature} id="slide__one">
                     <div className="feature__title">
