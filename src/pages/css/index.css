@@ -2291,6 +2291,18 @@ section{
     #features svg {
         left: -96%;
     }
+    .navigation__header.mobile ul .download__button {
+        padding: 20px 35px;
+        position: relative;
+        bottom: unset; 
+        top: 90px;
+    }
+    .navigation__header.mobile li {
+        margin: 11px 0;
+    }
+    .homepage__header h1 {
+        margin: 30px auto auto;
+    }
     .slider__mobile {
         padding: 0 120px;
     }
@@ -2410,6 +2422,23 @@ section{
         line-height: 28px;
         max-width: 280px;
     }
+    .navigation__header.mobile ul .download__button {
+        padding: 20px 35px;
+        bottom: 7%;
+        right: -15px;
+    }
+    .menu__column.mobile ul {
+        top: 30px;
+        position: relative;
+        left: -3px;
+    }
+    .navigation__header.mobile li {
+        margin: 10px 0;
+    }
+    .navigation__header.mobile ul a {
+        font-size: 23px;
+        line-height: 12px;
+    }
     #download p {
         font-size: 35px;
     }
@@ -2472,15 +2501,26 @@ section{
         top: 100px;
     }
     .homepage__header h1 {
-        font-size: 65px;
-        line-height: 112.9%;
+        font-size: 27px;
+        line-height: 108.9%;
+        margin: 70px auto auto;
+    }
+    .app__links>div {
+        margin: 0 10px;
+    }
+    .app__links svg {
+        width: 140px;
+    }
+    .header__row .logo__column a {
+        font-size: 28px;
+    }
+    .play__button {
+        margin: 15px 0;
     }
     .pre__mission__section h2 {
         padding: 0!important;
     }
-    .app__links svg {
-        width: 240px;
-    }
+ 
     .pre__mission__wrapper {
         flex-direction: column-reverse;
         display: flex;
@@ -2489,9 +2529,10 @@ section{
         position: relative;
     }
     .phone__image {
-        margin: initial;
         padding: 60px 60px;
-        margin-top: 90px;
+        margin-top: auto;
+        position: relative;
+        left: 5%;
     }
     .phone__circle:after {
         content: '';
@@ -2765,6 +2806,11 @@ section{
 
     }
 
+}
+@media (max-width: 763px) and (orientation: landscape) {
+    .phone__image {
+        left: unset;
+    }
 }
 @media (max-width: 667px) and (orientation: landscape) {
     .slider__mobile {
@@ -3128,6 +3174,33 @@ section{
 @media (max-width: 568px) and (orientation: landscape) {
     .slider__mobile {
         padding: 0px 185px;
+    }
+}
+@media (max-width: 480px) and (orientation: landscape) {
+    .homepage__header h1 {
+        font-size: 26px;
+        line-height: 104.9%;
+        margin: 80px auto auto;
+    }
+    .navigation__header.mobile ul .download__button {
+        padding: 15px 20px;
+        font-size: 16px;
+        line-height: 18px;
+        bottom: 1%;
+        right: -15px;
+    }
+    .navigation__header.mobile li {
+        margin: 5px 0;
+    }
+    .navigation__header.mobile ul a {
+        font-size: 20px;
+        line-height: initial;
+    }
+    .app__links > div {
+        margin: 0 10px;
+    }
+    .play__button {
+        margin: 10px 0 10px;
     }
 }
 @media (max-width: 414px) and (orientation: landscape) {
