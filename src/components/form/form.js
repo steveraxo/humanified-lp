@@ -19,7 +19,7 @@ export default class form extends Component {
     
         this.handleNameChange = this.handleNameChange.bind(this);
         this.handleEmailChange = this.handleEmailChange.bind(this);
-        this.handleMessageChange = this.handleMessageChange.bind(this);
+        // this.handleMessageChange = this.handleMessageChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
     handleSubmit(e) {
@@ -45,15 +45,15 @@ export default class form extends Component {
             });
         }
     
-        if (this.state.message.length === 0 && this.state.message.length < 6) {
-            this.setState({
-                messageStatus: "invalid", 
-            });
-        }else{
-            this.setState({
-                messageStatus: "valid", 
-            });
-        }
+        // if (this.state.message.length === 0 && this.state.message.length < 6) {
+        //     this.setState({
+        //         messageStatus: "invalid", 
+        //     });
+        // }else{
+        //     this.setState({
+        //         messageStatus: "valid", 
+        //     });
+        // }
 
         if (this.state.email.match(mailformat) && this.state.email.length > 5) {
             this.setState({
@@ -61,7 +61,7 @@ export default class form extends Component {
             });
         }
 
-        if (this.state.email && this.state.email.length > 0 && this.state.name && this.state.name.length > 5 && this.state.message && this.state.message.length > 5) {
+        if (this.state.email && this.state.email.length > 0 && this.state.name && this.state.name.length > 5 ) {
           
           if (this.state.email.match(mailformat)) {
             
@@ -69,7 +69,7 @@ export default class form extends Component {
     
             // Add Lead to SharpSpring
             var xhr = new XMLHttpRequest()
-            xhr.open('POST', `https://app-3QNMWRHCZE.marketingautomation.services/webforms/receivePostback/MzawMLEwMjM1BQA/960bba77-86d8-45e0-9e09-dcbc00b16c71/jsonp/?firstName=${sharpName}&email=${this.state.email}&message=${this.state.message}&trackingid__sb=${SharpSpringTracking}`);
+            xhr.open('POST', `https://app-3QNMWRHCZE.marketingautomation.services/webforms/receivePostback/MzawMLEwMjM1BQA/960bba77-86d8-45e0-9e09-dcbc00b16c71/jsonp/?firstName=${sharpName}&email=${this.state.email}&trackingid__sb=${SharpSpringTracking}`);
             xhr.send()
     
             this.setState({
@@ -101,11 +101,11 @@ export default class form extends Component {
             email: e.currentTarget.value, 
         });
     }
-    handleMessageChange(e){
-        this.setState({
-            message: e.currentTarget.value, 
-        });
-    }
+    // handleMessageChange(e){
+    //     this.setState({
+    //         message: e.currentTarget.value, 
+    //     });
+    // }
 
     getCookie(cname) {
         var name = cname + "=";
@@ -143,7 +143,7 @@ export default class form extends Component {
                 : ""
               }
             </div>
-            <div className={'input__fields input__textarea'}>
+            {/* <div className={'input__fields input__textarea'}>
               <label htmlFor="message">Message:</label> 
               <textarea id="message" name="message" placeholder="Write your message here" onChange={this.handleMessageChange} value={this.state.message}></textarea>
               {
@@ -151,7 +151,7 @@ export default class form extends Component {
                 ? <p className={"form__invalid"}>Add a message</p>
                 : ""
               }
-            </div>
+            </div> */}
             <div>
              {
                 this.state.formStatus

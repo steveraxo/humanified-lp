@@ -1251,7 +1251,7 @@ class Index extends Component {
             <div className="col-sm-12 col-md-12 col-lg-6">
               <h3>Sign Up</h3>
               <h4>Join us and <br/> become <br/>  Humanified.</h4>
-              <p> Want to collaborate? Have a cause you want to feature? Looking for more information? Let us know what’s on your mind.</p>
+              <p> Start your Humanified journey now. Sign up to get the latest on the launch of the Humanified app and become some of our first Beta users.</p>
 
               <div className="social__links">
                 <h5>FOLLOW US ON <br/> SOCIAL MEDIA </h5>
