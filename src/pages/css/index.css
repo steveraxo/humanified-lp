@@ -1087,7 +1087,7 @@ section{
 }
 #footer {
     background: #1C1A1B;
-    padding: 50px!important;
+    padding: 120px 50px 50px!important;
     min-height: auto;
 }
 #footer .left p {
