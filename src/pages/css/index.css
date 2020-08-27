@@ -599,7 +599,7 @@ section{
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-
+    justify-content: center;
     /* White */
 
     color: #FFFFFF;
