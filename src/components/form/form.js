@@ -12,13 +12,7 @@ export default class form extends Component {
               <label htmlFor="email">Email: </label> 
               <input type="email" id="email" name="email" />
             </div>
-            <div className={'input__fields'}>
-              <label htmlFor="cause">Favorite Cause: </label>
-              <select id="cause" name="cause[]">
-                <option value="option-1">Option 1</option>
-                <option value="option-2">Option 2</option>
-              </select>
-            </div>
+
             <div className={'input__fields input__textarea'}>
               <label htmlFor="message">Message:</label> 
               <textarea id="message" name="message" placeholder="Write your message here"></textarea>

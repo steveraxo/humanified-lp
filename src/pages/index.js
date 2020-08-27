@@ -452,7 +452,6 @@ class Index extends Component {
                   
                   </div>
                 </MouseTooltip>
-                
               </div>
               <div className="team__member desktop">
                 <div className="team__member__avatar" id="team__three" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
@@ -510,6 +509,34 @@ class Index extends Component {
                 </MouseTooltip>
                 
               </div>
+              <div className="team__member desktop">
+                <div className="team__member__avatar" id="team__eight" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                  {
+                    images.map((image, index) =>
+                      image.fluid.src.includes("rachel.png")
+                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      : ""
+                    )
+                  }
+                </div>
+                <MouseTooltip
+                  visible={this.state.isMouseTooltipVisible}
+                  offsetX={-100}
+                  offsetY={-100}
+                >
+                  <div className="team__member__info " id="team__eight-member">
+                    <div className="team__member__info__name">
+                    <h5>
+                        <span>Rachel </span>
+                        <span>Chada</span>
+                      </h5>
+                      <h6>Strategy <br/>Director</h6>
+                    </div>
+                  
+                  </div>
+                </MouseTooltip>
+              </div>
+              
               <div className="team__member desktop">
                 <div className="team__member__avatar" id="team__five" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
                   {
@@ -693,6 +720,31 @@ class Index extends Component {
                 
               </div>
 
+              <div className="team__member mobile">
+                <div className="team__member__avatar" id="team__eight-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                  {
+                    images.map((image, index) =>
+                      image.fluid.src.includes("rachel.png")
+                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      : ""
+                    )
+                  }
+                </div>
+
+                <div className="team__member__info " id="team__eight-member">
+                    <div className="team__member__info__name">
+                    <h5>
+                        <span>Rachel </span>
+                        <span>Chada</span>
+                      </h5>
+                      <h6>Strategy <br/>Director</h6>
+                    </div>
+                  
+              </div>
+                
+              </div>
+
+              
               <div className="team__member mobile">
                 <div className="team__member__avatar" id="team__five-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
                   {
