@@ -1,6 +1,48 @@
 body{
     overflow-x : none;
 }
+.input__fields{
+    position: relative;
+}
+.form__submit *{
+    transition: all 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+
+}
+.form__submit svg circle{
+    fill: transparent;
+}
+.form__submit svg path{
+    fill: #FFC4DD!important;
+    stroke:#FFC4DD!important;
+}
+.form__submit:hover svg circle{
+    fill: #FFC4DD;
+}
+.form__submit:hover svg path:nth-child(1){
+    fill: #FFC4DD!important;
+    stroke:#FFC4DD!important;
+}
+.form__submit:hover svg path{
+    fill: #1C1A1B!important;
+    stroke:#1C1A1B!important;
+}
+.form__invalid{
+    font-size: 12px!important;
+    font-weight: bold!important;
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+}
+.form__invalid.form__response {
+    right: 0px;
+    font-size: 19px!important;
+    font-weight: bold!important;
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    /* left: 0; */
+    margin: auto;
+}
 @media (max-width: 4000px){
     .container-fluid{
         max-width: 1500px;
@@ -14,11 +56,21 @@ body{
 section{
     padding: 0 160px;
 }
+.social__links * {
+    transition: all 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+
+}
 .social__links a:hover svg{
     fill: #FFC4DD;
 }
 .social__links a:hover svg path{
     fill: #FFC4DD;
+}
+.play__button svg {
+    position: relative;
+}
+.play__button svg:after{
+    content: "";
 }
 .top__shadow{
     background: linear-gradient(to bottom, black, transparent);
