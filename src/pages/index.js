@@ -70,11 +70,15 @@ class Index extends Component {
 
     mediaVideo.onended = function() {
       mediaVideo.classList.remove("playing");
+      document.querySelectorAll(".hero__wrapper")[0].classList.remove("fade__out");
+
     };
     
     // if video status is changed to "paused", then change control button to "Continue Play"
     mediaVideo.onpause = function() {
       mediaVideo.classList.remove("playing");
+      document.querySelectorAll(".hero__wrapper")[0].classList.remove("fade__out");
+
     };
 
     if (mediaVideo.paused) {
