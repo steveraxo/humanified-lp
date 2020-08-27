@@ -73,7 +73,7 @@ export default class header extends Component {
                       </li>
                       <li>
                         <AnchorLink to="/#download" className="download__button" title="Download">
-                          Download
+                          Sign Up
                           <ArrowDown />
                         </AnchorLink>
                       </li>
@@ -111,7 +111,7 @@ export default class header extends Component {
                       </li>
                       <li>
                         <AnchorLink to="/#download" className="download__button" title="Download">
-                          Download
+                        Sign Up
                           <ArrowDown />
                         </AnchorLink>
                       </li>
