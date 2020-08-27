@@ -1217,7 +1217,7 @@ class Index extends Component {
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-6 left">
               <h3 id="down__title">Available to 
-                <span>Sign Up </span>
+                <span>Download </span>
               </h3>
               <p id="down__subtitle">and change the world <br/> around you today. </p>
               <div className="app__links d-flex ">

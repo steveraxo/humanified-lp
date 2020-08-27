@@ -124,7 +124,7 @@ export default class form extends Component {
     }
     render() {
         return (
-            <form name="contact" netlify>
+            <form name="contact" id="signup">
             <div className={'input__fields'}>
               <label htmlFor="name"> Name: </label> 
               <input type="text" id="name" name="name" onChange={this.handleNameChange} value={this.state.name} />   

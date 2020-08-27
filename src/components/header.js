@@ -72,7 +72,7 @@ export default class header extends Component {
                         </AnchorLink>
                       </li>
                       <li>
-                        <AnchorLink to="/#download" className="download__button" title="Download">
+                        <AnchorLink to="/#signup" className="download__button" title="Download">
                           Sign Up
                           <ArrowDown />
                         </AnchorLink>
@@ -81,7 +81,7 @@ export default class header extends Component {
                       {/* <li><a onClick={() => scrollTo('#team')}>Meat the team</a></li>
                       <li><a onClick={() => scrollTo('#what-we-do')}>What we do</a></li>
                       <li><a onClick={() => scrollTo('#contact')}>Contact</a></li>
-                      <li><a class="primary__btn" onClick={() => scrollTo('#download')}>Download</a></li> */}
+                      <li><a class="primary__btn" onClick={() => scrollTo('#signup')}>Download</a></li> */}
                     </ul>
                   </nav>
                 </div>
@@ -110,7 +110,7 @@ export default class header extends Component {
                         </AnchorLink>
                       </li>
                       <li>
-                        <AnchorLink to="/#download" className="download__button" title="Download">
+                        <AnchorLink to="/#signup" className="download__button" title="Download">
                         Sign Up
                           <ArrowDown />
                         </AnchorLink>
@@ -119,7 +119,7 @@ export default class header extends Component {
                       {/* <li><a onClick={() => scrollTo('#team')}>Meat the team</a></li>
                       <li><a onClick={() => scrollTo('#what-we-do')}>What we do</a></li>
                       <li><a onClick={() => scrollTo('#contact')}>Contact</a></li>
-                      <li><a class="primary__btn" onClick={() => scrollTo('#download')}>Download</a></li> */}
+                      <li><a class="primary__btn" onClick={() => scrollTo('#signup')}>Download</a></li> */}
                     </ul>
                   </nav>
                 </div>
