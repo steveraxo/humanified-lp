@@ -14,7 +14,12 @@ body{
 section{
     padding: 0 160px;
 }
-
+.social__links a:hover svg{
+    fill: #FFC4DD;
+}
+.social__links a:hover svg path{
+    fill: #FFC4DD;
+}
 .top__shadow{
     background: linear-gradient(to bottom, black, transparent);
     mix-blend-mode: multiply;
@@ -370,6 +375,7 @@ section{
     font-weight: normal;
     font-size: 22px;
     line-height: 38px;
+    flex-direction: column;
     /* or 173% */
 
 
@@ -1222,7 +1228,7 @@ section{
         padding-left: 50px;
     }
     #mission .down__arrow {
-        top: 100px;
+        top: 150px;
     }
     .pre__mission__section {
         padding: 100px 0 30px;

@@ -11,7 +11,7 @@ import DownArrow from "../images/downArrow.svg"
 import TeamTitle from "../images/the_team.svg"
 import TeamTitleMobile from "../images/TheTeam.svg"
 import scrollLock from 'scroll-lock';
-
+import Form from '../components/form/form'
 import MouseTooltip from 'react-sticky-mouse-tooltip';
 import Tilt from 'react-parallax-tilt';
 import "slick-carousel/slick/slick.css"; 
@@ -325,10 +325,9 @@ class Index extends Component {
             <div className="col-sm-12 col-md-12 col-lg-6 mission__title" id="mission__title">
               <p >OUR MISION</p>
               <h2>
-                
-                <span>We simply </span>
-                <span>simplify social </span>
-                <span>consciousness</span>
+              
+                <span>We Simplify</span>
+                <span> Social Impact</span>
               </h2>
               <div className="down__arrow">
                 <DownArrow id="mission__arrow" />
@@ -336,7 +335,10 @@ class Index extends Component {
             </div>
             <div className="col-sm-12 col-md-12 col-lg-6 mission__description" id="mission__description">
               <p >
-                There is a huge empty market for innovation in the social impact space. The Unicorn for Impact just doesn’t exist - leaving millions of people looking for a single platform to find resources, create feel good content, engage with others, donate, and become influencers in this area by seeing their content change people’s lives in real time. 
+                With our feeds flooded with stories of tragedies and injustices, it’s daunting to think about how one person can make a change in the world. At the same time, stories of advocacy and necessary resources get lost in the white noise of selfies, overhead lunch shots, and monotonous updates. 
+              </p>
+              <p>
+              Not anymore. Humanified is the first social network that is built for doing good, empowering people to show their compassionate side in real time.
               </p>
             </div>
           </div>
@@ -445,7 +447,7 @@ class Index extends Component {
                         <span>Suren </span>
                         <span>Sahaydachny</span>
                       </h5>
-                      <h6>Technical <br/> & Product <br/> Lead</h6>
+                      <h6>Chief of <br/>Product</h6>
                     </div>
                   
                   </div>
@@ -636,7 +638,7 @@ class Index extends Component {
                         <span>Suren </span>
                         <span>Sahaydachny</span>
                       </h5>
-                      <h6>Technical <br/> & Product <br/> Lead</h6>
+                      <h6>Chief of <br/>Product</h6>
                   </div>
                 
                 </div>
@@ -904,7 +906,6 @@ class Index extends Component {
             <div className="col-lg-12">
               <h3 id="www__info__two">
                 Humanified is the first purpose-built social network for social impact <span> that not only connects users and non-profits, but creates a space for creative advocacy and meeting other mission-aligned individuals. </span>
-<br/> Make a real difference, one tap at a time.
               </h3>
             </div>
           </div>
@@ -981,10 +982,10 @@ class Index extends Component {
                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M41.6803 9.21974C40.6588 8.19775 39.4459 7.38704 38.111 6.83391C36.7761 6.28079 35.3453 5.99609 33.9003 5.99609C32.4553 5.99609 31.0245 6.28079 29.6896 6.83391C28.3547 7.38704 27.1418 8.19775 26.1203 9.21974L24.0003 11.3397L21.8803 9.21974C19.8169 7.15636 17.0184 5.99716 14.1003 5.99716C11.1822 5.99716 8.38368 7.15636 6.3203 9.21974C4.25691 11.2831 3.09772 14.0817 3.09772 16.9997C3.09772 19.9178 4.25691 22.7164 6.3203 24.7797L8.4403 26.8997L24.0003 42.4597L39.5603 26.8997L41.6803 24.7797C42.7023 23.7582 43.513 22.5454 44.0661 21.2105C44.6193 19.8755 44.904 18.4447 44.904 16.9997C44.904 15.5548 44.6193 14.124 44.0661 12.789C43.513 11.4541 42.7023 10.2413 41.6803 9.21974V9.21974Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
-                      <h3>Feel <br/> Good Content </h3>
+                      <h3>Feel-Good  <br/> Content </h3>
                     </div>
                     <div className="feature__description">
-                      <p>Make your feed stand out by sharing, posting and liking content that spreads joy, kindness and positivity.</p>
+                      <p>Make your feed stand out by sharing, posting and liking content that supports the causes you care about.</p>
                     </div>
                   </div>
                   <div className="feature__slide" onClick={this.showFeature} onMouseOver={this.showFeature} id="slide__two">
@@ -1014,7 +1015,8 @@ class Index extends Component {
   Yourself</h3>
                     </div>
                     <div className="feature__description">
-                      <p>Use our challenge feature to create and do different challenges during the week and make change happen in real time.</p>
+                      <p>Use our challenge feature to create and do different challenges during the week and make change happen in real time.
+</p>
                     </div>
                   </div>
               </div>
@@ -1038,7 +1040,7 @@ class Index extends Component {
                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M41.6803 9.21974C40.6588 8.19775 39.4459 7.38704 38.111 6.83391C36.7761 6.28079 35.3453 5.99609 33.9003 5.99609C32.4553 5.99609 31.0245 6.28079 29.6896 6.83391C28.3547 7.38704 27.1418 8.19775 26.1203 9.21974L24.0003 11.3397L21.8803 9.21974C19.8169 7.15636 17.0184 5.99716 14.1003 5.99716C11.1822 5.99716 8.38368 7.15636 6.3203 9.21974C4.25691 11.2831 3.09772 14.0817 3.09772 16.9997C3.09772 19.9178 4.25691 22.7164 6.3203 24.7797L8.4403 26.8997L24.0003 42.4597L39.5603 26.8997L41.6803 24.7797C42.7023 23.7582 43.513 22.5454 44.0661 21.2105C44.6193 19.8755 44.904 18.4447 44.904 16.9997C44.904 15.5548 44.6193 14.124 44.0661 12.789C43.513 11.4541 42.7023 10.2413 41.6803 9.21974V9.21974Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
-                      <h3>A Sense of <br/>   Community</h3>
+                      <h3>Build<br/>   Community</h3>
                     </div>
                     <div className="feature__description">
                       <p>Connect more with your local community and make change happen in real time.</p>
@@ -1050,7 +1052,7 @@ class Index extends Component {
                       <path d="M26 4L6 28H24L22 44L42 20H24L26 4Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
 
-                      <h3>Easy <br/> Donation</h3>
+                      <h3>Easily <br/> Donate</h3>
                     </div>
                     <div className="feature__description">
                       <p>Donate to your favorite causes or organizations in an easy and fast way, all through your feed. </p>
@@ -1062,14 +1064,14 @@ class Index extends Component {
             <div className=" slider__mobile"> 
               <Slider {...settings} ref={c => (this.slider = c)}>
                   <div className="feature__slide active"  id="slide__one">
-                    <div className="feature__title">
+                  <div className="feature__title">
                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M41.6803 9.21974C40.6588 8.19775 39.4459 7.38704 38.111 6.83391C36.7761 6.28079 35.3453 5.99609 33.9003 5.99609C32.4553 5.99609 31.0245 6.28079 29.6896 6.83391C28.3547 7.38704 27.1418 8.19775 26.1203 9.21974L24.0003 11.3397L21.8803 9.21974C19.8169 7.15636 17.0184 5.99716 14.1003 5.99716C11.1822 5.99716 8.38368 7.15636 6.3203 9.21974C4.25691 11.2831 3.09772 14.0817 3.09772 16.9997C3.09772 19.9178 4.25691 22.7164 6.3203 24.7797L8.4403 26.8997L24.0003 42.4597L39.5603 26.8997L41.6803 24.7797C42.7023 23.7582 43.513 22.5454 44.0661 21.2105C44.6193 19.8755 44.904 18.4447 44.904 16.9997C44.904 15.5548 44.6193 14.124 44.0661 12.789C43.513 11.4541 42.7023 10.2413 41.6803 9.21974V9.21974Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
-                      <h3>Feel <br/> Good Content </h3>
+                      <h3>Feel-Good  <br/> Content </h3>
                     </div>
                     <div className="feature__description">
-                      <p>Make your feed stand out by sharing, posting and liking content that spreads joy, kindness and positivity.</p>
+                      <p>Make your feed stand out by sharing, posting and liking content that supports the causes you care about.</p>
                     </div>
                   </div>
                   <div className="feature__slide active"  id="slide__two">
@@ -1099,7 +1101,8 @@ class Index extends Component {
   Yourself</h3>
                     </div>
                     <div className="feature__description">
-                      <p>Use our challenge feature to create and do different challenges during the week and make change happen in real time.</p>
+                      <p>Use our challenge feature to create and do different challenges during the week and make change happen in real time.
+</p>
                     </div>
                   </div>
                   <div className="feature__slide active"  id="slide__four">
@@ -1121,7 +1124,7 @@ class Index extends Component {
                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M41.6803 9.21974C40.6588 8.19775 39.4459 7.38704 38.111 6.83391C36.7761 6.28079 35.3453 5.99609 33.9003 5.99609C32.4553 5.99609 31.0245 6.28079 29.6896 6.83391C28.3547 7.38704 27.1418 8.19775 26.1203 9.21974L24.0003 11.3397L21.8803 9.21974C19.8169 7.15636 17.0184 5.99716 14.1003 5.99716C11.1822 5.99716 8.38368 7.15636 6.3203 9.21974C4.25691 11.2831 3.09772 14.0817 3.09772 16.9997C3.09772 19.9178 4.25691 22.7164 6.3203 24.7797L8.4403 26.8997L24.0003 42.4597L39.5603 26.8997L41.6803 24.7797C42.7023 23.7582 43.513 22.5454 44.0661 21.2105C44.6193 19.8755 44.904 18.4447 44.904 16.9997C44.904 15.5548 44.6193 14.124 44.0661 12.789C43.513 11.4541 42.7023 10.2413 41.6803 9.21974V9.21974Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
-                      <h3>A Sense of <br/>   Community</h3>
+                      <h3>Build<br/>   Community</h3>
                     </div>
                     <div className="feature__description">
                       <p>Connect more with your local community and make change happen in real time.</p>
@@ -1133,7 +1136,7 @@ class Index extends Component {
                       <path d="M26 4L6 28H24L22 44L42 20H24L26 4Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
 
-                      <h3>Easy <br/> Donation</h3>
+                      <h3>Easily <br/> Donate</h3>
                     </div>
                     <div className="feature__description">
                       <p>Donate to your favorite causes or organizations in an easy and fast way, all through your feed. </p>
@@ -1230,37 +1233,7 @@ class Index extends Component {
             <div className="col-sm-12 col-md-12 col-lg-6 contact__right">
               <h6>Tell us about you </h6>
 
-              <form name="contact" netlify>
-                <div className={'input__fields'}>
-                  <label htmlFor="name"> Name: </label> 
-                  <input type="text" id="name" name="name" />   
-                </div>
-                <div className={'input__fields'}>
-                  <label htmlFor="email">Email: </label> 
-                  <input type="email" id="email" name="email" />
-                </div>
-                <div className={'input__fields'}>
-                  <label htmlFor="cause">Favorite Cause: </label>
-                  <select id="cause" name="cause[]">
-                    <option value="option-1">Option 1</option>
-                    <option value="option-2">Option 2</option>
-                  </select>
-                </div>
-                <div className={'input__fields input__textarea'}>
-                  <label htmlFor="message">Message:</label> 
-                  <textarea id="message" name="message" placeholder="Write your message here"></textarea>
-                </div>
-                <div>
-                  <button className={"form__submit"} type="submit">
-                    <svg width="129" height="58" viewBox="0 0 129 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7.512 36.288C12.312 36.288 14.64 33.888 14.64 31.08C14.64 24.912 4.872 27.048 4.872 23.952C4.872 22.896 5.76 22.032 8.064 22.032C9.552 22.032 11.16 22.464 12.72 23.352L13.92 20.4C12.36 19.416 10.2 18.912 8.088 18.912C3.312 18.912 1.008 21.288 1.008 24.144C1.008 30.384 10.776 28.224 10.776 31.368C10.776 32.4 9.84 33.168 7.536 33.168C5.52 33.168 3.408 32.448 1.992 31.416L0.672 34.344C2.16 35.496 4.848 36.288 7.512 36.288ZM29.6807 29.592C29.6807 25.44 26.7527 22.896 22.9607 22.896C19.0247 22.896 16.0727 25.68 16.0727 29.544C16.0727 33.384 18.9767 36.192 23.4407 36.192C25.7687 36.192 27.5687 35.472 28.7687 34.104L26.7767 31.944C25.8887 32.784 24.9047 33.192 23.5367 33.192C21.5687 33.192 20.2007 32.208 19.8407 30.6H29.6087C29.6327 30.288 29.6807 29.88 29.6807 29.592ZM22.9847 25.728C24.6647 25.728 25.8887 26.784 26.1527 28.416H19.7927C20.0567 26.76 21.2807 25.728 22.9847 25.728ZM40.0213 22.896C38.2693 22.896 36.7573 23.496 35.7493 24.6V23.088H32.1733V36H35.9173V29.616C35.9173 27.24 37.2133 26.136 39.0133 26.136C40.6693 26.136 41.6293 27.096 41.6293 29.184V36H45.3733V28.608C45.3733 24.672 43.0693 22.896 40.0213 22.896ZM58.3157 18.192V24.456C57.3797 23.4 56.0357 22.896 54.4517 22.896C50.8037 22.896 47.9957 25.488 47.9957 29.544C47.9957 33.6 50.8037 36.192 54.4517 36.192C56.1797 36.192 57.5477 35.64 58.4837 34.512V36H62.0597V18.192H58.3157ZM55.0997 33.12C53.2277 33.12 51.7877 31.776 51.7877 29.544C51.7877 27.312 53.2277 25.968 55.0997 25.968C56.9477 25.968 58.3877 27.312 58.3877 29.544C58.3877 31.776 56.9477 33.12 55.0997 33.12Z" fill="#FFC4DD"/>
-                      <circle cx="100" cy="29" r="29" fill="#FFC4DD"/>
-                      <path d="M83.0001 29.333L116.881 29.333" stroke="#1C1A1B" stroke-width="2"/>
-                      <path d="M107.815 20.0146L117 29.3337L107.815 38.6527" stroke="#1C1A1B" stroke-width="2"/>
-                    </svg>
-                  </button>
-                </div>
-              </form>
+              <Form />
 
             </div>
           </div>
