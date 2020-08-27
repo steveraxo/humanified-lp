@@ -209,10 +209,6 @@ class Index extends Component {
 
   }
 
-  componentDidMount(){
-    this.parallaxContainer();
-  }
-
   showFeature(event){
     document.querySelectorAll(".feature__slide.active")[0].classList.remove("active");
 
@@ -221,6 +217,20 @@ class Index extends Component {
 
     event.target.classList.add("active")
     document.querySelectorAll(`.${event.target.id}`)[0].classList.add("active");
+  }
+
+  componentDidMount(){
+    this.parallaxContainer();
+
+    [...document.querySelectorAll(".navigation__header.mobile")].map((navItem) => (
+      navItem.addEventListener("click", function(){
+        console.log("test");
+        document.getElementById("opened__toggle").classList.remove("show");
+        document.getElementById("closed__toggle").classList.add("show");
+        document.getElementById("mobile__menu").classList.remove("show");
+        document.querySelectorAll(".nav__button.mobile")[0].classList.remove("show");
+      })
+    ))
   }
 
   render() {
@@ -348,7 +358,7 @@ class Index extends Component {
       </section>
 
 
-      <section className="founder__section" id="meet-the-founder">
+      <section className="founder__section" id="team">
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-6 founder">
@@ -731,7 +741,7 @@ class Index extends Component {
                   }
                 </div>
 
-                <div className="team__member__info " id="team__eight-member">
+                <div className="team__member__info " id="team__eight-membermobile">
                     <div className="team__member__info__name">
                     <h5>
                         <span>Rachel </span>

@@ -357,10 +357,11 @@ section{
     margin: 0px 0;
     position: relative;
     align-items: flex-start;
+    top: 80px;
 }
 #mission .down__arrow{
     position: relative;
-    top: 150px;
+    top: 80px;
 }
 .mission__description{
     display: flex;
@@ -1228,7 +1229,7 @@ section{
         padding-left: 50px;
     }
     #mission .down__arrow {
-        top: 150px;
+        top: 90px;
     }
     .pre__mission__section {
         padding: 100px 0 30px;
@@ -1252,6 +1253,7 @@ section{
     }
     #mission__title h2 {
         font-size: 60px;
+        top: 65px;
     }
     #mission__description {
         font-size: 18px;
@@ -1395,13 +1397,13 @@ section{
     #mission__title h2 {
         font-size: 50px;
         padding: 0 0px;
-        margin-top: -70px!important;
+        margin-top: 0px!important;
     }
     .pre__mission__section h2 {
         top: 30%;
     }
     #mission .down__arrow {
-        top: 160px;
+        top: 100px;
     }
     #mission__description {
         margin-top: 100px;
@@ -1453,7 +1455,7 @@ section{
         transform: scale(0.8);
     }
     #meet-the-team .team__member__info {
-        transform: scale(0.5);
+        transform: scale(1);
         right: 30px;
         bottom: -50px;
     
@@ -1766,7 +1768,7 @@ section{
     #meet-the-team .team__member {
         width: calc(100% / 2);
     }
-    .team__member:nth-child(odd){
+    .team__member:nth-child(even){
         margin-top: 220px;
         top: 70px;
     }
@@ -2101,7 +2103,7 @@ section{
     .team__section svg{
         transform: scale(1.1);
     }
-    .team__member:nth-child(odd) {
+    .team__member:nth-child(even) {
         margin-top: 20px;
         top: 145px;
     }
@@ -2109,7 +2111,7 @@ section{
         right: -90px;
         bottom: 140px;
     }
-    #meet-the-team .team__member:nth-child(odd) .team__member__info {
+    #meet-the-team .team__member:nth-child(even) .team__member__info {
         right: 73px;
         bottom: -15px;
     }
@@ -2635,7 +2637,7 @@ section{
     #meet-the-team .team__member {
         width: calc(100% / 2);
     }
-    .team__member:nth-child(odd){
+    .team__member:nth-child(even){
         margin-top: 220px;
         top: 70px;
     }
@@ -2983,7 +2985,7 @@ section{
     .team__section svg{
         transform: scale(1.1);
     }
-    .team__member:nth-child(odd) {
+    .team__member:nth-child(even) {
         margin-top: 20px;
         top: 145px;
     }
@@ -2991,7 +2993,7 @@ section{
         right: -90px;
         bottom: 140px;
     }
-    #meet-the-team .team__member:nth-child(odd) .team__member__info {
+    #meet-the-team .team__member:nth-child(even) .team__member__info {
         right: 73px;
         bottom: -15px;
     }

@@ -45,8 +45,8 @@ export default class header extends Component {
                       textDecoration: `none`,
                     }}
                   >
-                    Humanified
-                  </Link>
+                  humanified
+                  </Link> 
                 </div>
                 <div className="col-lg-7 menu__column desktop" >
                   <nav role="navigation" className="navigation__header ">
@@ -57,8 +57,8 @@ export default class header extends Component {
                         </AnchorLink>
                       </li>
                       <li>
-                        <AnchorLink to="/#meat-the-team" title="Meat the team">
-                          Meat the team
+                        <AnchorLink to="/#team" title="Meet the team">
+                          Meet the team
                         </AnchorLink>
                       </li>
                       <li>
@@ -78,7 +78,7 @@ export default class header extends Component {
                         </AnchorLink>
                       </li>
                       
-                      {/* <li><a onClick={() => scrollTo('#meat-the-team')}>Meat the team</a></li>
+                      {/* <li><a onClick={() => scrollTo('#team')}>Meat the team</a></li>
                       <li><a onClick={() => scrollTo('#what-we-do')}>What we do</a></li>
                       <li><a onClick={() => scrollTo('#contact')}>Contact</a></li>
                       <li><a class="primary__btn" onClick={() => scrollTo('#download')}>Download</a></li> */}
@@ -95,7 +95,7 @@ export default class header extends Component {
                         </AnchorLink>
                       </li>
                       <li>
-                        <AnchorLink to="/#meat-the-team" title="Meat the team">
+                        <AnchorLink to="/#team" title="Meat the team">
                           Meat the team
                         </AnchorLink>
                       </li>
@@ -116,7 +116,7 @@ export default class header extends Component {
                         </AnchorLink>
                       </li>
                       
-                      {/* <li><a onClick={() => scrollTo('#meat-the-team')}>Meat the team</a></li>
+                      {/* <li><a onClick={() => scrollTo('#team')}>Meat the team</a></li>
                       <li><a onClick={() => scrollTo('#what-we-do')}>What we do</a></li>
                       <li><a onClick={() => scrollTo('#contact')}>Contact</a></li>
                       <li><a class="primary__btn" onClick={() => scrollTo('#download')}>Download</a></li> */}
