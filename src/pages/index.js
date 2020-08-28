@@ -394,7 +394,7 @@ class Index extends Component {
                 <span>founder</span>
               </h2>
               <p className="second" id="founder__description">
-                A communicator, brand builder, strategist, mother, and doer of good, Marla González is the heart and brain behind Humanified. She created the app when she saw the need for a platform that makes it easy to make a change in our world.
+              A communicator, brand builder, strategist, special needs mother, and doer of good, Marla González is the heart and brain behind Humanified. She created the app when she saw the need for a platform that makes it easy to make a change in our world.
               </p>
             </div>
           </div>
@@ -435,7 +435,6 @@ class Index extends Component {
                 </MouseTooltip>
                 
               </div>
-
               <div className="team__member desktop">
                 <div className="team__member__avatar" id="team__two" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
                   {
@@ -546,7 +545,6 @@ class Index extends Component {
                   </div>
                 </MouseTooltip>
               </div>
-              
               <div className="team__member desktop">
                 <div className="team__member__avatar" id="team__five" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
                   {
@@ -623,9 +621,38 @@ class Index extends Component {
                     <div className="team__member__info__name">
                       <h5>
                         <span>Kike </span>
-                        <span>Sánchez</span>
+                        <span>Sanchez</span>
                       </h5>
-                      <h6>Content   <br/> Manager</h6>
+                      <h6>Content <br/> Manager</h6>
+                    </div>
+                  
+                  </div>
+                </MouseTooltip>
+               
+              </div>
+              
+              <div className="team__member desktop">
+                <div className="team__member__avatar" id="team__nine" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                  {
+                    images.map((image, index) =>
+                      image.fluid.src.includes("avaz.png")
+                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      : ""
+                    )
+                  }
+                </div>
+                <MouseTooltip
+                  visible={this.state.isMouseTooltipVisible}
+                  offsetX={-100}
+                  offsetY={-100}
+                >
+                  <div className="team__member__info " id="team__nine-member">
+                    <div className="team__member__info__name">
+                      <h5>
+                        <span>Avaz </span>
+                        <span>Bokiev</span>
+                      </h5>
+                      <h6>Lead     <br/> Developer</h6>
                     </div>
                   
                   </div>
@@ -633,6 +660,65 @@ class Index extends Component {
                 
               </div>
               
+              <div className="team__member desktop">
+                <div className="team__member__avatar" id="team__ten" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                  {
+                    images.map((image, index) =>
+                      image.fluid.src.includes("gabriela.png")
+                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      : ""
+                    )
+                  }
+                </div>
+                <MouseTooltip
+                  visible={this.state.isMouseTooltipVisible}
+                  offsetX={-100}
+                  offsetY={-100}
+                >
+                  <div className="team__member__info " id="team__ten-member">
+                    <div className="team__member__info__name">
+                      <h5>
+                        <span>Gabriela   </span>
+                        <span>Carde</span>
+                      </h5>
+                      <h6>Jr. Counsel  </h6>
+                    </div>
+                  
+                  </div>
+                </MouseTooltip>
+                
+              </div>
+
+              <div className="team__member desktop">
+                <div className="team__member__avatar" id="team__eleven" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                  {
+                    images.map((image, index) =>
+                      image.fluid.src.includes("oscar.png")
+                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      : ""
+                    )
+                  }
+                </div>
+                <MouseTooltip
+                  visible={this.state.isMouseTooltipVisible}
+                  offsetX={-100}
+                  offsetY={-100}
+                >
+                  <div className="team__member__info " id="team__eleven-member">
+                    <div className="team__member__info__name">
+                      <h5>
+                        <span>Oscar</span>
+                        <span>Rivera</span>
+                      </h5>
+                      <h6>Chief<br/> Creative Officer</h6>
+                    </div>
+                  
+                  </div>
+                </MouseTooltip>
+                
+              </div>
+
+       
               {/* Team members for Mobile */}
               <div className="team__member mobile">
                 <div className="team__member__avatar" id="team__one-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
@@ -707,7 +793,7 @@ class Index extends Component {
               </div>
                 
               <div className="team__member mobile">
-                <div className="team__member__avatar" id="team__four-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                <div className="team__member__avatar genevieve" id="team__four-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("gen.png")
@@ -754,7 +840,6 @@ class Index extends Component {
                 
               </div>
 
-              
               <div className="team__member mobile">
                 <div className="team__member__avatar" id="team__five-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
                   {
@@ -822,6 +907,78 @@ class Index extends Component {
                       <span>Sánchez</span>
                     </h5>
                     <h6>Content   <br/> Manager</h6>
+                  </div>
+                
+                </div>
+                
+              </div>
+
+              <div className="team__member mobile">
+                <div className="team__member__avatar" id="team__nine-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                  {
+                    images.map((image, index) =>
+                      image.fluid.src.includes("avaz.png")
+                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      : ""
+                    )
+                  }
+                </div>
+
+                <div className="team__member__info " id="team__nine-membermobile">
+                  <div className="team__member__info__name">
+                    <h5>
+                      <span>Avaz </span>
+                      <span>Bokiev</span>
+                    </h5>
+                    <h6>Lead   <br/> Developer</h6>
+                  </div>
+                
+                </div>
+                
+              </div>
+
+              <div className="team__member mobile">
+                <div className="team__member__avatar" id="team__ten-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                  {
+                    images.map((image, index) =>
+                      image.fluid.src.includes("gabriela.png")
+                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      : ""
+                    )
+                  }
+                </div>
+
+                <div className="team__member__info " id="team__ten-membermobile">
+                  <div className="team__member__info__name">
+                    <h5>
+                      <span>Gabriela </span>
+                      <span>Carde</span>
+                    </h5>
+                    <h6>Jr.   <br/>  Counsel </h6>
+                  </div>
+                
+                </div>
+                
+              </div>
+
+              <div className="team__member mobile">
+                <div className="team__member__avatar" id="team__eleven-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                  {
+                    images.map((image, index) =>
+                      image.fluid.src.includes("oscar.png")
+                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      : ""
+                    )
+                  }
+                </div>
+
+                <div className="team__member__info " id="team__eleven-membermobile">
+                  <div className="team__member__info__name">
+                    <h5>
+                      <span>Oscar </span>
+                      <span>Rivera</span>
+                    </h5>
+                    <h6>Chief    <br/> Creative Officer </h6>
                   </div>
                 
                 </div>

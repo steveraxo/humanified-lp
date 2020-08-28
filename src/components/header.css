@@ -1,10 +1,10 @@
 .header__wrapper{
     background: transparent;
     padding: 47px 71px 43px 83px;
-    position: absolute;
+    position: fixed;
     top: 0px;
     width: 100%;
-    z-index: 2;
+    z-index: 999;
 }
 .navigation__header {
     display: flex;
@@ -17,7 +17,7 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 104.9%;
     /* identical to box height, or 42px */
     display: flex;

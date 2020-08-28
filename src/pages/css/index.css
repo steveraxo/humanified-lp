@@ -12,7 +12,6 @@ body{
     fill: transparent;
 }
 .form__submit svg path{
-    fill: #FFC4DD!important;
     stroke:#FFC4DD!important;
 }
 .form__submit:hover svg circle{
@@ -23,7 +22,6 @@ body{
     stroke:#FFC4DD!important;
 }
 .form__submit:hover svg path{
-    fill: #1C1A1B!important;
     stroke:#1C1A1B!important;
 }
 .form__invalid{
@@ -73,10 +71,10 @@ section{
     content: "";
 }
 .top__shadow{
-    background: linear-gradient(to bottom, black, transparent);
+    background: linear-gradient(to bottom, #000000a3, transparent);
     mix-blend-mode: multiply;
     opacity: 0.5;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     height: 132px;
@@ -426,11 +424,11 @@ section{
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
-    line-height: 38px;
+    font-size: 18px;
+    line-height: 30px;
     flex-direction: column;
     /* or 173% */
-
+    left: -50px;
 
     color: #FFFFFF;
     text-align: left;
@@ -515,8 +513,8 @@ section{
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
-    line-height: 38px;
+    font-size: 18px;
+    line-height: 30px;
     /* or 173% */
     max-width: 586px;
     text-transform: initial;
@@ -560,7 +558,7 @@ section{
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 104.9%;
     /* or 23px */
 
@@ -600,7 +598,9 @@ section{
 #meet-the-team .team__member{
     width: calc(100% / 4);
     position: relative;
-    padding: 0px
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
 }
 #meet-the-team .img {
     width: 220px!important;
@@ -632,7 +632,7 @@ section{
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 104.9%;
     /* identical to box height, or 23px */
 
@@ -664,7 +664,6 @@ section{
     color: #FFFFFF;
 }
 #meet-the-team .row{
-    justify-content: center;
     align-items: center;
     display: flex;
 }
@@ -867,7 +866,7 @@ section{
 }
 #www__info h3 span{
     color: transparent;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
     display: contents;
 }
@@ -961,7 +960,7 @@ section{
     display: flex;
     align-items: center;
     position: relative;
-    top: 300px;
+    top: 80px;
 }
 #contact .social__links h5{
     font-family: Montserrat;
@@ -1008,8 +1007,8 @@ section{
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
-    line-height: 38px;
+    font-size: 18px;
+    line-height: 30px;
     /* or 173% */
 
 
@@ -1040,7 +1039,7 @@ section{
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 105.4%;
     /* or 23px */
     height: 50px;
@@ -1055,7 +1054,7 @@ section{
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 105.4%;
     /* or 23px */
     min-height: 150px;
@@ -1124,6 +1123,10 @@ section{
 }
 #right__mobile{
     animation: float 6s ease-in-out infinite;
+    width: 80%;
+    position: relative;
+    top: 100px;
+    left: 50px;
 }
 @keyframes float {
     0% {
@@ -1174,8 +1177,8 @@ section{
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
-    line-height: 38px;
+    font-size: 18px;
+    line-height: 30px;
     /* or 173% */
     color: #FFFFFF;
     height: 0;
@@ -1271,6 +1274,9 @@ section{
     display: none;
 }
 @media (max-width: 1700px){
+    #mission__description{
+        left: 0px;
+    }
     #mission__description {
         top: 390px;
     }
@@ -1433,6 +1439,12 @@ section{
 }
 
 @media (max-width: 1024px){
+    #right__mobile{
+        width: 100%;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
     #team__title__mobile{
         width: 100%;
         transform: scale(1.5);
@@ -1641,7 +1653,7 @@ section{
         cursor: pointer;
     }
     .top__shadow{
-        display: none;
+        z-index: 99;
     }
     .header__row{
         position: relative;
@@ -1653,6 +1665,9 @@ section{
     }
 }
 @media (max-width: 815px){
+    .genevieve.team__member__avatar{
+        width: 125px;
+    }
     .slider__mobile{
         display: block;
         padding: 0 280px;
@@ -1762,7 +1777,7 @@ section{
 
     }
     .mission__title p {
-        font-size: 22px;
+        font-size: 18px;
     }
     #download p {
         top: 0px;
@@ -1778,7 +1793,7 @@ section{
     }
     #mission__description {
         margin: 0;
-        font-size: 22px;
+        font-size: 18px;
         top: 180px;
     }
     .founder__info {
@@ -1820,7 +1835,7 @@ section{
     #meet-the-team .team__member {
         width: calc(100% / 2);
     }
-    .team__member:nth-child(even){
+    .team__member:nth-child(odd){
         margin-top: 220px;
         top: 70px;
     }
@@ -1841,7 +1856,7 @@ section{
         top: 26%;
     }
     #what-we-do h5 {
-        font-size: 22px;
+        font-size: 18px;
     }
     #what-we-do h2 {
         z-index: 9;
@@ -1892,7 +1907,7 @@ section{
         margin-top: -200px;
     }
     #download h3 {
-        font-size: 22px;
+        font-size: 18px;
         text-align: center;
     }
     #download .left{
@@ -1935,7 +1950,7 @@ section{
         line-height: 124.4%;
     }
     #contact h3 {
-        font-size: 22px;
+        font-size: 18px;
         margin-bottom: 60px;
     }
     #contact .social__links {
@@ -2018,8 +2033,8 @@ section{
     }
     .slider__mobile {
         padding: 10px 215px;
-        margin-top: -110px;
-        margin-bottom: 90px;
+        margin-top: -160px;
+        margin-bottom: 100px;
     }
     #download {
         margin-top: -1019px;
@@ -2028,7 +2043,7 @@ section{
         margin-bottom: 140px;
     }
     .phone__slide img {
-        width: 275px;
+        width: 225px;
     }
     #features svg {
         width: 1210px;
@@ -2155,7 +2170,7 @@ section{
     .team__section svg{
         transform: scale(1.1);
     }
-    .team__member:nth-child(even) {
+    .team__member:nth-child(odd) {
         margin-top: 20px;
         top: 145px;
     }
@@ -2163,7 +2178,7 @@ section{
         right: -90px;
         bottom: 140px;
     }
-    #meet-the-team .team__member:nth-child(even) .team__member__info {
+    #meet-the-team .team__member:nth-child(odd) .team__member__info {
         right: 73px;
         bottom: -15px;
     }
@@ -2196,17 +2211,21 @@ section{
         padding: 0px 0 160px;
     }
     #what-we-do .floating__ww__image:nth-child(10) {
-        left: -32.5%;
-        bottom: 88%;
+        left: -23.5%;
+        bottom: 80%;
+    }
+
+    #what-we-do h5 {
+        margin-top: 0px;
     }
     #what-we-do h5 {
         font-size: 16px;
         line-height: 104.9%;
     }
-    #what-we-do h2{
+    #what-we-do h2 {
         font-size: 40px;
         line-height: 104.9%;
-        margin-top: 130px;
+        margin-top: 40px;
         padding: 0 50px;
     }
     #wwd__wrapper__title__two.desktop{
@@ -2230,13 +2249,15 @@ section{
         margin-top: 60px;
     }
     #what-we-do {
-        padding: 100px 0 369px;
+        padding: 0px 0 10px;
+        min-height: 600px;
+        margin-top: -460px;
     }
     #what-we-do .floating__ww__image:nth-child(5) img {
-        width: 270px;
+        width: 190px;
     }
     #what-we-do .floating__ww__image:nth-child(5) {
-        right: -29%;
+        right: -18%;
         bottom: 2%;
     }
     #what-we-do .floating__ww__image:nth-child(2) img {
@@ -2244,7 +2265,10 @@ section{
     }
     #what-we-do .floating__ww__image:nth-child(2) {
         left: 25%;
-        top: 93%;
+        top: 87%;
+    }
+    #what-we-do .floating__ww__image:nth-child(10) img {
+        width: 200px;
     }
     #what-we-do .floating__ww__image:nth-child(6) {
         right: 56%;
@@ -2336,7 +2360,7 @@ section{
         min-height: auto;
     }
     #footer .left p{
-        font-size: 22px;
+        font-size: 18px;
         line-height: 104.9%;
     }
     #footer .right p{
@@ -2510,6 +2534,7 @@ section{
     }
 }
 @media (max-width: 960px) and (orientation: landscape) {
+    
     .slider__mobile{
         display: block;
         padding: 0 280px;
@@ -2631,7 +2656,7 @@ section{
 
     }
     .mission__title p {
-        font-size: 22px;
+        font-size: 18px;
     }
     #download p {
         top: 0px;
@@ -2647,7 +2672,7 @@ section{
     }
     #mission__description {
         margin: 0;
-        font-size: 22px;
+        font-size: 18px;
         top: 180px;
     }
     .founder__info {
@@ -2689,7 +2714,7 @@ section{
     #meet-the-team .team__member {
         width: calc(100% / 2);
     }
-    .team__member:nth-child(even){
+    .team__member:nth-child(odd){
         margin-top: 220px;
         top: 70px;
     }
@@ -2710,7 +2735,7 @@ section{
         top: 26%;
     }
     #what-we-do h5 {
-        font-size: 22px;
+        font-size: 18px;
     }
     #what-we-do h2 {
         z-index: 9;
@@ -2761,7 +2786,7 @@ section{
         margin-top: -200px;
     }
     #download h3 {
-        font-size: 22px;
+        font-size: 18px;
         text-align: center;
     }
     #download .left{
@@ -2804,7 +2829,7 @@ section{
         line-height: 124.4%;
     }
     #contact h3 {
-        font-size: 22px;
+        font-size: 18px;
         margin-bottom: 60px;
     }
     #contact .social__links {
@@ -3037,7 +3062,7 @@ section{
     .team__section svg{
         transform: scale(1.1);
     }
-    .team__member:nth-child(even) {
+    .team__member:nth-child(odd) {
         margin-top: 20px;
         top: 145px;
     }
@@ -3045,7 +3070,7 @@ section{
         right: -90px;
         bottom: 140px;
     }
-    #meet-the-team .team__member:nth-child(even) .team__member__info {
+    #meet-the-team .team__member:nth-child(odd) .team__member__info {
         right: 73px;
         bottom: -15px;
     }
@@ -3218,7 +3243,7 @@ section{
         min-height: auto;
     }
     #footer .left p{
-        font-size: 22px;
+        font-size: 18px;
         line-height: 104.9%;
     }
     #footer .right p{

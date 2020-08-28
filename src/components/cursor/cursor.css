@@ -65,12 +65,12 @@ html body { cursor: none!important; }
   .cursor__inner--dot {
     width: 20px;
     height: 20px;
-    background: #ec7459;
+    background: #ffc4dd;
     display: block;
     left: 0px !important;
     top: 0px !important;
     z-index: 9999;
-    border: #ec7459;
+    border: #ffc4dd;
   }
   .cursor__inner--circle {
     width: 40px;
@@ -165,7 +165,7 @@ html body { cursor: none!important; }
   .cursor.morphed--cursor .cursor__inner--dot {
     width: 40px;
     height: 40px;
-    background: #e6e6e6c9;
+    background: #ffffff75;
     top: -15px !important;
     left: -15px !important;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
