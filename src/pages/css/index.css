@@ -8,6 +8,27 @@ body{
     transition: all 0.6s cubic-bezier(0.83, 0, 0.17, 1);
 
 }
+.advisory.team__section{
+    padding: 350px 0 150px;
+}
+.advisory #team__title {
+    top: -400px!important;
+}
+.team__row__one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team__row__two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team__row__three{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .form__submit svg circle{
     fill: transparent;
 }
@@ -623,7 +644,7 @@ section{
 
 }
 #team__title{
-    top: -600px!important;
+    top: -30px!important;
 }
 #meet-the-team .team__member__info.show{
     opacity: 1;
@@ -1439,6 +1460,16 @@ section{
 }
 
 @media (max-width: 1024px){
+    .advisory #team__title {
+        top: 0px!important;
+        position: relative;
+        transform: scale(0.8)!important;
+        margin-bottom: 0px;
+        height: 360px;
+    }
+    .advisory.team__section {
+        padding: 50px 0 150px;
+    }
     #right__mobile{
         width: 100%;
         position: relative;
@@ -1665,12 +1696,18 @@ section{
     }
 }
 @media (max-width: 815px){
+    .advisory.team__section {
+        padding: 0px 0 130px;
+    }
+    
+    .founder__section {
+        padding: 80px 0px 0px 0;
+        min-height: auto;
+    }
     .slider__mobile {
         padding: 0 10px;
     }
-    .genevieve.team__member__avatar{
-        width: 125px;
-    }
+
     .slick-slide{
         opacity: 0.5;
     }
@@ -2023,7 +2060,15 @@ section{
 
 }
 @media(max-width: 600px){
-
+    #team__title__mobile {
+        transform: scale(0.7);
+    }
+    .advisory.team__section {
+        padding: 0px 0 0px;
+    }
+    .genevieve.team__member__avatar{
+        width: 125px;
+    }
     .phone__slide.active{
         left: 0px;
         bottom: -235px;
@@ -2193,7 +2238,8 @@ section{
     }
     #meet-the-team .team__member:nth-child(odd) .team__member__info {
         right: 73px;
-        bottom: -15px;
+        bottom: unset;
+        top: -20px;
     }
     #meet-the-team .team__member__info{
         width: 171px;

@@ -9,6 +9,9 @@ import GoogleDownload from "../images/google.svg";
 import PlayButton from "../images/playButton.svg"
 import DownArrow from "../images/downArrow.svg"
 import TeamTitle from "../images/the_team.svg"
+import ATeamTitle from "../images/advisoryboard.svg"
+
+
 import TeamTitleMobile from "../images/TheTeam.svg"
 import scrollLock from 'scroll-lock';
 import Form from '../components/form/form'
@@ -99,7 +102,7 @@ class Index extends Component {
     document.querySelectorAll(".phone__circle")[0].classList.remove("phone__circle--active");
   }
   parallaxContainer() {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 1024) {
       window.addEventListener(
         "scroll",
         function() {
@@ -402,323 +405,501 @@ class Index extends Component {
         </div>
       </section>
 
-      <section className="team__section" id="meet-the-team">
-        <TeamTitleMobile id={"team__title__mobile"} className={"mobile"} />
-        <TeamTitle id="team__title" className={"desktop"}  />
+      <section className="advisory team__section" id="meet-the-team">
+        <ATeamTitle id="team__title" className={""}  />
         <div className="container">
-          <div className="row">
+          <div className="row team__row">
               {/* Team members for desktop */}
-              <div className="team__member desktop">
-                <div className="team__member__avatar" id="team__one" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+              <div className="team__row__one">
+                <div className="team__member desktop">
+                  <div className="team__member__avatar" id="team__aone" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                    {
+                      images.map((image, index) =>
+                        image.fluid.src.includes("alison.png")
+                        ? <img src={image.fluid.src} alt="" key={index}/>
+                        : ""
+                      )
+                    }
+                  </div>
+                  <MouseTooltip
+                    visible={this.state.isMouseTooltipVisible}
+                    offsetX={-100}
+                    offsetY={-100}
+                  >
+                    <div className="team__member__info " id="team__aone-member">
+                      <div className="team__member__info__name">
+                        <h5>
+                          <span>Alison  </span>
+                          <span>Wyatt</span>
+                        </h5>
+                        <h6>Angel Investor, <br/>
+Former President, <br/> Girlboss</h6>
+                      </div>
+                    
+                    </div>
+                  </MouseTooltip>
+                  
+                </div>
+                <div className="team__member desktop">
+                  <div className="team__member__avatar" id="team__atwo" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                    {
+                      images.map((image, index) =>
+                        image.fluid.src.includes("hitha.png")
+                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        : ""
+                      )
+                    }
+                  </div>
+                  <MouseTooltip
+                    visible={this.state.isMouseTooltipVisible}
+                    offsetX={-100}
+                    offsetY={-100}
+                  >
+                    <div className="team__member__info " id="team__atwo-member">
+                      <div className="team__member__info__name">
+                      <h5>
+                          <span>Hitha  </span>
+                          <span>Palepu</span>
+                        </h5>
+                        <h6>CEO Rhoshan <br/> Pharmaceuticals <br/>
+Early-stage Investor</h6>
+                      </div>
+                    
+                    </div>
+                  </MouseTooltip>
+                </div>
+                <div className="team__member desktop">
+                  <div className="team__member__avatar" id="team__athree" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                    {
+                      images.map((image, index) =>
+                        image.fluid.src.includes("steve.png")
+                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        : ""
+                      )
+                    }
+                  </div>
+                  <MouseTooltip
+                    visible={this.state.isMouseTooltipVisible}
+                    offsetX={-100}
+                    offsetY={-100}
+                  >
+                    <div className="team__member__info " id="team__athree-member">
+                      <div className="team__member__info__name">
+                        <h5>
+                          <span>Steve 
+  </span>
+                          <span>Lubin</span>
+                        </h5>
+                        <h6>Technology Executive <br/> (Multiple Exits) Venture <br/> Capitalist</h6>
+                      </div>
+                    
+                    </div>
+                  </MouseTooltip>
+                </div>            
+              </div> 
+
+       
+              {/* Team members for Mobile */}
+              <div className="team__member mobile">
+                <div className="team__member__avatar" id="team__one-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
                   {
                     images.map((image, index) =>
-                      image.fluid.src.includes("neil.png")
+                      image.fluid.src.includes("alison.png")
                       ? <img src={image.fluid.src} alt="" key={index}/>
                       : ""
                     )
                   }
                 </div>
-                <MouseTooltip
-                  visible={this.state.isMouseTooltipVisible}
-                  offsetX={-100}
-                  offsetY={-100}
-                >
-                  <div className="team__member__info " id="team__one-member">
-                    <div className="team__member__info__name">
-                      <h5>
-                        <span>Neil </span>
-                        <span>St.Clair</span>
-                      </h5>
-                      <h6>COO</h6>
-                    </div>
-                  
-                  </div>
-                </MouseTooltip>
+
+                <div className="team__member__info " id="team__one-membermobile">
+                <div className="team__member__info__name">
+                        <h5>
+                          <span>Alison  </span>
+                          <span>Wyatt</span>
+                        </h5>
+                        <h6>Angel Investor, <br/>
+Former President, <br/> Girlboss</h6>
+                      </div>
                 
-              </div>
-              <div className="team__member desktop">
-                <div className="team__member__avatar" id="team__two" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
-                  {
-                    images.map((image, index) =>
-                      image.fluid.src.includes("suren.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
-                      : ""
-                    )
-                  }
                 </div>
-                <MouseTooltip
-                  visible={this.state.isMouseTooltipVisible}
-                  offsetX={-100}
-                  offsetY={-100}
-                >
-                  <div className="team__member__info " id="team__two-member">
-                    <div className="team__member__info__name">
-                    <h5>
-                        <span>Suren </span>
-                        <span>Sahaydachny</span>
-                      </h5>
-                      <h6>Chief of <br/>Product</h6>
-                    </div>
-                  
-                  </div>
-                </MouseTooltip>
-              </div>
-              <div className="team__member desktop">
-                <div className="team__member__avatar" id="team__three" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
-                  {
-                    images.map((image, index) =>
-                      image.fluid.src.includes("natalia.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
-                      : ""
-                    )
-                  }
-                </div>
-                <MouseTooltip
-                  visible={this.state.isMouseTooltipVisible}
-                  offsetX={-100}
-                  offsetY={-100}
-                >
-                  <div className="team__member__info " id="team__three-member">
-                    <div className="team__member__info__name">
-                      <h5>
-                        <span>Natalia
-</span>
-                        <span>Cacheiro</span>
-                      </h5>
-                      <h6>UX/UI <br/> Director</h6>
-                    </div>
-                  
-                  </div>
-                </MouseTooltip>
-              </div>            
-              <div className="team__member desktop">
-                <div className="team__member__avatar" id="team__four" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
-                  {
-                    images.map((image, index) =>
-                      image.fluid.src.includes("gen.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
-                      : ""
-                    )
-                  }
-                </div>
-                <MouseTooltip
-                  visible={this.state.isMouseTooltipVisible}
-                  offsetX={-100}
-                  offsetY={-100}
-                >
-                  <div className="team__member__info " id="team__four-member">
-                    <div className="team__member__info__name">
-                      <h5>
-                        <span>Gen</span>
-                        <span>Keillor</span>
-                      </h5>
-                      <h6>Associate <br/> Account <br/> Director</h6>
-                    </div>
-                  
-                  </div>
-                </MouseTooltip>
-                
-              </div>
-              <div className="team__member desktop">
-                <div className="team__member__avatar" id="team__eight" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
-                  {
-                    images.map((image, index) =>
-                      image.fluid.src.includes("rachel.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
-                      : ""
-                    )
-                  }
-                </div>
-                <MouseTooltip
-                  visible={this.state.isMouseTooltipVisible}
-                  offsetX={-100}
-                  offsetY={-100}
-                >
-                  <div className="team__member__info " id="team__eight-member">
-                    <div className="team__member__info__name">
-                    <h5>
-                        <span>Rachel </span>
-                        <span>Chada</span>
-                      </h5>
-                      <h6>Strategy <br/>Director</h6>
-                    </div>
-                  
-                  </div>
-                </MouseTooltip>
-              </div>
-              <div className="team__member desktop">
-                <div className="team__member__avatar" id="team__five" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
-                  {
-                    images.map((image, index) =>
-                      image.fluid.src.includes("ornella.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
-                      : ""
-                    )
-                  }
-                </div>
-                <MouseTooltip
-                  visible={this.state.isMouseTooltipVisible}
-                  offsetX={-100}
-                  offsetY={-100}
-                >
-                  <div className="team__member__info " id="team__five-member">
-                    <div className="team__member__info__name">
-                      <h5>
-                        <span>Ornella
-</span>
-                        <span>Castellini</span>
-                      </h5>
-                      <h6>UX/UI <br/> Designer</h6>
-                    </div>
-                  
-                  </div>
-                </MouseTooltip>
-                
-              </div>
-              <div className="team__member desktop">
-                <div className="team__member__avatar" id="team__six" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
-                  {
-                    images.map((image, index) =>
-                      image.fluid.src.includes("lilinette.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
-                      : ""
-                    )
-                  }
-                </div>
-                <MouseTooltip
-                  visible={this.state.isMouseTooltipVisible}
-                  offsetX={-100}
-                  offsetY={-100}
-                >
-                  <div className="team__member__info " id="team__six-member">
-                    <div className="team__member__info__name">
-                      <h5>
-                        <span>Lillinette </span>
-                        <span>Díaz</span>
-                      </h5>
-                      <h6>Content <br/> strategist</h6>
-                    </div>
-                  
-                  </div>
-                </MouseTooltip>
-               
-              </div>
-              <div className="team__member desktop">
-                <div className="team__member__avatar" id="team__seven" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
-                  {
-                    images.map((image, index) =>
-                      image.fluid.src.includes("kike.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
-                      : ""
-                    )
-                  }
-                </div>
-                <MouseTooltip
-                  visible={this.state.isMouseTooltipVisible}
-                  offsetX={-100}
-                  offsetY={-100}
-                >
-                  <div className="team__member__info " id="team__seven-member">
-                    <div className="team__member__info__name">
-                      <h5>
-                        <span>Kike </span>
-                        <span>Sanchez</span>
-                      </h5>
-                      <h6>Content <br/> Manager</h6>
-                    </div>
-                  
-                  </div>
-                </MouseTooltip>
-               
-              </div>
-              
-              <div className="team__member desktop">
-                <div className="team__member__avatar" id="team__nine" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
-                  {
-                    images.map((image, index) =>
-                      image.fluid.src.includes("avaz.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
-                      : ""
-                    )
-                  }
-                </div>
-                <MouseTooltip
-                  visible={this.state.isMouseTooltipVisible}
-                  offsetX={-100}
-                  offsetY={-100}
-                >
-                  <div className="team__member__info " id="team__nine-member">
-                    <div className="team__member__info__name">
-                      <h5>
-                        <span>Avaz </span>
-                        <span>Bokiev</span>
-                      </h5>
-                      <h6>Lead     <br/> Developer</h6>
-                    </div>
-                  
-                  </div>
-                </MouseTooltip>
-                
-              </div>
-              
-              <div className="team__member desktop">
-                <div className="team__member__avatar" id="team__ten" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
-                  {
-                    images.map((image, index) =>
-                      image.fluid.src.includes("gabriela.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
-                      : ""
-                    )
-                  }
-                </div>
-                <MouseTooltip
-                  visible={this.state.isMouseTooltipVisible}
-                  offsetX={-100}
-                  offsetY={-100}
-                >
-                  <div className="team__member__info " id="team__ten-member">
-                    <div className="team__member__info__name">
-                      <h5>
-                        <span>Gabriela   </span>
-                        <span>Carde</span>
-                      </h5>
-                      <h6>Jr. Counsel  </h6>
-                    </div>
-                  
-                  </div>
-                </MouseTooltip>
                 
               </div>
 
-              <div className="team__member desktop">
-                <div className="team__member__avatar" id="team__eleven" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+              <div className="team__member mobile">
+                <div className="team__member__avatar" id="team__two-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
                   {
                     images.map((image, index) =>
-                      image.fluid.src.includes("oscar.png")
+                      image.fluid.src.includes("hitha.png")
                       ?<img src={image.fluid.src} alt="" key={index}/>
                       : ""
                     )
                   }
                 </div>
-                <MouseTooltip
-                  visible={this.state.isMouseTooltipVisible}
-                  offsetX={-100}
-                  offsetY={-100}
-                >
-                  <div className="team__member__info " id="team__eleven-member">
-                    <div className="team__member__info__name">
+
+                <div className="team__member__info " id="team__two-membermobile">
+                <div className="team__member__info__name">
                       <h5>
-                        <span>Oscar</span>
-                        <span>Rivera</span>
-                      </h5>
-                      <h6>Chief<br/> Creative Officer</h6>
-                    </div>
-                  
-                  </div>
-                </MouseTooltip>
+                          <span>Hitha  </span>
+                          <span>Palepu</span>
+                        </h5>
+                        <h6>CEO Rhoshan <br/> Pharmaceuticals <br/>
+Early-stage Investor</h6>
+                      </div>
+                
+                </div>
                 
               </div>
 
+              <div className="team__member mobile">
+                <div className="team__member__avatar" id="team__three-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                  {
+                    images.map((image, index) =>
+                      image.fluid.src.includes("steve.png")
+                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      : ""
+                    )
+                  }
+                </div>
+
+                <div className="team__member__info " id="team__three-membermobile">
+                <div className="team__member__info__name">
+                        <h5>
+                          <span>Steve 
+  </span>
+                          <span>Lubin</span>
+                        </h5>
+                        <h6>Technology Executive <br/> (Multiple Exits) Venture <br/> Capitalist</h6>
+                      </div>
+                
+                </div>
+              </div>
+                
+
+          </div>
+        </div>
+      </section>
+
+      <section className="team__section" id="meet-the-team">
+        <TeamTitleMobile id={"team__title__mobile"} className={"mobile"} />
+        <TeamTitle id="team__title" className={"desktop"}  />
+        <div className="container">
+          <div className="row team__row">
+              {/* Team members for desktop */}
+              <div className="team__row__one">
+                <div className="team__member desktop">
+                  <div className="team__member__avatar" id="team__one" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                    {
+                      images.map((image, index) =>
+                        image.fluid.src.includes("neil.png")
+                        ? <img src={image.fluid.src} alt="" key={index}/>
+                        : ""
+                      )
+                    }
+                  </div>
+                  <MouseTooltip
+                    visible={this.state.isMouseTooltipVisible}
+                    offsetX={-100}
+                    offsetY={-100}
+                  >
+                    <div className="team__member__info " id="team__one-member">
+                      <div className="team__member__info__name">
+                        <h5>
+                          <span>Neil </span>
+                          <span>St.Clair</span>
+                        </h5>
+                        <h6>COO</h6>
+                      </div>
+                    
+                    </div>
+                  </MouseTooltip>
+                  
+                </div>
+                <div className="team__member desktop">
+                  <div className="team__member__avatar" id="team__two" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                    {
+                      images.map((image, index) =>
+                        image.fluid.src.includes("suren.png")
+                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        : ""
+                      )
+                    }
+                  </div>
+                  <MouseTooltip
+                    visible={this.state.isMouseTooltipVisible}
+                    offsetX={-100}
+                    offsetY={-100}
+                  >
+                    <div className="team__member__info " id="team__two-member">
+                      <div className="team__member__info__name">
+                      <h5>
+                          <span>Suren </span>
+                          <span>Sahaydachny</span>
+                        </h5>
+                        <h6>Chief of <br/>Product</h6>
+                      </div>
+                    
+                    </div>
+                  </MouseTooltip>
+                </div>
+                <div className="team__member desktop">
+                  <div className="team__member__avatar" id="team__three" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                    {
+                      images.map((image, index) =>
+                        image.fluid.src.includes("natalia.png")
+                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        : ""
+                      )
+                    }
+                  </div>
+                  <MouseTooltip
+                    visible={this.state.isMouseTooltipVisible}
+                    offsetX={-100}
+                    offsetY={-100}
+                  >
+                    <div className="team__member__info " id="team__three-member">
+                      <div className="team__member__info__name">
+                        <h5>
+                          <span>Natalia
+  </span>
+                          <span>Cacheiro</span>
+                        </h5>
+                        <h6>UX/UI <br/> Director</h6>
+                      </div>
+                    
+                    </div>
+                  </MouseTooltip>
+                </div>            
+                <div className="team__member desktop">
+                  <div className="team__member__avatar" id="team__four" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                    {
+                      images.map((image, index) =>
+                        image.fluid.src.includes("gen.png")
+                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        : ""
+                      )
+                    }
+                  </div>
+                  <MouseTooltip
+                    visible={this.state.isMouseTooltipVisible}
+                    offsetX={-100}
+                    offsetY={-100}
+                  >
+                    <div className="team__member__info " id="team__four-member">
+                      <div className="team__member__info__name">
+                        <h5>
+                          <span>Gen</span>
+                          <span>Keillor</span>
+                        </h5>
+                        <h6>Associate <br/> Account <br/> Director</h6>
+                      </div>
+                    
+                    </div>
+                  </MouseTooltip>
+                  
+                </div>
+              </div> 
+              <div className="team__row__two">
+                <div className="team__member desktop">
+                  <div className="team__member__avatar" id="team__eight" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                    {
+                      images.map((image, index) =>
+                        image.fluid.src.includes("rachel.png")
+                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        : ""
+                      )
+                    }
+                  </div>
+                  <MouseTooltip
+                    visible={this.state.isMouseTooltipVisible}
+                    offsetX={-100}
+                    offsetY={-100}
+                  >
+                    <div className="team__member__info " id="team__eight-member">
+                      <div className="team__member__info__name">
+                      <h5>
+                          <span>Rachel </span>
+                          <span>Chada</span>
+                        </h5>
+                        <h6>Strategy <br/>Director</h6>
+                      </div>
+                    
+                    </div>
+                  </MouseTooltip>
+                </div>
+                <div className="team__member desktop">
+                  <div className="team__member__avatar" id="team__five" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                    {
+                      images.map((image, index) =>
+                        image.fluid.src.includes("ornella.png")
+                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        : ""
+                      )
+                    }
+                  </div>
+                  <MouseTooltip
+                    visible={this.state.isMouseTooltipVisible}
+                    offsetX={-100}
+                    offsetY={-100}
+                  >
+                    <div className="team__member__info " id="team__five-member">
+                      <div className="team__member__info__name">
+                        <h5>
+                          <span>Ornella
+  </span>
+                          <span>Castellini</span>
+                        </h5>
+                        <h6>UX/UI <br/> Designer</h6>
+                      </div>
+                    
+                    </div>
+                  </MouseTooltip>
+                  
+                </div>
+                <div className="team__member desktop">
+                  <div className="team__member__avatar" id="team__six" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                    {
+                      images.map((image, index) =>
+                        image.fluid.src.includes("lilinette.png")
+                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        : ""
+                      )
+                    }
+                  </div>
+                  <MouseTooltip
+                    visible={this.state.isMouseTooltipVisible}
+                    offsetX={-100}
+                    offsetY={-100}
+                  >
+                    <div className="team__member__info " id="team__six-member">
+                      <div className="team__member__info__name">
+                        <h5>
+                          <span>Lillinette </span>
+                          <span>Díaz</span>
+                        </h5>
+                        <h6>Content <br/> strategist</h6>
+                      </div>
+                    
+                    </div>
+                  </MouseTooltip>
+                
+                </div>
+                
+              </div>
+              <div className="team__row__three">
+                <div className="team__member desktop">
+                  <div className="team__member__avatar" id="team__seven" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                    {
+                      images.map((image, index) =>
+                        image.fluid.src.includes("kike.png")
+                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        : ""
+                      )
+                    }
+                  </div>
+                  <MouseTooltip
+                    visible={this.state.isMouseTooltipVisible}
+                    offsetX={-100}
+                    offsetY={-100}
+                  >
+                    <div className="team__member__info " id="team__seven-member">
+                      <div className="team__member__info__name">
+                        <h5>
+                          <span>Kike </span>
+                          <span>Sanchez</span>
+                        </h5>
+                        <h6>Content <br/> Manager</h6>
+                      </div>
+                    
+                    </div>
+                  </MouseTooltip>
+                
+                </div>
+                <div className="team__member desktop">
+                  <div className="team__member__avatar" id="team__nine" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                    {
+                      images.map((image, index) =>
+                        image.fluid.src.includes("avaz.png")
+                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        : ""
+                      )
+                    }
+                  </div>
+                  <MouseTooltip
+                    visible={this.state.isMouseTooltipVisible}
+                    offsetX={-100}
+                    offsetY={-100}
+                  >
+                    <div className="team__member__info " id="team__nine-member">
+                      <div className="team__member__info__name">
+                        <h5>
+                          <span>Avaz </span>
+                          <span>Bokiev</span>
+                        </h5>
+                        <h6>Lead     <br/> Developer</h6>
+                      </div>
+                    
+                    </div>
+                  </MouseTooltip>
+                  
+                </div>
+                <div className="team__member desktop">
+                  <div className="team__member__avatar" id="team__ten" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                    {
+                      images.map((image, index) =>
+                        image.fluid.src.includes("gabriela.png")
+                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        : ""
+                      )
+                    }
+                  </div>
+                  <MouseTooltip
+                    visible={this.state.isMouseTooltipVisible}
+                    offsetX={-100}
+                    offsetY={-100}
+                  >
+                    <div className="team__member__info " id="team__ten-member">
+                      <div className="team__member__info__name">
+                        <h5>
+                          <span>Gabriela   </span>
+                          <span>Carde</span>
+                        </h5>
+                        <h6>Jr. Counsel  </h6>
+                      </div>
+                    
+                    </div>
+                  </MouseTooltip>
+                  
+                </div>
+                <div className="team__member desktop">
+                  <div className="team__member__avatar" id="team__eleven" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                    {
+                      images.map((image, index) =>
+                        image.fluid.src.includes("oscar.png")
+                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        : ""
+                      )
+                    }
+                  </div>
+                  <MouseTooltip
+                    visible={this.state.isMouseTooltipVisible}
+                    offsetX={-100}
+                    offsetY={-100}
+                  >
+                    <div className="team__member__info " id="team__eleven-member">
+                      <div className="team__member__info__name">
+                        <h5>
+                          <span>Oscar</span>
+                          <span>Rivera</span>
+                        </h5>
+                        <h6>Chief<br/> Creative Officer</h6>
+                      </div>
+                    
+                    </div>
+                  </MouseTooltip>
+                  
+                </div>
+                
+              </div>
        
               {/* Team members for Mobile */}
               <div className="team__member mobile">
