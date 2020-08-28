@@ -1665,12 +1665,21 @@ section{
     }
 }
 @media (max-width: 815px){
+    .slider__mobile {
+        padding: 0 10px;
+    }
     .genevieve.team__member__avatar{
         width: 125px;
     }
+    .slick-slide{
+        opacity: 0.5;
+    }
+    .slick-slide.slick-active.slick-current{
+        opacity: 1;
+    }
     .slider__mobile{
         display: block;
-        padding: 0 280px;
+        padding: 0px 220px;
         position: relative;
         margin-top: -60px;
     }
@@ -2017,11 +2026,11 @@ section{
 
     .phone__slide.active{
         left: 0px;
-        bottom: -300px;
+        bottom: -235px;
     }
     .phone__slide{
         
-        bottom: -300px;
+        bottom: -235px;
 
     }
     .wwd__wrapper svg {
@@ -2392,7 +2401,7 @@ section{
         margin: 30px auto auto;
     }
     .slider__mobile {
-        padding: 0 120px;
+        padding: 0 0px;
     }
 }
 @media (max-width: 384px){
@@ -2408,7 +2417,7 @@ section{
         left: -112%;
     }
     .slider__mobile {
-        padding: 0 100px;
+        padding: 0 0px;
     }
 }
 @media (max-width: 360px){
@@ -2419,7 +2428,7 @@ section{
         left: -117%;
     }
     .slider__mobile {
-        padding: 0 70px;
+        padding: 0 0px;
     }
     #contact h4 {
         font-size: 29px;

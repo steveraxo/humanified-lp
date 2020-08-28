@@ -240,11 +240,12 @@ class Index extends Component {
     const isBrowser = typeof window !== `undefined`
 
     const settings = {
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
       dots: false,
+      arrows: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      centerMode: true,
       swipeToSlide: true,
       swipe: true,
       afterChange: function(index) {
@@ -276,9 +277,9 @@ class Index extends Component {
                 </div>
                 <div className="wt-hero-header-blend">
                   <h1 id="home__hero__title">
-                    <span>We are the first</span>
-                    <span>social impact </span>
-                    <span>social network</span>
+                    <span>The Social</span>
+                    <span>Impact </span>
+                    <span>Network</span>
                   </h1>
                   <div className="play__button">
                     <div className="hover__transition" onClick={this.playVideo} >
@@ -345,7 +346,7 @@ class Index extends Component {
             </div>
             <div className="col-sm-12 col-md-12 col-lg-6 mission__description" id="mission__description">
               <p >
-                With our feeds flooded with stories of tragedies and injustices, it’s daunting to think about how one person can make a change in the world. At the same time, stories of advocacy and necessary resources get lost in the white noise of selfies, overhead lunch shots, and monotonous updates. 
+                With our feeds flooded with stories of injustices, it’s daunting to think about how one person can make a change in the world. At the same time, stories of advocacy and necessary resources get lost in the white noise of selfies, overhead lunch shots, and monotonous updates. 
               </p>
               <p>
               Not anymore. Humanified is the first social network that is built for doing good, empowering people to show their compassionate side in real time.
