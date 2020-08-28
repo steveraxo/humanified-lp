@@ -1123,9 +1123,9 @@ section{
 }
 #right__mobile{
     animation: float 6s ease-in-out infinite;
-    width: 80%;
+    width: 70%;
     position: relative;
-    top: 100px;
+    top: 150px;
     left: 50px;
 }
 @keyframes float {
@@ -2058,11 +2058,15 @@ section{
         line-height: 104.9%;
     }
     .header__wrapper {
-        padding: 47px 15px 43px 15px;
+        padding: 35px 15px 35px 15px;
+        background: #2C13DD;
     }
     .nav__button {
-        top: 45px;
+        top: 35px;
         right: 35px;
+    }
+    .top__shadow{
+        display: none;
     }
     .navigation__header.mobile ul a {
         font-size: 30px;
@@ -2246,7 +2250,8 @@ section{
         top: 30%;
     }
     .wwd__wrapper svg {
-        margin-top: 60px;
+        margin-top: 30px;
+        transform: scale(0.5);
     }
     #what-we-do {
         padding: 0px 0 10px;
@@ -2407,6 +2412,9 @@ section{
     }
 }
 @media (max-width: 360px){
+    #what-we-do h2 {
+        font-size: 38px;
+    }
     #features svg {
         left: -117%;
     }
