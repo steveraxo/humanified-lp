@@ -987,7 +987,7 @@ section{
     margin-left: 80px;
 }
 #contact .social__links ul li{
-    margin-right: 50px;
+    margin-right: 45px;
     margin-bottom: 0px;
 }
 #contact h4{
@@ -2033,8 +2033,8 @@ section{
     }
     .slider__mobile {
         padding: 10px 215px;
-        margin-top: -160px;
-        margin-bottom: 100px;
+        margin-top: -190px;
+        margin-bottom: 90px;
     }
     #download {
         margin-top: -1019px;
@@ -2043,7 +2043,7 @@ section{
         margin-bottom: 140px;
     }
     .phone__slide img {
-        width: 225px;
+        width: 205px;
     }
     #features svg {
         width: 1210px;
@@ -2251,7 +2251,6 @@ section{
     #what-we-do {
         padding: 0px 0 10px;
         min-height: 600px;
-        margin-top: -460px;
     }
     #what-we-do .floating__ww__image:nth-child(5) img {
         width: 190px;
