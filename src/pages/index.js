@@ -21,6 +21,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
+
 class Index extends Component {
   constructor(props) {
     super(props);
@@ -304,7 +305,7 @@ class Index extends Component {
                       <AppleDownload alt="Apple Store Badge - Coming Soon" />
                     </div>
                     <div className="play__store">
-                      <GoogleDownload alt="Googla Play Store Badge - Coming Soon" />
+                      <GoogleDownload alt="Googla PlayStore Badge - Coming Soon" />
                     </div>
                   </div>
                 </div>
@@ -918,7 +919,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("neil.png")
-                      ? <img src={image.fluid.src} alt="" key={index}/>
+                      ? <img src={image.fluid.src} alt="" key={index}  alt="Neil St.Clair, COO"/>
                       : ""
                     )
                   }
@@ -936,13 +937,12 @@ Early-stage Investor</h6>
                 </div>
                 
               </div>
-
               <div className="team__member mobile">
                 <div className="team__member__avatar" id="team__twosix-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("suren.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      ?<img src={image.fluid.src} alt="" key={index} alt="Suren Sahaydachny, Chief of Product"/>
                       : ""
                     )
                   }
@@ -966,7 +966,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("natalia.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      ?<img src={image.fluid.src} alt="" key={index} alt="Natalia Cacheiro, UX/UI Director"/>
                       : ""
                     )
                   }
@@ -990,7 +990,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("gen.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      ?<img src={image.fluid.src} alt="" key={index} alt="Gen Keillor, Associate Account Account"/>
                       : ""
                     )
                   }
@@ -1014,7 +1014,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("rachel.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      ?<img src={image.fluid.src} alt="" key={index} alt="Rachel Chada, Strategy Director"/>
                       : ""
                     )
                   }
@@ -1038,7 +1038,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("ornella.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      ?<img src={image.fluid.src} alt="" key={index} alt="Ornella Castellini, UX/UI  Designer"/>
                       : ""
                     )
                   }
@@ -1063,7 +1063,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("lilinette.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      ?<img src={image.fluid.src} alt="" key={index} alt="Lillinette Díaz, Content strategist" />
                       : ""
                     )
                   }
@@ -1087,7 +1087,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("kike.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      ?<img src={image.fluid.src} alt="" key={index} alt="Kike Sanchez, Content Manager"/>
                       : ""
                     )
                   }
@@ -1111,7 +1111,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("avaz.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      ?<img src={image.fluid.src} alt="" key={index}  alt="Avaz Bokiev, Lead Developer" />
                       : ""
                     )
                   }
@@ -1135,7 +1135,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("gabriela.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      ?<img src={image.fluid.src} alt="" key={index}  alt="Gabriela Carde, Jr. Counsel"/>
                       : ""
                     )
                   }
@@ -1159,7 +1159,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("oscar.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      ?<img src={image.fluid.src} alt="" key={index} alt="Oscar Rivera, Chief Creative Officer"/>
                       : ""
                     )
                   }
@@ -1182,7 +1182,7 @@ Early-stage Investor</h6>
       </section>
 
       <section className="about__section" id="what-we-do">
-        <div className="floating__ww__image">
+        <div className="floating__ww__image" tabIndex="-1">
           <Tilt>
             {
               images.map((image, index) =>
@@ -1193,7 +1193,7 @@ Early-stage Investor</h6>
             }
           </Tilt>
         </div>
-        <div className="floating__ww__image">
+        <div className="floating__ww__image" tabIndex="-1">
           <Tilt>
             {
               images.map((image, index) =>
@@ -1204,7 +1204,7 @@ Early-stage Investor</h6>
             }
           </Tilt>
         </div>
-        <div className="floating__ww__image">
+        <div className="floating__ww__image" tabIndex="-1">
           <Tilt>
             {
               images.map((image, index) =>
@@ -1215,7 +1215,7 @@ Early-stage Investor</h6>
             }
           </Tilt>
         </div>
-        <div className="floating__ww__image">
+        <div className="floating__ww__image" tabIndex="-1">
           <Tilt>
             {
               images.map((image, index) =>
@@ -1226,7 +1226,7 @@ Early-stage Investor</h6>
             }
           </Tilt>
         </div>
-        <div className="floating__ww__image">
+        <div className="floating__ww__image" tabIndex="-1">
           <Tilt>
             {
               images.map((image, index) =>
@@ -1237,7 +1237,7 @@ Early-stage Investor</h6>
             }
           </Tilt>
         </div>
-        <div className="floating__ww__image">
+        <div className="floating__ww__image" tabIndex="-1">
           <Tilt>
             {
               images.map((image, index) =>
@@ -1248,7 +1248,7 @@ Early-stage Investor</h6>
             }
           </Tilt>
         </div>
-        <div className="floating__ww__image">
+        <div className="floating__ww__image" tabIndex="-1">
           <Tilt>
             {
               images.map((image, index) =>
@@ -1259,7 +1259,7 @@ Early-stage Investor</h6>
             }
           </Tilt>
         </div>
-        <div className="floating__ww__image">
+        <div className="floating__ww__image" tabIndex="-1">
           <Tilt>
             {
               images.map((image, index) =>
@@ -1270,7 +1270,7 @@ Early-stage Investor</h6>
             }
           </Tilt>
         </div>
-        <div className="floating__ww__image">
+        <div className="floating__ww__image" tabIndex="-1">
           <Tilt>
             {
               images.map((image, index) =>
@@ -1281,7 +1281,7 @@ Early-stage Investor</h6>
             }
           </Tilt>
         </div>
-        <div className="floating__ww__image">
+        <div className="floating__ww__image" tabIndex="-1">
           <Tilt>
             {
               images.map((image, index) =>
@@ -1306,7 +1306,7 @@ Early-stage Investor</h6>
                 Change the 
                 world in real time
               </h2>
-              <DownArrow />
+              <DownArrow alt="Next Section Below" />
             </div>
           </div>
         </div>
@@ -1332,7 +1332,7 @@ Early-stage Investor</h6>
         <div className="container-fluid slider">
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-6 left slider__phones__wrapper">
-                <div className="phone__slide slide__one active">
+                <div tabIndex={"-1"} className="phone__slide slide__one active">
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes(`phoneone.png`)
@@ -1341,7 +1341,7 @@ Early-stage Investor</h6>
                     )
                   }
                 </div>
-                <div className="phone__slide slide__two">
+                <div tabIndex={"-1"} className="phone__slide slide__two">
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes(`phonetwo.png`)
@@ -1350,7 +1350,7 @@ Early-stage Investor</h6>
                     )
                   }
                 </div>
-                <div className="phone__slide slide__three">
+                <div tabIndex={"-1"} className="phone__slide slide__three">
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes(`phonethree.png`)
@@ -1359,7 +1359,7 @@ Early-stage Investor</h6>
                     )
                   }
                 </div>
-                <div className="phone__slide slide__four">
+                <div tabIndex={"-1"} className="phone__slide slide__four">
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes(`phonefour.png`)
@@ -1368,7 +1368,7 @@ Early-stage Investor</h6>
                     )
                   }
                 </div>
-                <div className="phone__slide slide__five">
+                <div tabIndex={"-1"} className="phone__slide slide__five">
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes(`phonefive.png`)
@@ -1377,7 +1377,7 @@ Early-stage Investor</h6>
                     )
                   }
                 </div>
-                <div className="phone__slide slide__six">
+                <div tabIndex={"-1"} className="phone__slide slide__six">
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes(`phonesix.png`)
@@ -1572,10 +1572,10 @@ Early-stage Investor</h6>
               <p id="down__subtitle">and change the world <br/> around you today. </p>
               <div className="app__links d-flex ">
                 <div className="app__store">
-                  <AppleDownload/>
+                  <AppleDownload alt="Apple Store Badge - Coming Soon" />
                 </div>
                 <div className="play__store">
-                  <GoogleDownload/>
+                  <GoogleDownload alt="Google PlayStore Badge - Coming Soon" />
                 </div>
               </div>
             </div>
@@ -1584,7 +1584,7 @@ Early-stage Investor</h6>
                 {
                   images.map((image, index) =>
                     image.fluid.src.includes("mobileend.png")
-                    ?<Img fluid={image.fluid} id={"down__image"} key={index}/>
+                    ?<Img fluid={image.fluid} id={"down__image"} key={index} alt="Floating Phone"/>
                     : ""
                   )
                 }
@@ -1609,33 +1609,33 @@ Early-stage Investor</h6>
                   <ul>
                     <li className={"instagram"}>
                       <a href="https://www.instagram.com/humanified/?hl=en" target="_BLANK">
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg title="Instagram Icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M21.0122 5.57323C20.7032 5.57323 20.4011 5.66487 20.1441 5.83658C19.8871 6.00829 19.6868 6.25235 19.5686 6.53789C19.4503 6.82342 19.4193 7.13762 19.4796 7.44075C19.5399 7.74387 19.6887 8.02231 19.9073 8.24085C20.1258 8.45939 20.4042 8.60821 20.7074 8.66851C21.0105 8.7288 21.3247 8.69785 21.6102 8.57958C21.8958 8.46131 22.1398 8.26102 22.3115 8.00404C22.4832 7.74707 22.5749 7.44495 22.5749 7.13589C22.5749 6.72145 22.4103 6.32398 22.1172 6.03092C21.8242 5.73787 21.4267 5.57323 21.0122 5.57323ZM14.0428 7.58906C12.7401 7.58906 11.4667 7.97535 10.3835 8.69909C9.30035 9.42283 8.45613 10.4515 7.9576 11.6551C7.45908 12.8586 7.32865 14.1829 7.5828 15.4606C7.83694 16.7383 8.46424 17.9119 9.38539 18.833C10.3065 19.7542 11.4802 20.3815 12.7578 20.6357C14.0355 20.8898 15.3599 20.7594 16.5634 20.2608C17.7669 19.7623 18.7956 18.9181 19.5194 17.8349C20.2431 16.7518 20.6294 15.4783 20.6294 14.1756C20.6273 12.4294 19.9327 10.7553 18.698 9.5205C17.4632 8.28572 15.789 7.59113 14.0428 7.58906ZM14.0428 18.387C13.208 18.387 12.392 18.1393 11.698 17.6754C11.004 17.2114 10.4632 16.552 10.1441 15.7806C9.82496 15.0092 9.74186 14.1605 9.90529 13.3418C10.0687 12.5232 10.4713 11.7714 11.0622 11.1817C11.653 10.5919 12.4055 10.1907 13.2245 10.0288C14.0434 9.86687 14.892 9.95153 15.6628 10.2721C16.4336 10.5926 17.0921 11.1346 17.5547 11.8295C18.0174 12.5243 18.2635 13.3408 18.262 14.1756C18.2599 15.2933 17.8145 16.3644 17.0234 17.154C16.2324 17.9435 15.1604 18.387 14.0428 18.387ZM27.3254 8.69854C27.3254 6.56831 26.4791 4.52533 24.9728 3.01903C23.4665 1.51273 21.4235 0.666504 19.2933 0.666504H8.69854C6.56831 0.666504 4.52534 1.51273 3.01904 3.01903C1.51274 4.52533 0.666504 6.56831 0.666504 8.69854V19.3011C0.666504 21.4314 1.51274 23.4743 3.01904 24.9806C4.52534 26.4869 6.56831 27.3332 8.69854 27.3332H19.3011C21.4314 27.3332 23.4743 26.4869 24.9806 24.9806C26.4869 23.4743 27.3332 21.4314 27.3332 19.3011L27.3254 8.69854ZM24.8095 19.3011C24.8095 20.7641 24.2283 22.1672 23.1938 23.2017C22.1594 24.2361 20.7563 24.8173 19.2933 24.8173H8.69854C7.23556 24.8173 5.83251 24.2361 4.79803 23.2017C3.76355 22.1672 3.18238 20.7641 3.18238 19.3011V8.69854C3.18238 7.23556 3.76355 5.83251 4.79803 4.79802C5.83251 3.76354 7.23556 3.18236 8.69854 3.18236H19.3011C20.7641 3.18236 22.1672 3.76354 23.2017 4.79802C24.2361 5.83251 24.8173 7.23556 24.8173 8.69854L24.8095 19.3011Z" fill="white"/>
                         </svg>
                       </a>
                     </li>
                     <li className={"facebook"} >
                       <a href="https://www.facebook.com/humanified/" target="_BLANK">
-                        <svg width="15" height="28" viewBox="0 0 15 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg title="Facebook icon" width="15" height="28" viewBox="0 0 15 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M9.80668 27.3332V15.1692H13.8897L14.501 10.4287H9.80668V7.40208C9.80668 6.02963 10.1878 5.09423 12.1561 5.09423L14.6664 5.09312V0.853296C13.4514 0.724728 12.2303 0.66244 11.0085 0.666709C7.38925 0.666709 4.9114 2.8758 4.9114 6.9329V10.4289H0.817871V15.1694H4.91128V27.3334L9.80668 27.3332Z" fill="white"/>
                         </svg>
                       </a>
                     </li>
                     <li className={"linkedin"} >
                       <a href="https://www.linkedin.com/company/humanified/" target="_BLANK">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill={"#ffffff"} width="24" height="24" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+                        <svg title="Linkedin icon" xmlns="http://www.w3.org/2000/svg" fill={"#ffffff"} width="24" height="24" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
                       </a>
                     </li>
                     <li className={"twitter"} >
                       <a href="https://twitter.com/humanifiedapp" target="_BLANK">
-                        <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg title="Twitter icon" width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M27.3332 2.73361C26.331 3.16841 25.2711 3.45583 24.1865 3.58695C25.3307 2.90337 26.1882 1.82799 26.5998 0.560279C25.5246 1.20036 24.3475 1.65134 23.1198 1.89361C22.2992 1.00371 21.2065 0.411341 20.0129 0.209415C18.8194 0.00748825 17.5926 0.207424 16.5249 0.777865C15.4572 1.34831 14.6091 2.25699 14.1135 3.36139C13.6179 4.4658 13.5029 5.70347 13.7865 6.88028C11.6124 6.77031 9.48576 6.20422 7.54471 5.21876C5.60366 4.23331 3.89163 2.85054 2.51984 1.16028C2.03869 2.0005 1.78586 2.95204 1.7865 3.92028C1.7848 4.81946 2.00546 5.7051 2.42884 6.49836C2.85223 7.29163 3.4652 7.96789 4.21317 8.46695C3.34381 8.44329 2.49302 8.21001 1.73317 7.78695V7.85361C1.73969 9.11347 2.18116 10.3324 2.98292 11.3042C3.78468 12.2761 4.89751 12.9411 6.13317 13.1869C5.65751 13.3317 5.16367 13.408 4.6665 13.4136C4.32236 13.4096 3.97907 13.3784 3.63984 13.3203C3.99172 14.404 4.67267 15.3511 5.58794 16.0298C6.50321 16.7085 7.60727 17.085 8.7465 17.1069C6.82277 18.6206 4.44768 19.4468 1.99984 19.4536C1.55415 19.4551 1.10882 19.4284 0.666504 19.3736C3.16574 20.9873 6.07825 21.8439 9.05317 21.8403C11.1061 21.8616 13.1427 21.4736 15.044 20.6991C16.9453 19.9245 18.6732 18.7788 20.1268 17.3289C21.5804 15.8791 22.7305 14.1541 23.5099 12.2548C24.2894 10.3555 24.6826 8.31992 24.6665 6.26695C24.6665 6.04028 24.6665 5.80028 24.6665 5.56028C25.7128 4.78003 26.6151 3.82351 27.3332 2.73361Z" fill="white"/>
                         </svg>
                       </a>
                     </li>
                     <li className={"youtube"} >
                       <a href="https://" target="_BLANK">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        <svg title="Youtube icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
                       </a>
                     </li>
                   </ul>

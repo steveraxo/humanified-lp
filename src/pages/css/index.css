@@ -4,6 +4,12 @@ body{
 .input__fields{
     position: relative;
 }
+.g__recaptcha{
+    margin-bottom: 25px;
+}
+#submit__form:disabled {
+    opacity: 0.5;
+}
 .privacy__wrapper{
     background: #1C1A1B;
     color: white;
