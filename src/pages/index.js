@@ -273,7 +273,7 @@ class Index extends Component {
 
       <section className="homepage__header">
         <div className="top__shadow"> </div>
-        <video playsInline="" controls="" preload="none"  id="homepage__header__video" onClick={this.playVideo} >
+        <video  playsInline="" controls="" preload="none"  id="homepage__header__video" onClick={this.playVideo} >
           <source src="https://rx.raxo.dev/wp-content/uploads/2020/05/Raxo-Reel-2019.mp4" type="video/mp4" />
         </video>
         <div className="container hero__wrapper">
@@ -292,8 +292,8 @@ class Index extends Component {
                     <span>Network</span>
                   </h1>
                   <div className="play__button">
-                    <div className="hover__transition" onClick={this.playVideo} >
-                      <PlayButton />
+                    <div className="hover__transition" onClick={this.playVideo} tabIndex={0} aria-label={"Watch Video"}>
+                      <PlayButton  />
 
                       <p data-text="Watch video">Watch video</p>
                     </div>
@@ -301,10 +301,10 @@ class Index extends Component {
             
                   <div className="app__links d-flex justify-content-center align-items-center">
                     <div className="app__store">
-                      <AppleDownload/>
+                      <AppleDownload alt="Apple Store Badge - Coming Soon" />
                     </div>
                     <div className="play__store">
-                      <GoogleDownload/>
+                      <GoogleDownload alt="Googla Play Store Badge - Coming Soon" />
                     </div>
                   </div>
                 </div>
@@ -326,7 +326,7 @@ class Index extends Component {
                   <span className="mobile">Make a real difference, one tap at a time.</span>
                 </h2>
               </div>
-              <div className="phone__image" onMouseEnter={this.activatePulsing} onMouseLeave={this.deactivatePulsing}>
+              <div className="phone__image" tabIndex="-1" onMouseEnter={this.activatePulsing} onMouseLeave={this.deactivatePulsing}>
                 {
                   images.map((image, index) =>
                     image.fluid.src.includes("phone.png")
@@ -334,7 +334,7 @@ class Index extends Component {
                     : ""
                   )
                 }
-                <div className="phone__circle"></div>
+                <div className="phone__circle" tabIndex="-1"></div>
               </div>
             </div>
           </div>
@@ -351,7 +351,7 @@ class Index extends Component {
                 <span> Social Impact</span>
               </h2>
               <div className="down__arrow">
-                <DownArrow id="mission__arrow" />
+                <DownArrow id="mission__arrow" alt="Next Section Below"/>
               </div>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-6 mission__description" id="mission__description">
@@ -379,10 +379,10 @@ class Index extends Component {
                   ? window.innerWidth > 900
                     ?
                       image.fluid.src.includes("founder_marla.png")
-                      ? <Img fluid={image.fluid} key={index}/>
+                      ? <Img fluid={image.fluid} key={index} alt="Marla Gonzales, Founder" />
                       : ""
                     : image.fluid.src.includes("marlamobile.png")
-                      ? <Img fluid={image.fluid} key={index}/>
+                      ? <Img fluid={image.fluid} key={index} alt="Marla Gonzales, Founder"/>
                       : ""
                   : " " 
                   
@@ -423,7 +423,7 @@ class Index extends Component {
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("alison.png")
-                        ? <img src={image.fluid.src} alt="" key={index}/>
+                        ? <img src={image.fluid.src} alt="" key={index} alt="Alison Wyatt, Advisory Board Member"/>
                         : ""
                       )
                     }
@@ -452,7 +452,7 @@ Former President, <br/> Girlboss</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("hitha.png")
-                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        ?<img src={image.fluid.src} alt="" key={index} alt="Hitha Palepu, Advisory Board Member" />
                         : ""
                       )
                     }
@@ -480,7 +480,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("steve.png")
-                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        ?<img src={image.fluid.src} alt="" key={index} alt="Steve Lubin, Advisory Board Member" />
                         : ""
                       )
                     }
@@ -512,7 +512,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("alison.png")
-                      ? <img src={image.fluid.src} alt="" key={index}/>
+                      ? <img src={image.fluid.src} alt="" key={index} alt="Alison Wyatt, Advisory Board Member" />
                       : ""
                     )
                   }
@@ -537,7 +537,7 @@ Former President, <br/> Girlboss</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("hitha.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      ?<img src={image.fluid.src} alt="" key={index} alt="Hitha Palepu, Advisory Board Member" />
                       : ""
                     )
                   }
@@ -562,7 +562,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("steve.png")
-                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      ?<img src={image.fluid.src} alt="" key={index} alt="Steve Lubin, Advisory Board Member"/>
                       : ""
                     )
                   }
@@ -598,7 +598,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("neil.png")
-                        ? <img src={image.fluid.src} alt="" key={index}/>
+                        ? <img src={image.fluid.src} alt="" key={index} alt="Neil St.Clair, COO"/>
                         : ""
                       )
                     }
@@ -626,7 +626,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("suren.png")
-                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        ?<img src={image.fluid.src} alt="" key={index} alt="Suren Sahaydachny, Chief of Product" />
                         : ""
                       )
                     }
@@ -655,7 +655,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("natalia.png")
-                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        ?<img src={image.fluid.src} alt="" key={index} alt="Natalia Cacheiro, UX/UI Director"/>
                         : ""
                       )
                     }
@@ -685,7 +685,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("gen.png")
-                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        ?<img src={image.fluid.src} alt="" key={index} alt="Gen Keillor, Associate Account Account" />
                         : ""
                       )
                     }
@@ -715,7 +715,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("rachel.png")
-                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        ?<img src={image.fluid.src} alt="" key={index} alt="Rachel Chada, Strategy Director" />
                         : ""
                       )
                     }
@@ -742,7 +742,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("ornella.png")
-                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        ?<img src={image.fluid.src} alt="" key={index} alt="Ornella Castellini, UX/UI  Designer"/>
                         : ""
                       )
                     }
@@ -771,7 +771,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("lilinette.png")
-                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        ?<img src={image.fluid.src} alt="" key={index} alt="Lillinette Díaz, Content strategist" />
                         : ""
                       )
                     }
@@ -802,7 +802,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("kike.png")
-                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        ?<img src={image.fluid.src} alt="" key={index} alt="Kike Sanchez, Content Manager" />
                         : ""
                       )
                     }
@@ -830,7 +830,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("avaz.png")
-                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        ?<img src={image.fluid.src} alt="" key={index}  alt="Avaz Bokiev, Lead Developer"  />
                         : ""
                       )
                     }
@@ -858,7 +858,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("gabriela.png")
-                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        ?<img src={image.fluid.src} alt="" key={index} alt="Gabriela Carde, Jr. Counsel" />
                         : ""
                       )
                     }
@@ -886,7 +886,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("oscar.png")
-                        ?<img src={image.fluid.src} alt="" key={index}/>
+                        ?<img src={image.fluid.src} alt="" key={index} alt="Oscar Rivera, Chief Creative Officer" />
                         : ""
                       )
                     }

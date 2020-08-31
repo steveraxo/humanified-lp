@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Cursor  from "./cursor/cursor"
 import AOS from "aos"
 import Header from "./header"
+import { Link } from "gatsby"
 
 import "./layout.css"
 import "aos/dist/aos.css"
