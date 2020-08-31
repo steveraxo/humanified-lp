@@ -255,7 +255,7 @@ class Index extends Component {
 
     return (
       <Layout>
-      <SEO title="Home" />
+      <SEO title="Humanified | The Social Impact Network" />
       <script>
         {`
         function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-598312411/jLU5CPDsl90BENuLpp0C', 'event_callback': callback }); return false; } 
@@ -288,7 +288,7 @@ class Index extends Component {
                     <div className="hover__transition" onClick={this.playVideo} tabIndex={0} aria-label={"Watch Video"}>
                       <PlayButton  />
 
-                      <p data-text="Watch video">Watch video</p>
+                      <p data-text="#WhatDidYouDo">#WhatDidYouDo</p>
                     </div>
                   </div>
             
@@ -313,10 +313,11 @@ class Index extends Component {
             <div className="col-lg-12 pre__mission__wrapper">
               <div className="pre__mission__title">
                 <h2 id="pre__mission__title">
-                  <span className="desktop">Make a real difference, </span>
-                  <span className="desktop">one tap at a time.</span>
-
-                  <span className="mobile">Make a real difference, one tap at a time.</span>
+                  <span className="desktop">A social network, </span>
+                  <span className="desktop">for difference makers. </span>
+                  <span className="desktop">Don't just post...do.</span>
+                  
+                  <span className="mobile">A social network for difference makers. Don't just post...do.</span>
                 </h2>
               </div>
               <div className="phone__image" tabIndex="-1" onMouseEnter={this.activatePulsing} onMouseLeave={this.deactivatePulsing}>
@@ -349,11 +350,14 @@ class Index extends Component {
             </div>
             <div className="col-sm-12 col-md-12 col-lg-6 mission__description" id="mission__description">
               <p >
-                With our feeds flooded with stories of injustices, it’s daunting to think about how one person can make a change in the world. At the same time, stories of advocacy and necessary resources get lost in the white noise of selfies, overhead lunch shots, and monotonous updates. 
+              Humanified is the social network for making change happen. We amplify online activism* and provide real ways to volunteer, donate, and advocate for verified causes and nonprofits. 
+
               </p>
               <p>
-              Not anymore. Humanified is the first social network that is built for doing good, empowering people to show their compassionate side in real time.
+              We eliminate traditional social media's white noise to make voices heard, to move beyond performative activism to action, and to lift up new movements and moments. #WhatDidYouDo?
               </p>
+              <p>              <strong>64%</strong> of people are more likely to take real action after posting or following a cause or nonprofit.
+</p>
             </div>
           </div>
         </div>
@@ -394,11 +398,12 @@ class Index extends Component {
                 ABOUT THE TEAM
               </p>
               <h2 id="the__founder">
-                <span>Meet the </span>
-                <span>founder</span>
+                <span>Meet the First </span>
+                <span>Humanifier</span>
               </h2>
               <p className="second" id="founder__description">
-              A communicator, brand builder, strategist, special needs mother, and doer of good, Marla González is the heart and brain behind Humanified. She created the app when she saw the need for a platform that makes it easy to make a change in our world.
+              A communicator, brand builder, and special needs mother, Marla González is the heart and mind behind Humanified. She created the app when she saw the need for a platform that makes it easier to make change in our world.
+
               </p>
             </div>
           </div>
@@ -607,7 +612,7 @@ Early-stage Investor</h6>
                           <span>Neil </span>
                           <span>St.Clair</span>
                         </h5>
-                        <h6>COO</h6>
+                        <h6>Chief Operating <br/> Officer</h6>
                       </div>
                     
                     </div>
@@ -635,7 +640,7 @@ Early-stage Investor</h6>
                           <span>Suren </span>
                           <span>Sahaydachny</span>
                         </h5>
-                        <h6>Chief of <br/>Product</h6>
+                        <h6>Chief Product <br/> Officer</h6>
                       </div>
                     
                     </div>
@@ -923,7 +928,7 @@ Early-stage Investor</h6>
                         <span>Neil </span>
                         <span>St.Clair</span>
                       </h5>
-                      <h6>COO</h6>
+                      <h6>Chief Operating <br/> Officer</h6>
                   </div>
                 
                 </div>
@@ -946,7 +951,7 @@ Early-stage Investor</h6>
                         <span>Suren </span>
                         <span>Sahaydachny</span>
                       </h5>
-                      <h6>Chief of <br/>Product</h6>
+                      <h6>Chief Product <br/> Officer</h6>
                   </div>
                 
                 </div>
@@ -1301,7 +1306,8 @@ Early-stage Investor</h6>
           <div className="row">
             <div className="col-lg-12">
               <h3 id="www__info__two">
-                Humanified is the first purpose-built social network for social impact <span> that not only connects users and non-profits, but creates a space for creative advocacy and meeting other mission-aligned individuals. </span>
+              Humanified is the app for people, nonprofits, and even companies <span> to engage in creative advocacy, meet other mission-aligned individuals, and take real action. </span>
+
               </h3>
             </div>
           </div>
@@ -1378,10 +1384,11 @@ Early-stage Investor</h6>
                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M41.6803 9.21974C40.6588 8.19775 39.4459 7.38704 38.111 6.83391C36.7761 6.28079 35.3453 5.99609 33.9003 5.99609C32.4553 5.99609 31.0245 6.28079 29.6896 6.83391C28.3547 7.38704 27.1418 8.19775 26.1203 9.21974L24.0003 11.3397L21.8803 9.21974C19.8169 7.15636 17.0184 5.99716 14.1003 5.99716C11.1822 5.99716 8.38368 7.15636 6.3203 9.21974C4.25691 11.2831 3.09772 14.0817 3.09772 16.9997C3.09772 19.9178 4.25691 22.7164 6.3203 24.7797L8.4403 26.8997L24.0003 42.4597L39.5603 26.8997L41.6803 24.7797C42.7023 23.7582 43.513 22.5454 44.0661 21.2105C44.6193 19.8755 44.904 18.4447 44.904 16.9997C44.904 15.5548 44.6193 14.124 44.0661 12.789C43.513 11.4541 42.7023 10.2413 41.6803 9.21974V9.21974Z" stroke="white" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
-                      <h3>Feel-Good  <br/> Content </h3>
+                      <h3>Impactful <br/> Content
+ </h3>
                     </div>
                     <div className="feature__description">
-                      <p>Make your feed stand out by sharing, posting and liking content that supports the causes you care about.</p>
+                      <p>Create a “Cause” page, post and share content, and engage with people and ideas that support what you care about.</p>
                     </div>
                   </div>
                   <div className="feature__slide" onClick={this.showFeature} onMouseOver={this.showFeature} id="slide__two">
@@ -1394,7 +1401,8 @@ Early-stage Investor</h6>
                       <h3>Explore <br/> What's Good</h3>
                     </div>
                     <div className="feature__description">
-                      <p>Use our explore page to find new places to volunteer, donate your time or connect with people that share your same passion for social good.</p>
+                      <p>Use the “Explore” section to find new movements, new places to volunteer, or to make new connections with like-minded advocates. 
+</p>
                     </div>
                   </div>
                   <div className="feature__slide" onClick={this.showFeature} onMouseOver={this.showFeature} id="slide__three">
@@ -1411,7 +1419,8 @@ Early-stage Investor</h6>
   Yourself</h3>
                     </div>
                     <div className="feature__description">
-                      <p>Use our challenge feature to create and do different challenges during the week and make change happen in real time.
+                      <p>With the “Challenge” feature you can create or participate in different activism every day. Challenges are unique contests to get donations matched or to raise awareness through pass-it-along actions.  
+
 </p>
                     </div>
                   </div>
@@ -1439,7 +1448,7 @@ Early-stage Investor</h6>
                       <h3>Build<br/>   Community</h3>
                     </div>
                     <div className="feature__description">
-                      <p>Connect more with your local community and make change happen in real time.</p>
+                      <p>Connect with your community—find new ways to volunteer or share a special skill. And coming soon, “Cause Groups.” Meet and chat directly with other mission-aligned Humanifiers.</p>
                     </div>
                   </div>
                   <div className="feature__slide" onClick={this.showFeature} onMouseOver={this.showFeature} id="slide__six">
@@ -1451,7 +1460,7 @@ Early-stage Investor</h6>
                       <h3>Easily <br/> Donate</h3>
                     </div>
                     <div className="feature__description">
-                      <p>Donate to your favorite causes or organizations in an easy and fast way, all through your feed. </p>
+                      <p>Donate to verified organizations quickly and simply, all with a tap.</p>
                     </div>
                   </div>
               </div>
@@ -1464,10 +1473,11 @@ Early-stage Investor</h6>
                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M41.6803 9.21974C40.6588 8.19775 39.4459 7.38704 38.111 6.83391C36.7761 6.28079 35.3453 5.99609 33.9003 5.99609C32.4553 5.99609 31.0245 6.28079 29.6896 6.83391C28.3547 7.38704 27.1418 8.19775 26.1203 9.21974L24.0003 11.3397L21.8803 9.21974C19.8169 7.15636 17.0184 5.99716 14.1003 5.99716C11.1822 5.99716 8.38368 7.15636 6.3203 9.21974C4.25691 11.2831 3.09772 14.0817 3.09772 16.9997C3.09772 19.9178 4.25691 22.7164 6.3203 24.7797L8.4403 26.8997L24.0003 42.4597L39.5603 26.8997L41.6803 24.7797C42.7023 23.7582 43.513 22.5454 44.0661 21.2105C44.6193 19.8755 44.904 18.4447 44.904 16.9997C44.904 15.5548 44.6193 14.124 44.0661 12.789C43.513 11.4541 42.7023 10.2413 41.6803 9.21974V9.21974Z" stroke="white" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
-                      <h3>Feel-Good  <br/> Content </h3>
+                      <h3>Impactful <br/> Content
+ </h3>
                     </div>
                     <div className="feature__description">
-                      <p>Make your feed stand out by sharing, posting and liking content that supports the causes you care about.</p>
+                      <p>Create a “Cause” page, post and share content, and engage with people and ideas that support what you care about.</p>
                     </div>
                   </div>
                   <div className="feature__slide active"  id="slide__two">
@@ -1480,7 +1490,8 @@ Early-stage Investor</h6>
                       <h3>Explore <br/> What's Good</h3>
                     </div>
                     <div className="feature__description">
-                      <p>Use our explore page to find new places to volunteer, donate your time or connect with people that share your same passion for social good.</p>
+                      <p>Use the “Explore” section to find new movements, new places to volunteer, or to make new connections with like-minded advocates. 
+</p>
                     </div>
                   </div>
                   <div className="feature__slide active"  id="slide__three">
@@ -1497,7 +1508,8 @@ Early-stage Investor</h6>
   Yourself</h3>
                     </div>
                     <div className="feature__description">
-                      <p>Use our challenge feature to create and do different challenges during the week and make change happen in real time.
+                      <p>With the “Challenge” feature you can create or participate in different activism every day. Challenges are unique contests to get donations matched or to raise awareness through pass-it-along actions.  
+
 </p>
                     </div>
                   </div>
@@ -1523,7 +1535,7 @@ Early-stage Investor</h6>
                       <h3>Build<br/>   Community</h3>
                     </div>
                     <div className="feature__description">
-                      <p>Connect more with your local community and make change happen in real time.</p>
+                      <p>Connect with your community—find new ways to volunteer or share a special skill. And coming soon, “Cause Groups.” Meet and chat directly with other mission-aligned Humanifiers.</p>
                     </div>
                   </div>
                   <div className="feature__slide active"  id="slide__six">
@@ -1535,7 +1547,7 @@ Early-stage Investor</h6>
                       <h3>Easily <br/> Donate</h3>
                     </div>
                     <div className="feature__description">
-                      <p>Donate to your favorite causes or organizations in an easy and fast way, all through your feed. </p>
+                      <p>Donate to verified organizations quickly and simply, all with a tap.</p>
                     </div>
                   </div>
               </Slider>
@@ -1550,8 +1562,9 @@ Early-stage Investor</h6>
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-6 left">
-              <h3 id="down__title">Available to 
-                <span>Download </span>
+              <h3 id="down__title">Available for download 
+
+                <span>Fall 2020 </span>
               </h3>
               <p id="down__subtitle">and change the world <br/> around you today. </p>
               <div className="app__links d-flex ">
@@ -1584,8 +1597,8 @@ Early-stage Investor</h6>
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-6">
               <h3>Sign Up</h3>
-              <h4>Join us and <br/> become <br/>  Humanified.</h4>
-              <p> Start your Humanified journey now. Sign up to get the latest on the launch of the Humanified app and become some of our first Beta users.</p>
+              <h4>Become a <br/> Humanifier today.</h4>
+              <p> Start your Humanified journey now. Sign up to get the latest on the launch of the app, and become one of the first to post the causes you're passionate about! </p>
 
               <div className="social__links">
                 <h5>FOLLOW US ON <br/> SOCIAL MEDIA </h5>

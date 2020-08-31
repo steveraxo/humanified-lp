@@ -101,8 +101,9 @@ const Layout = ({ children }) => {
                   </a> 
             </div>
             <div className="col-sm-12 col-lg-9 right ">
-              <p>© Humanified 2020.  Trademarks and brands are the property of their respective owners. &nbsp;  | 
-                &nbsp;  <a href="/privacy-policy"> Privacy Policy</a></p>
+              <p>© Humanified 2020.  Trademarks and brands are the property of their respective owners. &nbsp;   
+                &nbsp;  <a href="/privacy-policy"> Privacy Policy</a> &nbsp;  | <a href="/privacy-policy"> &nbsp; Terms of Use </a>
+</p>
             </div>
           </div>
         </div>

@@ -38,15 +38,15 @@ export default class header extends Component {
               </div>
               <div className="row header__row">
                 <div className="col-lg-5 logo__column">
-                  <Link
-                    to="/"
+                  <a
+                    href="/"
                     style={{
                       color: `white`,
                       textDecoration: `none`,
                     }}
                   >
                   humanified
-                  </Link> 
+                  </a> 
                 </div>
                 <div className="col-lg-7 menu__column desktop" >
                   <nav role="navigation" className="navigation__header ">

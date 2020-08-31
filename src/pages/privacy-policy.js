@@ -6,7 +6,7 @@ export default class PrivacyPolicy extends Component {
     render() {
         return (
             <Layout>
-                <SEO title="Privacy Policy" />
+                <SEO title="Humanified | Privacy Policy" />
                 <section className={"privacy__wrapper"}>
                     <div className="container ">
                         <div >
