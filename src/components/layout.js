@@ -157,11 +157,12 @@ const Layout = ({ children }) => {
       <section id="footer">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-sm-12 col-lg-6 left">
+            <div className="col-sm-12 col-lg-3 left">
               <p>humanified</p>
             </div>
-            <div className="col-sm-12 col-lg-6 right ">
-              <p>© Humanified 2020.  Trademarks and brands are the property of their respective owners.</p>
+            <div className="col-sm-12 col-lg-9 right ">
+              <p>© Humanified 2020.  Trademarks and brands are the property of their respective owners. &nbsp;  | 
+                &nbsp;  <a href="/privacy-policy"> Privacy Policy</a></p>
             </div>
           </div>
         </div>

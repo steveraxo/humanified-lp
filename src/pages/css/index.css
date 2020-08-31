@@ -4,7 +4,19 @@ body{
 .input__fields{
     position: relative;
 }
-
+.privacy__wrapper{
+    background: #1C1A1B;
+    color: white;
+    padding: 270px 250px 140px;
+}
+.privacy__wrapper h2{
+    line-height: 18px;
+}
+.privacy__wrapper a, #footer a{
+    color: #FFC4DD;
+    text-decoration:none;
+    font-weight: bold;
+}
 .form__submit *{
     transition: all 0.6s cubic-bezier(0.83, 0, 0.17, 1);
 
