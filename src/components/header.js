@@ -26,14 +26,14 @@ export default class header extends Component {
             <div className="container-fluid header__container">
               <div className="nav__button mobile" onClick={this.toggleMenu}>
                 <svg width="24" className={"show"} id="closed__toggle" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3 12H21" stroke="white" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3 6H21" stroke="white" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3 18H21" stroke="white" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
 
                 <svg width="24" id="opened__toggle" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18 6L6 18" stroke="white" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6 6L18 18" stroke="white" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </div>
               <div className="row header__row">
