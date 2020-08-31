@@ -1308,6 +1308,30 @@ section{
     display: none;
 }
 @media (max-width: 1700px){
+    .phone__slide img {
+        max-height: 600px;
+    }
+    .feature__slide .feature__title h3 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    #features .feature__title svg {
+        top: 0px;
+        width: 35px;
+    }
+    #features .slider{
+        position: relative;
+        top: 100px;
+    }
+    .feature__description{
+        left: 76px;
+    }
+    .feature__slide.active .feature__description p{
+        font-size: 15px;
+        line-height: 22px;
+        max-width: 300px;
+        height: 75px;
+    }
     #mission__description{
         left: 0px;
     }
@@ -1393,7 +1417,10 @@ section{
         line-height: 120.9%;
     }
     #download {
-        padding: 100px 80px;
+        padding: 200px 80px 100;
+    }
+    #right__mobile {
+        top: 180px;
     }
     #contact {
         padding: 100px 80px;
@@ -1444,6 +1471,9 @@ section{
         right: 24%;
         bottom: 25%;
     }
+    #right__mobile {
+        top: 160px;
+    }
     .founder__info {
         padding-left: 100px;
     }
@@ -1473,6 +1503,21 @@ section{
 }
 
 @media (max-width: 1024px){
+    #features .slider {
+        position: relative;
+        top: 0px;
+    }
+    #download p {
+        font-size: 35px;
+        top: 0px;
+    }
+    #download .app__links > div {
+        margin: 40px 20px 0 0;
+    }
+    #download {
+
+        padding: 270px 60px 10px;
+    }
     .advisory #team__title {
         top: 0px!important;
         position: relative;
@@ -1613,7 +1658,7 @@ section{
         height: 110px;
     }
     #right__mobile {
-        top: 130px;
+        top: 0px;
         position: relative;
         left: 30px;
     }
@@ -1729,7 +1774,7 @@ section{
     }
     .slider__mobile{
         display: block;
-        padding: 0px 220px;
+        padding: 0px 180px;
         position: relative;
         margin-top: -60px;
     }
@@ -2070,11 +2115,14 @@ section{
         bottom: -360px;
 
     }
+    .feature__slide.active .feature__description p {
+        max-width: 250px;
+    }
 
 }
 @media(max-width: 600px){
     .team__section.advisory img {
-        max-width: 115px;
+        max-width: 135px;
     }
 
     #team__title__mobile {
@@ -2249,6 +2297,16 @@ section{
         margin-top: 0px;
         top: 150px;
     }
+    #meet-the-team .team__member.mobile {
+        height: 280px;
+    }
+    .feature__slide.active .feature__description p {
+        max-width: 250px;
+    }
+    .team__member.mobile:nth-child(odd) {
+        margin-top: 0px;
+        top: 140px;
+    }
     #meet-the-team .team__member__info {
         right: -90px;
         bottom: 140px;
@@ -2408,7 +2466,7 @@ section{
         font-size: 35px;
         line-height: 104.9%;
     }
-    #contact p{
+    #contact p {
         font-size: 14px;
         line-height: 24px;
     }

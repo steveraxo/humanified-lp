@@ -264,6 +264,13 @@ class Index extends Component {
     return (
       <Layout>
       <SEO title="Home" />
+      <script>
+        {`
+        function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-598312411/jLU5CPDsl90BENuLpp0C', 'event_callback': callback }); return false; } 
+        `
+        }
+      </script>
+
       <section className="homepage__header">
         <div className="top__shadow"> </div>
         <video playsInline="" controls="" preload="none"  id="homepage__header__video" onClick={this.playVideo} >

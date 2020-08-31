@@ -78,8 +78,9 @@ export default class form extends Component {
                 name: "",
                 email: "",
                 formStatus: true,  
-            });
+            }); 
            
+
           } else {
             this.setState({
                 emailStatus: "invalid",
