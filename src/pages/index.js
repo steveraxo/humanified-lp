@@ -100,10 +100,8 @@ class Index extends Component {
     document.querySelectorAll(".phone__circle")[0].classList.remove("phone__circle--active");
   }
   parallaxContainer() {
-    if (window.innerWidth > 1024) {
-      window.addEventListener(
-        "scroll",
-        function() {
+    
+      window.addEventListener("scroll",function() {
           var top =
             (window.pageYOffset || document.scrollTop) -
             (document.clientTop || 0)
@@ -111,93 +109,114 @@ class Index extends Component {
           var finalXDown = top / +12;
           var smallScroll = top / - 40;
 
-          [...document.querySelectorAll(".floating__ww__image")].map((image, index) => {
-            
-            if(index % 2 === 0){
-              image.style.transform = `translateY(${(top / + index) / 100 }px)`
-            }else{
-              image.style.transform = `translateY(${(top / - index) / 100 }px)`
+          if (window.innerWidth > 1280) {
+            [...document.querySelectorAll(".floating__ww__image")].map((image, index) => {
+              
+              if(index % 2 === 0){
+                image.style.transform = `translateY(${(top / + index) / 100 }px)`
+              }else{
+                image.style.transform = `translateY(${(top / - index) / 100 }px)`
+              }
+            })
+
+            if (document.getElementById("pre__mission__title") !== null) {
+              document.getElementById(
+                "pre__mission__title"
+              ).style.transform = `translateY(${finalX}px)`
             }
-          })
-
-          if (document.getElementById("pre__mission__title") !== null) {
-            document.getElementById(
-              "pre__mission__title"
-            ).style.transform = `translateY(${finalX}px)`
+            if (document.getElementById("home__hero__title") !== null) {
+              document.getElementById(
+                "home__hero__title"
+              ).style.transform = `translateY(${finalX}px)`
+            }
+            if (document.querySelectorAll(".phone__image")[0] !== null) {
+              document.querySelectorAll(".phone__image")[0].style.transform = `translateY(${finalXDown + 20}px)`
+            }
+            if (document.getElementById("mission__title") !== null) {
+              document.getElementById(
+                "mission__title"
+              ).style.transform = `translateY(${finalXDown + 5}px)`
+            }
+            if (document.getElementById("founder__data") !== null) {
+              document.getElementById(
+                "founder__data"
+              ).style.transform = `translateY(${smallScroll}px)`
+            }   
+            if (document.getElementById("about__team") !== null) {
+              document.getElementById(
+                "about__team"
+              ).style.transform = `translateX(${smallScroll + 30}px)`
+            }
+            if (document.getElementById("the__founder") !== null) {
+              document.getElementById(
+                "the__founder"
+              ).style.transform = `translateX(${smallScroll + 40}px)`
+            }
+            if (document.getElementById("founder__description") !== null) {
+              document.getElementById(
+                "founder__description"
+              ).style.transform = `translateX(${smallScroll + 50}px)`
+            }      
+            if (document.getElementById("team__title") !== null) {
+              document.getElementById(
+                "team__title"
+              ).style.transform = `translateY(${finalXDown - 20}px)`
+            }
+            if (document.getElementById("wwd__wrapper__title__one") !== null) {
+              document.getElementById(
+                "wwd__wrapper__title__one"
+              ).style.transform = `translateY(${smallScroll}px)`
+            }
+            if (document.getElementById("wwd__wrapper__title__two") !== null) {
+              document.getElementById(
+                "wwd__wrapper__title__two"
+              ).style.transform = `translateY(${smallScroll + 15}px)`
+            }
+            if (document.getElementById("down__title") !== null) {
+              document.getElementById(
+                "down__title"
+              ).style.transform = `translateY(${(top / + 1) / 100 }px)`
+            }
+            if (document.getElementById("down__subtitle") !== null) {
+              document.getElementById(
+                "down__subtitle"
+              ).style.transform = `translateY(${(top / - 1) / 100 }px)`
+            }
+            if (document.getElementById("www__info__two") !== null) {
+              document.getElementById(
+                "www__info__two"
+              ).style.transform = `translateY(${(top / + 1) / 100 }px)`
+            }
+          }else{
+            if(window.innerWidth < 1280){
+              [...document.querySelectorAll(".floating__ww__image")].map((image, index) => {
+                  
+                if(index % 2 === 0){
+                  image.style.transform = `translateY(0px)`
+                }else{
+                  image.style.transform = `translateY(0px)`
+                }
+              })
+        
+              document.getElementById("pre__mission__title").style.transform = `translateY(0px)`
+              document.getElementById("home__hero__title").style.transform = `translateY(0px)`
+              document.getElementById("phone__image").style.transform = `translateY(0px)`
+              document.getElementById("mission__title").style.transform = `translateY(0px)`
+              document.getElementById("founder__data").style.transform = `translateY(0px)`
+              document.getElementById("about__team").style.transform = `translateY(0px)`
+              document.getElementById("the__founder").style.transform = `translateY(0px)`
+              document.getElementById("founder__description").style.transform = `translateX(0px)`
+              document.getElementById("team__title").style.transform = `translateY(0px)`
+              document.getElementById("wwd__wrapper__title__one").style.transform = `translateY(0px)`
+              document.getElementById("wwd__wrapper__title__two").style.transform = `translateY(0px)`
+              document.getElementById("down__title").style.transform = `translateY(0px)`
+              document.getElementById("down__subtitle").style.transform = `translateY(0px)`
+              document.getElementById("www__info__two").style.transform = `translateY(0px)`
+            }
           }
-          if (document.getElementById("home__hero__title") !== null) {
-            document.getElementById(
-              "home__hero__title"
-            ).style.transform = `translateY(${finalX}px)`
-          }
-          if (document.querySelectorAll(".phone__image")[0] !== null) {
-            document.querySelectorAll(".phone__image")[0].style.transform = `translateY(${finalXDown + 20}px)`
-          }
-          if (document.getElementById("mission__title") !== null) {
-            document.getElementById(
-              "mission__title"
-            ).style.transform = `translateY(${finalXDown + 5}px)`
-          }
-          if (document.getElementById("founder__data") !== null) {
-            document.getElementById(
-              "founder__data"
-            ).style.transform = `translateY(${smallScroll}px)`
-          }
-          
-          if (document.getElementById("about__team") !== null) {
-            document.getElementById(
-              "about__team"
-            ).style.transform = `translateX(${smallScroll + 30}px)`
-          }
-          if (document.getElementById("the__founder") !== null) {
-            document.getElementById(
-              "the__founder"
-            ).style.transform = `translateX(${smallScroll + 40}px)`
-          }
-          if (document.getElementById("founder__description") !== null) {
-            document.getElementById(
-              "founder__description"
-            ).style.transform = `translateX(${smallScroll + 50}px)`
-          }
-          
-          if (document.getElementById("team__title") !== null) {
-            document.getElementById(
-              "team__title"
-            ).style.transform = `translateY(${finalXDown - 20}px)`
-          }
-
-          if (document.getElementById("wwd__wrapper__title__one") !== null) {
-            document.getElementById(
-              "wwd__wrapper__title__one"
-            ).style.transform = `translateY(${smallScroll}px)`
-          }
-          if (document.getElementById("wwd__wrapper__title__two") !== null) {
-            document.getElementById(
-              "wwd__wrapper__title__two"
-            ).style.transform = `translateY(${smallScroll + 15}px)`
-          }
-
-          if (document.getElementById("down__title") !== null) {
-            document.getElementById(
-              "down__title"
-            ).style.transform = `translateY(${(top / + 1) / 100 }px)`
-          }
-          if (document.getElementById("down__subtitle") !== null) {
-            document.getElementById(
-              "down__subtitle"
-            ).style.transform = `translateY(${(top / - 1) / 100 }px)`
-          }
-
-          if (document.getElementById("www__info__two") !== null) {
-            document.getElementById(
-              "www__info__two"
-            ).style.transform = `translateY(${(top / + 1) / 100 }px)`
-          }
-          
         },
         { passive: true }
       )
-    }
   }
   activateElement(id){
     var distance = document.getElementById(id).offset().top;
@@ -225,12 +244,40 @@ class Index extends Component {
         document.querySelectorAll(".nav__button.mobile")[0].classList.remove("show");
       })
     ))
+
+    window.addEventListener("resize", function(){
+      console.log("resize");
+      if(window.innerWidth < 1280){
+        [...document.querySelectorAll(".floating__ww__image")].map((image, index) => {
+            
+          if(index % 2 === 0){
+            image.style.transform = `translateY(0px)`
+          }else{
+            image.style.transform = `translateY(0px)`
+          }
+        })
+  
+        document.getElementById("pre__mission__title").style.transform = `translateY(0px)`
+        document.getElementById("home__hero__title").style.transform = `translateY(0px)`
+        document.getElementById("phone__image").style.transform = `translateY(0px)`
+        document.getElementById("mission__title").style.transform = `translateY(0px)`
+        document.getElementById("founder__data").style.transform = `translateY(0px)`
+        document.getElementById("about__team").style.transform = `translateY(0px)`
+        document.getElementById("the__founder").style.transform = `translateY(0px)`
+        document.getElementById("founder__description").style.transform = `translateX(0px)`
+        document.getElementById("team__title").style.transform = `translateY(0px)`
+        document.getElementById("wwd__wrapper__title__one").style.transform = `translateY(0px)`
+        document.getElementById("wwd__wrapper__title__two").style.transform = `translateY(0px)`
+        document.getElementById("down__title").style.transform = `translateY(0px)`
+        document.getElementById("down__subtitle").style.transform = `translateY(0px)`
+        document.getElementById("www__info__two").style.transform = `translateY(0px)`
+      }
+    });
   }
 
   render() {
 
     var images  = this.props.data.allImageSharp.nodes;
-    console.log(images);
 
     const isBrowser = typeof window !== `undefined`
 
@@ -319,7 +366,7 @@ class Index extends Component {
                   <span className="mobile">A social network for difference makers.</span>
                 </h2>
               </div>
-              <div className="phone__image" tabIndex="-1" onMouseEnter={this.activatePulsing} onMouseLeave={this.deactivatePulsing}>
+              <div className="phone__image" id="phone__image" tabIndex="-1" onMouseEnter={this.activatePulsing} onMouseLeave={this.deactivatePulsing}>
                 {
                   images.map((image, index) =>
                     image.fluid.src.includes("phone.png")
@@ -1381,7 +1428,7 @@ Early-stage Investor</h6>
                   <div className="feature__slide active" onClick={this.showFeature} onMouseOver={this.showFeature} id="slide__one">
                     <div className="feature__title">
                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M41.6803 9.21974C40.6588 8.19775 39.4459 7.38704 38.111 6.83391C36.7761 6.28079 35.3453 5.99609 33.9003 5.99609C32.4553 5.99609 31.0245 6.28079 29.6896 6.83391C28.3547 7.38704 27.1418 8.19775 26.1203 9.21974L24.0003 11.3397L21.8803 9.21974C19.8169 7.15636 17.0184 5.99716 14.1003 5.99716C11.1822 5.99716 8.38368 7.15636 6.3203 9.21974C4.25691 11.2831 3.09772 14.0817 3.09772 16.9997C3.09772 19.9178 4.25691 22.7164 6.3203 24.7797L8.4403 26.8997L24.0003 42.4597L39.5603 26.8997L41.6803 24.7797C42.7023 23.7582 43.513 22.5454 44.0661 21.2105C44.6193 19.8755 44.904 18.4447 44.904 16.9997C44.904 15.5548 44.6193 14.124 44.0661 12.789C43.513 11.4541 42.7023 10.2413 41.6803 9.21974V9.21974Z" stroke="white" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M41.6803 9.21974C40.6588 8.19775 39.4459 7.38704 38.111 6.83391C36.7761 6.28079 35.3453 5.99609 33.9003 5.99609C32.4553 5.99609 31.0245 6.28079 29.6896 6.83391C28.3547 7.38704 27.1418 8.19775 26.1203 9.21974L24.0003 11.3397L21.8803 9.21974C19.8169 7.15636 17.0184 5.99716 14.1003 5.99716C11.1822 5.99716 8.38368 7.15636 6.3203 9.21974C4.25691 11.2831 3.09772 14.0817 3.09772 16.9997C3.09772 19.9178 4.25691 22.7164 6.3203 24.7797L8.4403 26.8997L24.0003 42.4597L39.5603 26.8997L41.6803 24.7797C42.7023 23.7582 43.513 22.5454 44.0661 21.2105C44.6193 19.8755 44.904 18.4447 44.904 16.9997C44.904 15.5548 44.6193 14.124 44.0661 12.789C43.513 11.4541 42.7023 10.2413 41.6803 9.21974V9.21974Z" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                       <h3>Impactful <br/> Content
  </h3>
@@ -1393,8 +1440,8 @@ Early-stage Investor</h6>
                   <div className="feature__slide" onClick={this.showFeature} onMouseOver={this.showFeature} id="slide__two">
                     <div className="feature__title">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22 38C30.8366 38 38 30.8366 38 22C38 13.1634 30.8366 6 22 6C13.1634 6 6 13.1634 6 22C6 30.8366 13.1634 38 22 38Z" stroke="white" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M42 41.9999L33.3 33.2999" stroke="white" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 38C30.8366 38 38 30.8366 38 22C38 13.1634 30.8366 6 22 6C13.1634 6 6 13.1634 6 22C6 30.8366 13.1634 38 22 38Z" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M42 41.9999L33.3 33.2999" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
 
                       <h3>Explore <br/> What's Good</h3>
@@ -1407,10 +1454,10 @@ Early-stage Investor</h6>
                   <div className="feature__slide" onClick={this.showFeature} onMouseOver={this.showFeature} id="slide__three">
                     <div className="feature__title">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M14 46L6 38L14 30" stroke="#F0EEFF" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M42 26L42 30C42 32.1217 41.1571 34.1566 39.6569 35.6569C38.1566 37.1571 36.1217 38 34 38L6 38" stroke="#F0EEFF" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M34 2L42 10L34 18" stroke="#F0EEFF" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M6.00001 22L6.00001 18C6.00001 15.8783 6.84287 13.8434 8.34316 12.3431C9.84345 10.8429 11.8783 10 14 10L42 10" stroke="#F0EEFF" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14 46L6 38L14 30" stroke="#F0EEFF" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+  <path d="M42 26L42 30C42 32.1217 41.1571 34.1566 39.6569 35.6569C38.1566 37.1571 36.1217 38 34 38L6 38" stroke="#F0EEFF" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+  <path d="M34 2L42 10L34 18" stroke="#F0EEFF" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+  <path d="M6.00001 22L6.00001 18C6.00001 15.8783 6.84287 13.8434 8.34316 12.3431C9.84345 10.8429 11.8783 10 14 10L42 10" stroke="#F0EEFF" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
   </svg>
 
 
@@ -1429,7 +1476,7 @@ Early-stage Investor</h6>
                     <div className="feature__title">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="1">
-                      <path d="M42 30C42 31.0609 41.5786 32.0783 40.8284 32.8284C40.0783 33.5786 39.0609 34 38 34H14L6 42V10C6 8.93913 6.42143 7.92172 7.17157 7.17157C7.92172 6.42143 8.93913 6 10 6H38C39.0609 6 40.0783 6.42143 40.8284 7.17157C41.5786 7.92172 42 8.93913 42 10V30Z" stroke="white" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M42 30C42 31.0609 41.5786 32.0783 40.8284 32.8284C40.0783 33.5786 39.0609 34 38 34H14L6 42V10C6 8.93913 6.42143 7.92172 7.17157 7.17157C7.92172 6.42143 8.93913 6 10 6H38C39.0609 6 40.0783 6.42143 40.8284 7.17157C41.5786 7.92172 42 8.93913 42 10V30Z" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
                       </g>
                       </svg>
 
@@ -1442,7 +1489,7 @@ Early-stage Investor</h6>
                   <div className="feature__slide" onClick={this.showFeature} onMouseOver={this.showFeature} id="slide__five">
                     <div className="feature__title">
                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M41.6803 9.21974C40.6588 8.19775 39.4459 7.38704 38.111 6.83391C36.7761 6.28079 35.3453 5.99609 33.9003 5.99609C32.4553 5.99609 31.0245 6.28079 29.6896 6.83391C28.3547 7.38704 27.1418 8.19775 26.1203 9.21974L24.0003 11.3397L21.8803 9.21974C19.8169 7.15636 17.0184 5.99716 14.1003 5.99716C11.1822 5.99716 8.38368 7.15636 6.3203 9.21974C4.25691 11.2831 3.09772 14.0817 3.09772 16.9997C3.09772 19.9178 4.25691 22.7164 6.3203 24.7797L8.4403 26.8997L24.0003 42.4597L39.5603 26.8997L41.6803 24.7797C42.7023 23.7582 43.513 22.5454 44.0661 21.2105C44.6193 19.8755 44.904 18.4447 44.904 16.9997C44.904 15.5548 44.6193 14.124 44.0661 12.789C43.513 11.4541 42.7023 10.2413 41.6803 9.21974V9.21974Z" stroke="white" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M41.6803 9.21974C40.6588 8.19775 39.4459 7.38704 38.111 6.83391C36.7761 6.28079 35.3453 5.99609 33.9003 5.99609C32.4553 5.99609 31.0245 6.28079 29.6896 6.83391C28.3547 7.38704 27.1418 8.19775 26.1203 9.21974L24.0003 11.3397L21.8803 9.21974C19.8169 7.15636 17.0184 5.99716 14.1003 5.99716C11.1822 5.99716 8.38368 7.15636 6.3203 9.21974C4.25691 11.2831 3.09772 14.0817 3.09772 16.9997C3.09772 19.9178 4.25691 22.7164 6.3203 24.7797L8.4403 26.8997L24.0003 42.4597L39.5603 26.8997L41.6803 24.7797C42.7023 23.7582 43.513 22.5454 44.0661 21.2105C44.6193 19.8755 44.904 18.4447 44.904 16.9997C44.904 15.5548 44.6193 14.124 44.0661 12.789C43.513 11.4541 42.7023 10.2413 41.6803 9.21974V9.21974Z" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                       <h3>Build<br/>   Community</h3>
                     </div>
@@ -1453,7 +1500,7 @@ Early-stage Investor</h6>
                   <div className="feature__slide" onClick={this.showFeature} onMouseOver={this.showFeature} id="slide__six">
                     <div className="feature__title">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M26 4L6 28H24L22 44L42 20H24L26 4Z" stroke="white" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M26 4L6 28H24L22 44L42 20H24L26 4Z" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
 
                       <h3>Easily <br/> Donate</h3>
@@ -1470,7 +1517,7 @@ Early-stage Investor</h6>
                   <div className="feature__slide active"  id="slide__one">
                   <div className="feature__title">
                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M41.6803 9.21974C40.6588 8.19775 39.4459 7.38704 38.111 6.83391C36.7761 6.28079 35.3453 5.99609 33.9003 5.99609C32.4553 5.99609 31.0245 6.28079 29.6896 6.83391C28.3547 7.38704 27.1418 8.19775 26.1203 9.21974L24.0003 11.3397L21.8803 9.21974C19.8169 7.15636 17.0184 5.99716 14.1003 5.99716C11.1822 5.99716 8.38368 7.15636 6.3203 9.21974C4.25691 11.2831 3.09772 14.0817 3.09772 16.9997C3.09772 19.9178 4.25691 22.7164 6.3203 24.7797L8.4403 26.8997L24.0003 42.4597L39.5603 26.8997L41.6803 24.7797C42.7023 23.7582 43.513 22.5454 44.0661 21.2105C44.6193 19.8755 44.904 18.4447 44.904 16.9997C44.904 15.5548 44.6193 14.124 44.0661 12.789C43.513 11.4541 42.7023 10.2413 41.6803 9.21974V9.21974Z" stroke="white" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M41.6803 9.21974C40.6588 8.19775 39.4459 7.38704 38.111 6.83391C36.7761 6.28079 35.3453 5.99609 33.9003 5.99609C32.4553 5.99609 31.0245 6.28079 29.6896 6.83391C28.3547 7.38704 27.1418 8.19775 26.1203 9.21974L24.0003 11.3397L21.8803 9.21974C19.8169 7.15636 17.0184 5.99716 14.1003 5.99716C11.1822 5.99716 8.38368 7.15636 6.3203 9.21974C4.25691 11.2831 3.09772 14.0817 3.09772 16.9997C3.09772 19.9178 4.25691 22.7164 6.3203 24.7797L8.4403 26.8997L24.0003 42.4597L39.5603 26.8997L41.6803 24.7797C42.7023 23.7582 43.513 22.5454 44.0661 21.2105C44.6193 19.8755 44.904 18.4447 44.904 16.9997C44.904 15.5548 44.6193 14.124 44.0661 12.789C43.513 11.4541 42.7023 10.2413 41.6803 9.21974V9.21974Z" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                       <h3>Impactful <br/> Content
  </h3>
@@ -1482,8 +1529,8 @@ Early-stage Investor</h6>
                   <div className="feature__slide active"  id="slide__two">
                     <div className="feature__title">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22 38C30.8366 38 38 30.8366 38 22C38 13.1634 30.8366 6 22 6C13.1634 6 6 13.1634 6 22C6 30.8366 13.1634 38 22 38Z" stroke="white" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M42 41.9999L33.3 33.2999" stroke="white" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 38C30.8366 38 38 30.8366 38 22C38 13.1634 30.8366 6 22 6C13.1634 6 6 13.1634 6 22C6 30.8366 13.1634 38 22 38Z" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M42 41.9999L33.3 33.2999" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
 
                       <h3>Explore <br/> What's Good</h3>
@@ -1496,10 +1543,10 @@ Early-stage Investor</h6>
                   <div className="feature__slide active"  id="slide__three">
                     <div className="feature__title">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M14 46L6 38L14 30" stroke="#F0EEFF" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M42 26L42 30C42 32.1217 41.1571 34.1566 39.6569 35.6569C38.1566 37.1571 36.1217 38 34 38L6 38" stroke="#F0EEFF" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M34 2L42 10L34 18" stroke="#F0EEFF" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M6.00001 22L6.00001 18C6.00001 15.8783 6.84287 13.8434 8.34316 12.3431C9.84345 10.8429 11.8783 10 14 10L42 10" stroke="#F0EEFF" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14 46L6 38L14 30" stroke="#F0EEFF" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+  <path d="M42 26L42 30C42 32.1217 41.1571 34.1566 39.6569 35.6569C38.1566 37.1571 36.1217 38 34 38L6 38" stroke="#F0EEFF" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+  <path d="M34 2L42 10L34 18" stroke="#F0EEFF" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+  <path d="M6.00001 22L6.00001 18C6.00001 15.8783 6.84287 13.8434 8.34316 12.3431C9.84345 10.8429 11.8783 10 14 10L42 10" stroke="#F0EEFF" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
   </svg>
 
 
@@ -1516,7 +1563,7 @@ Early-stage Investor</h6>
                     <div className="feature__title">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="1">
-                      <path d="M42 30C42 31.0609 41.5786 32.0783 40.8284 32.8284C40.0783 33.5786 39.0609 34 38 34H14L6 42V10C6 8.93913 6.42143 7.92172 7.17157 7.17157C7.92172 6.42143 8.93913 6 10 6H38C39.0609 6 40.0783 6.42143 40.8284 7.17157C41.5786 7.92172 42 8.93913 42 10V30Z" stroke="white" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M42 30C42 31.0609 41.5786 32.0783 40.8284 32.8284C40.0783 33.5786 39.0609 34 38 34H14L6 42V10C6 8.93913 6.42143 7.92172 7.17157 7.17157C7.92172 6.42143 8.93913 6 10 6H38C39.0609 6 40.0783 6.42143 40.8284 7.17157C41.5786 7.92172 42 8.93913 42 10V30Z" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
                       </g>
                       </svg>
 
@@ -1529,7 +1576,7 @@ Early-stage Investor</h6>
                   <div className="feature__slide active"  id="slide__five">
                     <div className="feature__title">
                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M41.6803 9.21974C40.6588 8.19775 39.4459 7.38704 38.111 6.83391C36.7761 6.28079 35.3453 5.99609 33.9003 5.99609C32.4553 5.99609 31.0245 6.28079 29.6896 6.83391C28.3547 7.38704 27.1418 8.19775 26.1203 9.21974L24.0003 11.3397L21.8803 9.21974C19.8169 7.15636 17.0184 5.99716 14.1003 5.99716C11.1822 5.99716 8.38368 7.15636 6.3203 9.21974C4.25691 11.2831 3.09772 14.0817 3.09772 16.9997C3.09772 19.9178 4.25691 22.7164 6.3203 24.7797L8.4403 26.8997L24.0003 42.4597L39.5603 26.8997L41.6803 24.7797C42.7023 23.7582 43.513 22.5454 44.0661 21.2105C44.6193 19.8755 44.904 18.4447 44.904 16.9997C44.904 15.5548 44.6193 14.124 44.0661 12.789C43.513 11.4541 42.7023 10.2413 41.6803 9.21974V9.21974Z" stroke="white" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M41.6803 9.21974C40.6588 8.19775 39.4459 7.38704 38.111 6.83391C36.7761 6.28079 35.3453 5.99609 33.9003 5.99609C32.4553 5.99609 31.0245 6.28079 29.6896 6.83391C28.3547 7.38704 27.1418 8.19775 26.1203 9.21974L24.0003 11.3397L21.8803 9.21974C19.8169 7.15636 17.0184 5.99716 14.1003 5.99716C11.1822 5.99716 8.38368 7.15636 6.3203 9.21974C4.25691 11.2831 3.09772 14.0817 3.09772 16.9997C3.09772 19.9178 4.25691 22.7164 6.3203 24.7797L8.4403 26.8997L24.0003 42.4597L39.5603 26.8997L41.6803 24.7797C42.7023 23.7582 43.513 22.5454 44.0661 21.2105C44.6193 19.8755 44.904 18.4447 44.904 16.9997C44.904 15.5548 44.6193 14.124 44.0661 12.789C43.513 11.4541 42.7023 10.2413 41.6803 9.21974V9.21974Z" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                       <h3>Build<br/>   Community</h3>
                     </div>
@@ -1540,7 +1587,7 @@ Early-stage Investor</h6>
                   <div className="feature__slide active"  id="slide__six">
                     <div className="feature__title">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M26 4L6 28H24L22 44L42 20H24L26 4Z" stroke="white" strokeWidth="4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M26 4L6 28H24L22 44L42 20H24L26 4Z" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
 
                       <h3>Easily <br/> Donate</h3>

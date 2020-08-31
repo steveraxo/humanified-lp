@@ -30,7 +30,7 @@ export default class form extends Component {
 
         var SharpSpringTracking = this.getCookie('__ss_tk')
     
-        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+        
         
         if (this.state.email.length === 0) {
           this.setState({
@@ -54,10 +54,12 @@ export default class form extends Component {
             });
         }
 
-        if (this.state.email && this.state.email.length > 0 && this.state.name && this.state.name.length > 5 ) {
+        if (this.state.email && this.state.email.length > 0 && this.state.name && this.state.name.length > 3 ) {
           
-          if (this.state.email.match(mailformat)) {
-            
+          var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+          if (this.state.email.trim().match(mailformat)) {
+
             var sharpName = this.state.name;
             var sharplName = this.state.lname;
             console.log("s")

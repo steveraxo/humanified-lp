@@ -1584,6 +1584,7 @@ section{
     #mission__title h2 {
         text-align: left;
     }
+    
 }
 @media (max-width: 1024px){
     .privacy__wrapper {
@@ -2658,7 +2659,7 @@ section{
 }
 @media (max-width: 384px){
     .slider__mobile {
-        padding: 0 100px;
+        padding: 0 0px;
     }
     #features svg {
         left: -110%;
@@ -2763,8 +2764,8 @@ section{
 }
 @media (max-width: 1366px) and (orientation: landscape) {
     .feature__slide .feature__description p {
-        font-size: 19px;
-        line-height: 34px;
+        font-size: 15px;
+        line-height: 22px;
         max-width: 310px;
     }
 }
@@ -2805,7 +2806,7 @@ section{
     
     .slider__mobile{
         display: block;
-        padding: 0 280px;
+        padding:  0 200px;
         position: relative;
         margin-top: -60px;
     }
@@ -3167,7 +3168,7 @@ section{
 }
 @media (max-width: 667px) and (orientation: landscape) {
     .slider__mobile {
-        padding: 0px 210px;
+        padding: 0px 0px;
     }
     #features svg {
         left: -65%;
@@ -3192,7 +3193,7 @@ section{
         margin-top: -820px;
     }
     .slider__mobile {
-        padding: 10px 215px;
+        padding: 10px 0px;
         margin-top: -110px;
         margin-bottom: 90px;
     }
@@ -3527,7 +3528,7 @@ section{
 }
 @media (max-width: 568px) and (orientation: landscape) {
     .slider__mobile {
-        padding: 0px 185px;
+        padding: 0px 0px;
     }
 }
 @media (max-width: 480px) and (orientation: landscape) {
@@ -3562,12 +3563,12 @@ section{
         left: -96%;
     }
     .slider__mobile {
-        padding: 0 120px;
+        padding: 0 0px;
     }
 }
 @media (max-width: 384px) and (orientation: landscape) {
     .slider__mobile {
-        padding: 0 100px;
+        padding: 0 0px;
     }
     #features svg {
         left: -110%;
@@ -3578,7 +3579,7 @@ section{
         left: -112%;
     }
     .slider__mobile {
-        padding: 0 100px;
+        padding: 0 0px;
     }
 }
 @media (max-width: 360px) and (orientation: landscape) {
@@ -3586,7 +3587,7 @@ section{
         left: -117%;
     }
     .slider__mobile {
-        padding: 0 70px;
+        padding: 0 0px;
     }
     #contact h4 {
         font-size: 29px;
