@@ -66,13 +66,13 @@ export default class header extends Component {
                           What we do
                         </AnchorLink>
                       </li>
-                      <li>
+                      {/* <li>
                         <AnchorLink to="/#contact" title="Contact">
                           Contact
                         </AnchorLink>
-                      </li>
+                      </li> */}
                       <li>
-                        <AnchorLink to="/#signup" className="download__button" title="Download">
+                        <AnchorLink to="/#contact" className="download__button" title="Download">
                           Sign Up
                           <ArrowDown />
                         </AnchorLink>
@@ -104,13 +104,13 @@ export default class header extends Component {
                           What we do
                         </AnchorLink>
                       </li>
-                      <li>
+                      {/* <li>
                         <AnchorLink to="/#contact" title="Contact">
                           Contact
                         </AnchorLink>
-                      </li>
+                      </li> */}
                       <li>
-                        <AnchorLink to="/#signup" className="download__button" title="Download">
+                        <AnchorLink to="/#contact" className="download__button" title="Download">
                         Sign Up
                           <ArrowDown />
                         </AnchorLink>
