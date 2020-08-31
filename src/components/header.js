@@ -78,7 +78,7 @@ export default class header extends Component {
                         </AnchorLink>
                       </li>
                       
-                      {/* <li><a onClick={() => scrollTo('#team')}>Meat the team</a></li>
+                      {/* <li><a onClick={() => scrollTo('#team')}>Meet the team</a></li>
                       <li><a onClick={() => scrollTo('#what-we-do')}>What we do</a></li>
                       <li><a onClick={() => scrollTo('#contact')}>Contact</a></li>
                       <li><a class="primary__btn" onClick={() => scrollTo('#signup')}>Download</a></li> */}
@@ -95,8 +95,8 @@ export default class header extends Component {
                         </AnchorLink>
                       </li>
                       <li>
-                        <AnchorLink to="/#team" title="Meat the team">
-                          Meat the team
+                        <AnchorLink to="/#team" title="Meet the team">
+                          Meet the team
                         </AnchorLink>
                       </li>
                       <li>
@@ -116,7 +116,7 @@ export default class header extends Component {
                         </AnchorLink>
                       </li>
                       
-                      {/* <li><a onClick={() => scrollTo('#team')}>Meat the team</a></li>
+                      {/* <li><a onClick={() => scrollTo('#team')}>Meet the team</a></li>
                       <li><a onClick={() => scrollTo('#what-we-do')}>What we do</a></li>
                       <li><a onClick={() => scrollTo('#contact')}>Contact</a></li>
                       <li><a class="primary__btn" onClick={() => scrollTo('#signup')}>Download</a></li> */}

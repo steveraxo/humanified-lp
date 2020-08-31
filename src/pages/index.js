@@ -36,8 +36,6 @@ class Index extends Component {
     
   }
   showInfoMobile(event){
-    
-
     if(document.getElementById(`${event.target.id}mobile`).classList.contains("show")){
       [...document.querySelectorAll(".team__member__info")].map((element) => {
         element.classList.remove("show");
@@ -52,7 +50,6 @@ class Index extends Component {
     
 
   }
-
   showInfo(event){
     if (window.innerWidth > 1024) {
       document.getElementById(`${event.target.id}-member`).classList.add("show");
@@ -60,7 +57,6 @@ class Index extends Component {
       this.setState(prevState => ({ isMouseTooltipVisible: !prevState.isMouseTooltipVisible }));
     }
   }
-
   hideInfo(event){
     if (window.innerWidth > 1024) {
       document.getElementById(`${event.target.id}-member`).classList.remove("show");
@@ -68,7 +64,6 @@ class Index extends Component {
       this.setState(prevState => ({ isMouseTooltipVisible: !prevState.isMouseTooltipVisible }));
     }
   }
-
   playVideo(){
     var mediaVideo = document.getElementById("homepage__header__video");
 
@@ -203,15 +198,8 @@ class Index extends Component {
     }
   }
   activateElement(id){
-  
     var distance = document.getElementById(id).offset().top;
-    
   }
-
-  lockScroll(){
-
-  }
-
   showFeature(event){
     document.querySelectorAll(".feature__slide.active")[0].classList.remove("active");
 
@@ -223,6 +211,8 @@ class Index extends Component {
   }
 
   componentDidMount(){
+    window.onresize = function(){ window.location.reload(); }
+
     this.parallaxContainer();
 
     [...document.querySelectorAll(".navigation__header.mobile")].map((navItem) => (
@@ -1633,11 +1623,11 @@ Early-stage Investor</h6>
                         </svg>
                       </a>
                     </li>
-                    <li className={"youtube"} >
+                    {/* <li className={"youtube"} >
                       <a href="https://" target="_BLANK">
                         <svg title="Youtube icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </nav>
               </div>
