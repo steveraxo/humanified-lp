@@ -70,24 +70,26 @@ class Index extends Component {
     mediaVideo.onended = function() {
       mediaVideo.classList.remove("playing");
       document.querySelectorAll(".hero__wrapper")[0].classList.remove("fade__out");
-
+      document.getElementById("close__video").classList.remove("show");
     };
     
     // if video status is changed to "paused", then change control button to "Continue Play"
     mediaVideo.onpause = function() {
       mediaVideo.classList.remove("playing");
       document.querySelectorAll(".hero__wrapper")[0].classList.remove("fade__out");
-
+      document.getElementById("close__video").classList.remove("show");
     };
 
     if (mediaVideo.paused) {
       mediaVideo.play();
       document.querySelectorAll(".hero__wrapper")[0].classList.add("fade__out");
       mediaVideo.classList.add("playing");
+      document.getElementById("close__video").classList.add("show");
     } else {
       mediaVideo.pause();
       document.querySelectorAll(".hero__wrapper")[0].classList.remove("fade__out");
       mediaVideo.classList.remove("playing")
+      document.getElementById("close__video").classList.remove("show");
     }
 
   }
@@ -261,8 +263,9 @@ class Index extends Component {
         }
       </script>
 
-      <section className="homepage__header">
+      <section className="homepage__header" id="home">
         <div className="top__shadow"> </div>
+        <div className="close__video" id={"close__video"} onClick={this.playVideo}>╳</div>
         <video  playsInline="" controls="" preload="none"  id="homepage__header__video" onClick={this.playVideo} >
           <source src="https://rx.raxo.dev/wp-content/uploads/2020/05/Raxo-Reel-2019.mp4" type="video/mp4" />
         </video>
@@ -638,8 +641,6 @@ Early-stage Investor</h6>
                     </div>
                   </MouseTooltip>
                 </div>
-   
-
                 <div className="team__member desktop">
                   <div className="team__member__avatar" id="team__threeone" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
                     {
@@ -669,7 +670,6 @@ Early-stage Investor</h6>
                   </MouseTooltip>
                   
                 </div>
-
                 <div className="team__member desktop">
                   <div className="team__member__avatar" id="team__four" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
                     {
@@ -700,6 +700,7 @@ Early-stage Investor</h6>
                 </div>
               </div> 
               <div className="team__row__two">
+
                 <div className="team__member desktop">
                   <div className="team__member__avatar" id="team__eight" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
                     {
@@ -757,6 +758,38 @@ Early-stage Investor</h6>
                   
                 </div>
                 <div className="team__member desktop">
+                  <div className="team__member__avatar" id="team__eleven" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                    {
+                      images.map((image, index) =>
+                        image.fluid.src.includes("oscar.png")
+                        ?<img src={image.fluid.src} alt="" key={index} alt="Oscar Rivera, Chief Creative Officer" />
+                        : ""
+                      )
+                    }
+                  </div>
+                  <MouseTooltip
+                    visible={this.state.isMouseTooltipVisible}
+                    offsetX={-100}
+                    offsetY={-100}
+                  >
+                    <div className="team__member__info " id="team__eleven-member">
+                      <div className="team__member__info__name">
+                        <h5>
+                          <span>Oscar</span>
+                          <span>Rivera</span>
+                        </h5>
+                        <h6>Chief<br/> Creative Officer</h6>
+                      </div>
+                    
+                    </div>
+                  </MouseTooltip>
+                  
+                </div>
+
+                
+              </div>
+              <div className="team__row__three">
+                <div className="team__member desktop">
                   <div className="team__member__avatar" id="team__six" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
                     {
                       images.map((image, index) =>
@@ -784,9 +817,6 @@ Early-stage Investor</h6>
                   </MouseTooltip>
                 
                 </div>
-                
-              </div>
-              <div className="team__row__three">
                 <div className="team__member desktop">
                   <div className="team__member__avatar" id="team__seven" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
                     {
@@ -871,34 +901,7 @@ Early-stage Investor</h6>
                   </MouseTooltip>
                   
                 </div>
-                <div className="team__member desktop">
-                  <div className="team__member__avatar" id="team__eleven" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
-                    {
-                      images.map((image, index) =>
-                        image.fluid.src.includes("oscar.png")
-                        ?<img src={image.fluid.src} alt="" key={index} alt="Oscar Rivera, Chief Creative Officer" />
-                        : ""
-                      )
-                    }
-                  </div>
-                  <MouseTooltip
-                    visible={this.state.isMouseTooltipVisible}
-                    offsetX={-100}
-                    offsetY={-100}
-                  >
-                    <div className="team__member__info " id="team__eleven-member">
-                      <div className="team__member__info__name">
-                        <h5>
-                          <span>Oscar</span>
-                          <span>Rivera</span>
-                        </h5>
-                        <h6>Chief<br/> Creative Officer</h6>
-                      </div>
-                    
-                    </div>
-                  </MouseTooltip>
-                  
-                </div>
+
                 
               </div>
        
@@ -949,7 +952,6 @@ Early-stage Investor</h6>
                 </div>
                 
               </div>
-
               <div className="team__member mobile">
                 <div className="team__member__avatar" id="team__threesix-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
                   {
@@ -973,7 +975,6 @@ Early-stage Investor</h6>
                 
                 </div>
               </div>
-                
               <div className="team__member mobile">
                 <div className="team__member__avatar genevieve" id="team__four-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
                   {
@@ -997,7 +998,6 @@ Early-stage Investor</h6>
                 </div>
                 
               </div>
-
               <div className="team__member mobile">
                 <div className="team__member__avatar" id="team__eight-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
                   {
@@ -1021,7 +1021,6 @@ Early-stage Investor</h6>
               </div>
                 
               </div>
-
               <div className="team__member mobile">
                 <div className="team__member__avatar" id="team__five-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
                   {
@@ -1046,103 +1045,6 @@ Early-stage Investor</h6>
                 </div>
                 
               </div>
-
-              <div className="team__member mobile">
-                <div className="team__member__avatar" id="team__six-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
-                  {
-                    images.map((image, index) =>
-                      image.fluid.src.includes("lilinette.png")
-                      ?<img src={image.fluid.src} alt="" key={index} alt="Lillinette Díaz, Content strategist" />
-                      : ""
-                    )
-                  }
-                </div>
-
-                <div className="team__member__info " id="team__six-membermobile">
-                  <div className="team__member__info__name">
-                    <h5>
-                      <span>Lillinette </span>
-                      <span>Díaz</span>
-                    </h5>
-                    <h6>Content  <br/> strategist</h6>
-                  </div>
-                
-                </div>
-               
-              </div>
-
-              <div className="team__member mobile">
-                <div className="team__member__avatar" id="team__seven-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
-                  {
-                    images.map((image, index) =>
-                      image.fluid.src.includes("kike.png")
-                      ?<img src={image.fluid.src} alt="" key={index} alt="Kike Sanchez, Content Manager"/>
-                      : ""
-                    )
-                  }
-                </div>
-
-                <div className="team__member__info " id="team__seven-membermobile">
-                  <div className="team__member__info__name">
-                    <h5>
-                      <span>Kike </span>
-                      <span>Sánchez</span>
-                    </h5>
-                    <h6>Content   <br/> Manager</h6>
-                  </div>
-                
-                </div>
-                
-              </div>
-
-              <div className="team__member mobile">
-                <div className="team__member__avatar" id="team__nine-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
-                  {
-                    images.map((image, index) =>
-                      image.fluid.src.includes("avaz.png")
-                      ?<img src={image.fluid.src} alt="" key={index}  alt="Avaz Bokiev, Lead Developer" />
-                      : ""
-                    )
-                  }
-                </div>
-
-                <div className="team__member__info " id="team__nine-membermobile">
-                  <div className="team__member__info__name">
-                    <h5>
-                      <span>Avaz </span>
-                      <span>Bokiev</span>
-                    </h5>
-                    <h6>Lead   <br/> Developer</h6>
-                  </div>
-                
-                </div>
-                
-              </div>
-
-              <div className="team__member mobile">
-                <div className="team__member__avatar" id="team__ten-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
-                  {
-                    images.map((image, index) =>
-                      image.fluid.src.includes("gabriela.png")
-                      ?<img src={image.fluid.src} alt="" key={index}  alt="Gabriela Carde, Jr. Counsel"/>
-                      : ""
-                    )
-                  }
-                </div>
-
-                <div className="team__member__info " id="team__ten-membermobile">
-                  <div className="team__member__info__name">
-                    <h5>
-                      <span>Gabriela </span>
-                      <span>Carde</span>
-                    </h5>
-                    <h6>Jr.   <br/>  Counsel </h6>
-                  </div>
-                
-                </div>
-                
-              </div>
-
               <div className="team__member mobile">
                 <div className="team__member__avatar" id="team__eleven-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
                   {
@@ -1166,6 +1068,99 @@ Early-stage Investor</h6>
                 </div>
                 
               </div>
+              <div className="team__member mobile">
+                <div className="team__member__avatar" id="team__six-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                  {
+                    images.map((image, index) =>
+                      image.fluid.src.includes("lilinette.png")
+                      ?<img src={image.fluid.src} alt="" key={index} alt="Lillinette Díaz, Content strategist" />
+                      : ""
+                    )
+                  }
+                </div>
+
+                <div className="team__member__info " id="team__six-membermobile">
+                  <div className="team__member__info__name">
+                    <h5>
+                      <span>Lillinette </span>
+                      <span>Díaz</span>
+                    </h5>
+                    <h6>Content  <br/> strategist</h6>
+                  </div>
+                
+                </div>
+               
+              </div>
+              <div className="team__member mobile">
+                <div className="team__member__avatar" id="team__seven-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                  {
+                    images.map((image, index) =>
+                      image.fluid.src.includes("kike.png")
+                      ?<img src={image.fluid.src} alt="" key={index} alt="Kike Sanchez, Content Manager"/>
+                      : ""
+                    )
+                  }
+                </div>
+
+                <div className="team__member__info " id="team__seven-membermobile">
+                  <div className="team__member__info__name">
+                    <h5>
+                      <span>Kike </span>
+                      <span>Sánchez</span>
+                    </h5>
+                    <h6>Content   <br/> Manager</h6>
+                  </div>
+                
+                </div>
+                
+              </div>
+              <div className="team__member mobile">
+                <div className="team__member__avatar" id="team__nine-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                  {
+                    images.map((image, index) =>
+                      image.fluid.src.includes("avaz.png")
+                      ?<img src={image.fluid.src} alt="" key={index}  alt="Avaz Bokiev, Lead Developer" />
+                      : ""
+                    )
+                  }
+                </div>
+
+                <div className="team__member__info " id="team__nine-membermobile">
+                  <div className="team__member__info__name">
+                    <h5>
+                      <span>Avaz </span>
+                      <span>Bokiev</span>
+                    </h5>
+                    <h6>Lead   <br/> Developer</h6>
+                  </div>
+                
+                </div>
+                
+              </div>
+              <div className="team__member mobile">
+                <div className="team__member__avatar" id="team__ten-member" onClick={this.showInfoMobile}  onMouseEnter={this.showInfo} onMouseLeave={this.hideInfo}  >
+                  {
+                    images.map((image, index) =>
+                      image.fluid.src.includes("gabriela.png")
+                      ?<img src={image.fluid.src} alt="" key={index}  alt="Gabriela Carde, Jr. Counsel"/>
+                      : ""
+                    )
+                  }
+                </div>
+
+                <div className="team__member__info " id="team__ten-membermobile">
+                  <div className="team__member__info__name">
+                    <h5>
+                      <span>Gabriela </span>
+                      <span>Carde</span>
+                    </h5>
+                    <h6>Jr.   <br/>  Counsel </h6>
+                  </div>
+                
+                </div>
+                
+              </div>
+              
           </div>
         </div>
       </section>

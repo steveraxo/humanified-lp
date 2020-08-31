@@ -159,7 +159,15 @@ const Layout = ({ children }) => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-12 col-lg-3 left">
-              <p>humanified</p>
+            <a
+                    href="/#home"
+                    style={{
+                      color: `white`,
+                      textDecoration: `none`,
+                    }}
+                  >
+                  <p>humanified</p>
+                  </a> 
             </div>
             <div className="col-sm-12 col-lg-9 right ">
               <p>© Humanified 2020.  Trademarks and brands are the property of their respective owners. &nbsp;  | 

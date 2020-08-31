@@ -7,6 +7,27 @@ body{
 .g__recaptcha{
     margin-bottom: 25px;
 }
+#close__video{
+    color: white;
+    background: #2C13DD;
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close__video.show{
+    display: flex!important;
+}
 #submit__form:disabled {
     opacity: 0.5;
 }
