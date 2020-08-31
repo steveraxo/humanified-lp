@@ -205,7 +205,6 @@ class Index extends Component {
   
     var distance = document.getElementById(id).offset().top;
     
-    console.log(distance)
   }
 
   lockScroll(){
@@ -238,8 +237,9 @@ class Index extends Component {
 
   render() {
 
-
     var images  = this.props.data.allImageSharp.nodes;
+    console.log(images);
+
     const isBrowser = typeof window !== `undefined`
 
     const settings = {
@@ -579,7 +579,7 @@ Early-stage Investor</h6>
         </div>
       </section>
 
-      <section className="team__section" id="meet-the-team">
+      <section className="team__section team" id="meet-the-team">
         <TeamTitleMobile id={"team__title__mobile"} className={"mobile"} />
         <TeamTitle id="team__title" className={"desktop"}  />
         <div className="container">
@@ -1657,6 +1657,9 @@ export const query = graphql`
         id
         fluid(maxWidth: 800, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
+          src
+        }
+        original {
           src
         }
       }
