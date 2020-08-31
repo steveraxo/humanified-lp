@@ -74,10 +74,11 @@ body{
     font-size: 19px!important;
     font-weight: bold!important;
     margin: 0;
-    position: absolute;
+    position: relative;
     bottom: 0px;
     /* left: 0; */
-    margin: auto;
+    margin: 0px!important;
+    padding: 0px;
 }
 @media (max-width: 4000px){
     .container-fluid{
