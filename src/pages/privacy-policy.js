@@ -13,7 +13,7 @@ export default class PrivacyPolicy extends Component {
                             <div className="col-lg-12">
 
                             <div className="">
-                        <h2>Privacy Policy</h2>
+                        <h2>PRIVACY POLICY</h2>
                         <h3>INTRODUCTION</h3>
                         <p>
                         
