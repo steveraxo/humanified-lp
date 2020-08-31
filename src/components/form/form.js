@@ -80,6 +80,11 @@ export default class form extends Component {
                 formStatus: true,  
             }); 
            
+            if (typeof window !== "undefined") {
+              if (window.fbq != null) { 
+                window.fbq('track', 'PageView')
+              }
+            }
 
           } else {
             this.setState({
@@ -89,7 +94,7 @@ export default class form extends Component {
         }else{
             this.setState({
                 status: "invalid", 
-            });
+            }); 
         }
     }
     handleNameChange(e){

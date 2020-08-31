@@ -2474,6 +2474,9 @@ section{
         margin-top: 60px;
         margin-bottom: 70px;
     }
+    .form__response{
+        top: 0px;
+    }
     #message {
         min-height: 160px;
     }
