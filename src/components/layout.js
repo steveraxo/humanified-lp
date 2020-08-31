@@ -160,7 +160,7 @@ const Layout = ({ children }) => {
           <div className="row">
             <div className="col-sm-12 col-lg-3 left">
             <a
-                    href="/#home"
+                    href="/"
                     style={{
                       color: `white`,
                       textDecoration: `none`,
