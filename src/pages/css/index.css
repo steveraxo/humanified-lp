@@ -1329,6 +1329,7 @@ section{
     .feature__slide .feature__description p{
         font-size: 15px;
         line-height: 22px;
+        max-width: 310px;
     }
     .feature__slide.active .feature__description p{
         font-size: 15px;
