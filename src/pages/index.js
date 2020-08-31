@@ -315,9 +315,8 @@ class Index extends Component {
                 <h2 id="pre__mission__title">
                   <span className="desktop">A social network, </span>
                   <span className="desktop">for difference makers. </span>
-                  <span className="desktop">Don't just post...do.</span>
                   
-                  <span className="mobile">A social network for difference makers. Don't just post...do.</span>
+                  <span className="mobile">A social network for difference makers.</span>
                 </h2>
               </div>
               <div className="phone__image" tabIndex="-1" onMouseEnter={this.activatePulsing} onMouseLeave={this.deactivatePulsing}>
@@ -356,7 +355,7 @@ class Index extends Component {
               <p>
               We eliminate traditional social media's white noise to make voices heard, to move beyond performative activism to action, and to lift up new movements and moments. #WhatDidYouDo?
               </p>
-              <p>              <strong>64%</strong> of people are more likely to take real action after posting or following a cause or nonprofit.
+              <p className="smaller__text">              <strong>*64%</strong> of people are more likely to take real action after posting or following a cause or nonprofit.
 </p>
             </div>
           </div>
@@ -466,7 +465,7 @@ Former President, <br/> Girlboss</h6>
                           <span>Hitha  </span>
                           <span>Palepu</span>
                         </h5>
-                        <h6>CEO Rhoshan <br/> Pharmaceuticals <br/>
+                        <h6>CEO Rhoshan <br/> Pharmaceuticals, <br/>
 Early-stage Investor</h6>
                       </div>
                     
@@ -495,7 +494,7 @@ Early-stage Investor</h6>
   </span>
                           <span>Lubin</span>
                         </h5>
-                        <h6>Technology Executive <br/> (Multiple Exits) Venture <br/> Capitalist</h6>
+                        <h6>Technology Executive <br/> (Multiple Exits), <br/> Venture Capitalist</h6>
                       </div>
                     
                     </div>
@@ -547,7 +546,7 @@ Former President, <br/> Girlboss</h6>
                           <span>Hitha  </span>
                           <span>Palepu</span>
                         </h5>
-                        <h6>CEO Rhoshan <br/> Pharmaceuticals <br/>
+                        <h6>CEO Rhoshan <br/> Pharmaceuticals, <br/>
 Early-stage Investor</h6>
                       </div>
                 
@@ -573,7 +572,7 @@ Early-stage Investor</h6>
   </span>
                           <span>Lubin</span>
                         </h5>
-                        <h6>Technology Executive <br/> (Multiple Exits) Venture <br/> Capitalist</h6>
+                        <h6>Technology Executive <br/> (Multiple Exits),  <br/> Venture Capitalist</h6>
                       </div>
                 
                 </div>
@@ -610,7 +609,7 @@ Early-stage Investor</h6>
                       <div className="team__member__info__name">
                         <h5>
                           <span>Neil </span>
-                          <span>St.Clair</span>
+                          <span>St. Clair</span>
                         </h5>
                         <h6>Chief Operating <br/> Officer</h6>
                       </div>
@@ -926,7 +925,7 @@ Early-stage Investor</h6>
                   <div className="team__member__info__name">
                   <h5>
                         <span>Neil </span>
-                        <span>St.Clair</span>
+                        <span>St. Clair</span>
                       </h5>
                       <h6>Chief Operating <br/> Officer</h6>
                   </div>
@@ -1426,7 +1425,7 @@ Early-stage Investor</h6>
                   </div>
               </div>
               <div className="slider__two">
-                  <div className="feature__slide" onClick={this.showFeature} onMouseOver={this.showFeature} id="slide__four">
+                  {/* <div className="feature__slide" onClick={this.showFeature} onMouseOver={this.showFeature} id="slide__four">
                     <div className="feature__title">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="1">
@@ -1439,7 +1438,7 @@ Early-stage Investor</h6>
                     <div className="feature__description">
                       <p>Feel closer to the causes that you care about with the people that you love.</p>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="feature__slide" onClick={this.showFeature} onMouseOver={this.showFeature} id="slide__five">
                     <div className="feature__title">
                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1513,7 +1512,7 @@ Early-stage Investor</h6>
 </p>
                     </div>
                   </div>
-                  <div className="feature__slide active"  id="slide__four">
+                  {/* <div className="feature__slide active"  id="slide__four">
                     <div className="feature__title">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="1">
@@ -1526,7 +1525,7 @@ Early-stage Investor</h6>
                     <div className="feature__description">
                       <p>Feel closer to the causes that you care about with the people that you love.</p>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="feature__slide active"  id="slide__five">
                     <div className="feature__title">
                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1566,7 +1565,7 @@ Early-stage Investor</h6>
 
                 <span>Fall 2020 </span>
               </h3>
-              <p id="down__subtitle">and change the world <br/> around you today. </p>
+              <p id="down__subtitle">change the world <br/> around you today. </p>
               <div className="app__links d-flex ">
                 <div className="app__store">
                   <AppleDownload alt="Apple Store Badge - Coming Soon" />
@@ -1597,7 +1596,8 @@ Early-stage Investor</h6>
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-6">
               <h3>Sign Up</h3>
-              <h4>Become a <br/> Humanifier today.</h4>
+              
+              <h4>Become an original <br/> Humanifier.</h4>
               <p> Start your Humanified journey now. Sign up to get the latest on the launch of the app, and become one of the first to post the causes you're passionate about! </p>
 
               <div className="social__links">

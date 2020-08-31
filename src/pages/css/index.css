@@ -7,6 +7,11 @@ body{
 .g__recaptcha{
     margin-bottom: 25px;
 }
+.smaller__text{
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 20px;
+}
 #close__video{
     color: white;
     background: #2C13DD;
@@ -1307,7 +1312,7 @@ section{
     opacity: 0;
     left: -100px;
     right: 0px;
-    top: unset;
+    top: 30px;
     bottom: 0px;
     transition: all 0.4s cubic-bezier(0.83, 0, 0.17, 1);
 
@@ -1855,6 +1860,9 @@ section{
     }
 }
 @media (max-width: 815px){
+    .phone__slide {
+        top: unset;
+    }
     .advisory.team__section {
         padding: 0px 0 130px;
     }
@@ -2552,8 +2560,9 @@ section{
         margin-top: -180px;
     }
     #download h3{
-        font-size: 16px;
-        line-height: 104.9%;
+        display: flex;
+    justify-content: center;
+    align-items: center;
     }
     #download h3 span{
         font-size: 40px;

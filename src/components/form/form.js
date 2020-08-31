@@ -139,7 +139,7 @@ export default class form extends Component {
         return (
             <form name="contact" id="signup">
             <div className={'input__fields'}>
-              <label htmlFor="name"> Name: </label> 
+              <label htmlFor="name"> First Name: </label> 
               <input type="text" id="name" name="name" onChange={this.handleNameChange} value={this.state.name} />   
               {
                 this.state.nameStatus === "invalid"
