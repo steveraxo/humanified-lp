@@ -211,7 +211,6 @@ class Index extends Component {
   }
 
   componentDidMount(){
-    window.onresize = function(){ window.location.reload(); }
 
     this.parallaxContainer();
 
