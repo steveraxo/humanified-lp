@@ -1326,10 +1326,14 @@ section{
     .feature__description{
         left: 76px;
     }
+    .feature__slide .feature__description p{
+        font-size: 15px;
+        line-height: 22px;
+    }
     .feature__slide.active .feature__description p{
         font-size: 15px;
         line-height: 22px;
-        max-width: 300px;
+        max-width: 310px;
         height: 75px;
     }
     #mission__description{
