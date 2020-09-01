@@ -1,4 +1,6 @@
 import React, { Component } from "react"
+import loadable from '@loadable/component'
+
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
@@ -14,12 +16,14 @@ import AOS from "aos"
 
 import TeamTitleMobile from "../images/TheTeam.svg"
 import Form from "../components/form/form"
-import MouseTooltip from "react-sticky-mouse-tooltip"
-import Tilt from "react-parallax-tilt"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import Slider from "react-slick"
 
+const MouseTooltip = loadable(() => import('react-sticky-mouse-tooltip'))
+const Tilt = loadable(() => import('react-parallax-tilt'))
+const Slider = loadable(() => import('react-slick'))
+
+ 
 class Index extends Component {
   constructor(props) {
     super(props)

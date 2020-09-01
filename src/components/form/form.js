@@ -1,5 +1,8 @@
 import React, { Component } from "react"
-import ReCAPTCHA from "react-google-recaptcha"
+import loadable from '@loadable/component'
+
+const ReCAPTCHA = loadable(() => import('react-google-recaptcha'))
+
 
 export default class form extends Component {
   constructor(props) {
