@@ -15,6 +15,7 @@
     "gatsby-plugin-offline": "^3.2.23",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-react-svg": "^3.0.0",
+    "gatsby-plugin-remove-console": "0.0.2",
     "gatsby-plugin-sharp": "^2.6.26",
     "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-source-filesystem": "^2.3.24",
@@ -32,6 +33,7 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "gatsby-cli": "^2.12.82",
     "prettier": "2.0.5"
   },
