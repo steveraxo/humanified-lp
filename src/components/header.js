@@ -19,6 +19,7 @@ export default class header extends Component {
       event.target.classList.add("show");
     }
   }
+
   render() {
     return (
       <header>
@@ -90,17 +91,17 @@ export default class header extends Component {
                   <nav role="navigation" className="navigation__header mobile">
                     <ul>
                       <li>
-                        <AnchorLink to="/#mission" title="Mission">
+                        <AnchorLink to="/#the-mission" title="Mission" >
                           Mission
                         </AnchorLink>
                       </li>
                       <li>
-                        <AnchorLink to="/#team" title="Meet the team">
+                        <AnchorLink to="/#the-team" title="Meet the team">
                           Meet the team
                         </AnchorLink>
                       </li>
                       <li>
-                        <AnchorLink to="/#what-we-do" title="What we do">
+                        <AnchorLink to="/#about" title="What we do">
                           What we do
                         </AnchorLink>
                       </li>
@@ -110,7 +111,7 @@ export default class header extends Component {
                         </AnchorLink>
                       </li> */}
                       <li>
-                        <AnchorLink to="/#contact" className="download__button" title="Download">
+                        <AnchorLink to="/#contact-us" className="download__button" title="Download">
                         Sign Up
                           <ArrowDown />
                         </AnchorLink>

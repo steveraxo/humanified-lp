@@ -7,6 +7,14 @@ body{
 .g__recaptcha{
     margin-bottom: 25px;
 }
+.mobile__anchor{
+    position: absolute;
+    visibility: hidden;
+    margin-top: -100px;
+}
+.mobile__contact{
+    margin-top: -200px;
+}
 .smaller__text{
     font-size: 15px;
     line-height: 28px;
@@ -35,6 +43,7 @@ body{
 }
 #submit__form:disabled {
     opacity: 0.5;
+    pointer-events: none;
 }
 .privacy__wrapper{
     background: #1C1A1B;
@@ -1042,6 +1051,7 @@ section{
     background: #1C1A1B;
     position: relative;
     padding: 100px 160px;
+    margin-top: -5px;
 }
 #contact h3{
     font-family: Montserrat;

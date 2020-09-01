@@ -10,7 +10,7 @@ import PlayButton from "../images/playButton.svg"
 import DownArrow from "../images/downArrow.svg"
 import TeamTitle from "../images/the_team.svg"
 import ATeamTitle from "../images/advisoryboard.svg"
-
+import AOS from "aos";
 
 import TeamTitleMobile from "../images/TheTeam.svg"
 import Form from '../components/form/form'
@@ -230,7 +230,10 @@ class Index extends Component {
     document.querySelectorAll(`.${event.target.id}`)[0].classList.add("active");
   }
 
+  
   componentDidMount(){
+
+    AOS.init();
 
     this.parallaxContainer();
 
@@ -352,7 +355,7 @@ class Index extends Component {
           </div>
         </div>
       </section>
-
+      
       <section className="pre__mission__section" id="pre__mission">
         <div className="container-fluid">
           <div className="row">
@@ -378,8 +381,8 @@ class Index extends Component {
             </div>
           </div>
         </div>
-
-      <div className="mission__section" id="mission">
+        <div className="mobile__mission mobile__anchor" id="the-mission"></div>
+        <div className="mission__section" id="mission">
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-6 mission__title" id="mission__title">
@@ -409,8 +412,7 @@ class Index extends Component {
       </div>
    
       </section>
-
-
+      <div className="mobile__mission mobile__anchor" id="the-team"></div>
       <section className="founder__section" id="team">
         <div className="container-fluid">
           <div className="row">
@@ -1215,8 +1217,10 @@ Early-stage Investor</h6>
         </div>
       </section>
 
+      <div className="mobile__mission mobile__anchor" id="about"></div>
       <section className="about__section" id="what-we-do">
-        <div className="floating__ww__image" tabIndex="-1">
+        <div className="floating__ww__image " data-aos="fade-up"
+     data-aos-duration="4000" tabIndex="-1">
           <Tilt>
             {
               images.map((image, index) =>
@@ -1227,7 +1231,8 @@ Early-stage Investor</h6>
             }
           </Tilt>
         </div>
-        <div className="floating__ww__image" tabIndex="-1">
+        <div className="floating__ww__image " data-aos="fade-up"
+     data-aos-duration="3000" tabIndex="-1">
           <Tilt>
             {
               images.map((image, index) =>
@@ -1238,7 +1243,8 @@ Early-stage Investor</h6>
             }
           </Tilt>
         </div>
-        <div className="floating__ww__image" tabIndex="-1">
+        <div className="floating__ww__image " data-aos="fade-up"
+     data-aos-duration="3000" tabIndex="-1">
           <Tilt>
             {
               images.map((image, index) =>
@@ -1249,7 +1255,8 @@ Early-stage Investor</h6>
             }
           </Tilt>
         </div>
-        <div className="floating__ww__image" tabIndex="-1">
+        <div className="floating__ww__image " data-aos="fade-up"
+     data-aos-duration="3000" tabIndex="-1">
           <Tilt>
             {
               images.map((image, index) =>
@@ -1260,7 +1267,8 @@ Early-stage Investor</h6>
             }
           </Tilt>
         </div>
-        <div className="floating__ww__image" tabIndex="-1">
+        <div className="floating__ww__image " data-aos="fade-up"
+     data-aos-duration="3000" tabIndex="-1">
           <Tilt>
             {
               images.map((image, index) =>
@@ -1271,7 +1279,8 @@ Early-stage Investor</h6>
             }
           </Tilt>
         </div>
-        <div className="floating__ww__image" tabIndex="-1">
+        <div className="floating__ww__image " data-aos="fade-up"
+     data-aos-duration="3000" tabIndex="-1">
           <Tilt>
             {
               images.map((image, index) =>
@@ -1282,7 +1291,8 @@ Early-stage Investor</h6>
             }
           </Tilt>
         </div>
-        <div className="floating__ww__image" tabIndex="-1">
+        <div className="floating__ww__image " data-aos="fade-up"
+     data-aos-duration="3000" tabIndex="-1">
           <Tilt>
             {
               images.map((image, index) =>
@@ -1293,7 +1303,8 @@ Early-stage Investor</h6>
             }
           </Tilt>
         </div>
-        <div className="floating__ww__image" tabIndex="-1">
+        <div className="floating__ww__image " data-aos="fade-up"
+     data-aos-duration="3000" tabIndex="-1">
           <Tilt>
             {
               images.map((image, index) =>
@@ -1304,7 +1315,8 @@ Early-stage Investor</h6>
             }
           </Tilt>
         </div>
-        <div className="floating__ww__image" tabIndex="-1">
+        <div className="floating__ww__image " data-aos="fade-up"
+     data-aos-duration="3000" tabIndex="-1">
           <Tilt>
             {
               images.map((image, index) =>
@@ -1315,7 +1327,8 @@ Early-stage Investor</h6>
             }
           </Tilt>
         </div>
-        <div className="floating__ww__image" tabIndex="-1">
+        <div className="floating__ww__image " data-aos="fade-up"
+     data-aos-duration="3000" tabIndex="-1">
           <Tilt>
             {
               images.map((image, index) =>
@@ -1331,7 +1344,7 @@ Early-stage Investor</h6>
         <div className="container-fluid ">
           <div className="row">
             <div className="col-lg-12 text-center wwd__wrapper">
-              <h5 id="wwd__wrapper__title__one">WHAT WE DO</h5>
+              <h5 id="wwd__wrapper__title__one" >WHAT WE DO</h5>
               <h2 id="wwd__wrapper__title__two" className="desktop">
                 <span>Change the </span>
                 <span>world in real time</span>
@@ -1601,8 +1614,7 @@ Early-stage Investor</h6>
         </div>
         
       </section>
-
-
+      <div className="mobile__contact mobile__anchor" id="contact-us"></div>
       <section className="download__section" id="download">
         <div className="container-fluid">
           <div className="row">
@@ -1686,7 +1698,7 @@ Early-stage Investor</h6>
               </div>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-6 contact__right">
-              <h6>Tell us about you </h6>
+              <h6>Join Our Beta Launch</h6>
 
               <Form />
 
@@ -1695,7 +1707,6 @@ Early-stage Investor</h6>
 
         </div>
       </section>
-
 
       </Layout>
     )
