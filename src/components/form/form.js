@@ -149,7 +149,7 @@ export default class form extends Component {
           recaptchaField: true,
         })
       }.bind(this),
-      400
+      1000
     )
   }
   render() {
