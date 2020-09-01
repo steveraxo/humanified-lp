@@ -28,6 +28,13 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
+}
+.not__found__page h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 #close__video{
     color: white;
