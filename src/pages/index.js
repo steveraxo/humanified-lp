@@ -435,7 +435,7 @@ class Index extends Component {
                   <span>Marla</span>
                   <span>González</span>
                 </h4>
-                <h5>FOUNDER & CEO</h5>
+                <h5>FOUNDER &amp; CEO</h5>
               </div>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-6 founder__info">
@@ -466,7 +466,7 @@ class Index extends Component {
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("alison.png")
-                        ? <img src={image.fluid.src} alt="" key={index} alt="Alison Wyatt, Advisory Board Member"/>
+                        ? <img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Alison Wyatt, Advisory Board Member"/>
                         : ""
                       )
                     }
@@ -495,7 +495,7 @@ Former President, <br/> Girlboss</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("hitha.png")
-                        ?<img src={image.fluid.src} alt="" key={index} alt="Hitha Palepu, Advisory Board Member" />
+                        ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Hitha Palepu, Advisory Board Member" />
                         : ""
                       )
                     }
@@ -523,7 +523,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("steve.png")
-                        ?<img src={image.fluid.src} alt="" key={index} alt="Steve Lubin, Advisory Board Member" />
+                        ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Steve Lubin, Advisory Board Member" />
                         : ""
                       )
                     }
@@ -555,7 +555,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("alison.png")
-                      ? <img src={image.fluid.src} alt="" key={index} alt="Alison Wyatt, Advisory Board Member" />
+                      ? <img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Alison Wyatt, Advisory Board Member" />
                       : ""
                     )
                   }
@@ -580,7 +580,7 @@ Former President, <br/> Girlboss</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("hitha.png")
-                      ?<img src={image.fluid.src} alt="" key={index} alt="Hitha Palepu, Advisory Board Member" />
+                      ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Hitha Palepu, Advisory Board Member" />
                       : ""
                     )
                   }
@@ -605,7 +605,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("steve.png")
-                      ?<img src={image.fluid.src} alt="" key={index} alt="Steve Lubin, Advisory Board Member"/>
+                      ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Steve Lubin, Advisory Board Member"/>
                       : ""
                     )
                   }
@@ -641,7 +641,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("neil.png")
-                        ? <img src={image.fluid.src} alt="" key={index} alt="Neil St.Clair, COO"/>
+                        ? <img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Neil St.Clair, COO"/>
                         : ""
                       )
                     }
@@ -669,7 +669,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("suren.png")
-                        ?<img src={image.fluid.src} alt="" key={index} alt="Suren Sahaydachny, Chief of Product" />
+                        ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Suren Sahaydachny, Chief of Product" />
                         : ""
                       )
                     }
@@ -696,7 +696,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("natalia.png")
-                        ?<img src={image.fluid.src} alt="" key={index} alt="Natalia Cacheiro, UX/UI Director"/>
+                        ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Natalia Cacheiro, UX/UI Director"/>
                         : ""
                       )
                     }
@@ -725,7 +725,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("gen.png")
-                        ?<img src={image.fluid.src} alt="" key={index} alt="Gen Keillor, Associate Account Account" />
+                        ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Gen Keillor, Associate Account Account" />
                         : ""
                       )
                     }
@@ -756,7 +756,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("rachel.png")
-                        ?<img src={image.fluid.src} alt="" key={index} alt="Rachel Chada, Strategy Director" />
+                        ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Rachel Chada, Strategy Director" />
                         : ""
                       )
                     }
@@ -783,7 +783,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("ornella.png")
-                        ?<img src={image.fluid.src} alt="" key={index} alt="Ornella Castellini, UX/UI  Designer"/>
+                        ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Ornella Castellini, UX/UI  Designer"/>
                         : ""
                       )
                     }
@@ -812,7 +812,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("oscar.png")
-                        ?<img src={image.fluid.src} alt="" key={index} alt="Oscar Rivera, Chief Creative Officer" />
+                        ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Oscar Rivera, Chief Creative Officer" />
                         : ""
                       )
                     }
@@ -844,7 +844,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("lilinette.png")
-                        ?<img src={image.fluid.src} alt="" key={index} alt="Lillinette Díaz, Content strategist" />
+                        ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Lillinette Díaz, Content strategist" />
                         : ""
                       )
                     }
@@ -872,7 +872,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("kike.png")
-                        ?<img src={image.fluid.src} alt="" key={index} alt="Kike Sanchez, Content Manager" />
+                        ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Kike Sanchez, Content Manager" />
                         : ""
                       )
                     }
@@ -900,7 +900,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("avaz.png")
-                        ?<img src={image.fluid.src} alt="" key={index}  alt="Avaz Bokiev, Lead Developer"  />
+                        ?<img src={image.fluid.src} loading="lazy" alt="" key={index}  alt="Avaz Bokiev, Lead Developer"  />
                         : ""
                       )
                     }
@@ -928,7 +928,7 @@ Early-stage Investor</h6>
                     {
                       images.map((image, index) =>
                         image.fluid.src.includes("gabriela.png")
-                        ?<img src={image.fluid.src} alt="" key={index} alt="Gabriela Carde, Jr. Counsel" />
+                        ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Gabriela Carde, Jr. Counsel" />
                         : ""
                       )
                     }
@@ -961,7 +961,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("neil.png")
-                      ? <img src={image.fluid.src} alt="" key={index}  alt="Neil St.Clair, COO"/>
+                      ? <img src={image.fluid.src} loading="lazy" alt="" key={index}  alt="Neil St.Clair, COO"/>
                       : ""
                     )
                   }
@@ -984,7 +984,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("suren.png")
-                      ?<img src={image.fluid.src} alt="" key={index} alt="Suren Sahaydachny, Chief of Product"/>
+                      ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Suren Sahaydachny, Chief of Product"/>
                       : ""
                     )
                   }
@@ -1007,7 +1007,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("natalia.png")
-                      ?<img src={image.fluid.src} alt="" key={index} alt="Natalia Cacheiro, UX/UI Director"/>
+                      ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Natalia Cacheiro, UX/UI Director"/>
                       : ""
                     )
                   }
@@ -1030,7 +1030,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("gen.png")
-                      ?<img src={image.fluid.src} alt="" key={index} alt="Gen Keillor, Associate Account Account"/>
+                      ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Gen Keillor, Associate Account Account"/>
                       : ""
                     )
                   }
@@ -1053,7 +1053,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("rachel.png")
-                      ?<img src={image.fluid.src} alt="" key={index} alt="Rachel Chada, Strategy Director"/>
+                      ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Rachel Chada, Strategy Director"/>
                       : ""
                     )
                   }
@@ -1076,7 +1076,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("ornella.png")
-                      ?<img src={image.fluid.src} alt="" key={index} alt="Ornella Castellini, UX/UI  Designer"/>
+                      ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Ornella Castellini, UX/UI  Designer"/>
                       : ""
                     )
                   }
@@ -1100,7 +1100,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("oscar.png")
-                      ?<img src={image.fluid.src} alt="" key={index} alt="Oscar Rivera, Chief Creative Officer"/>
+                      ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Oscar Rivera, Chief Creative Officer"/>
                       : ""
                     )
                   }
@@ -1123,7 +1123,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("lilinette.png")
-                      ?<img src={image.fluid.src} alt="" key={index} alt="Lillinette Díaz, Content strategist" />
+                      ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Lillinette Díaz, Content strategist" />
                       : ""
                     )
                   }
@@ -1146,7 +1146,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("kike.png")
-                      ?<img src={image.fluid.src} alt="" key={index} alt="Kike Sanchez, Content Manager"/>
+                      ?<img src={image.fluid.src} loading="lazy" alt="" key={index} alt="Kike Sanchez, Content Manager"/>
                       : ""
                     )
                   }
@@ -1169,7 +1169,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("avaz.png")
-                      ?<img src={image.fluid.src} alt="" key={index}  alt="Avaz Bokiev, Lead Developer" />
+                      ?<img src={image.fluid.src} loading="lazy" alt="" key={index}  alt="Avaz Bokiev, Lead Developer" />
                       : ""
                     )
                   }
@@ -1192,7 +1192,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes("gabriela.png")
-                      ?<img src={image.fluid.src} alt="" key={index}  alt="Gabriela Carde, Jr. Counsel"/>
+                      ?<img src={image.fluid.src} loading="lazy" alt="" key={index}  alt="Gabriela Carde, Jr. Counsel"/>
                       : ""
                     )
                   }
@@ -1223,7 +1223,7 @@ Early-stage Investor</h6>
             {
               images.map((image, index) =>
                 image.fluid.src.includes(`mask1.png`)
-                ?<img src={image.fluid.src} alt="" key={index}/>
+                ?<img src={image.fluid.src} loading="lazy" alt="" key={index}/>
                 : ""
               )
             }
@@ -1235,7 +1235,7 @@ Early-stage Investor</h6>
             {
               images.map((image, index) =>
                 image.fluid.src.includes(`mask2.png`)
-                ?<img src={image.fluid.src} alt="" key={index}/>
+                ?<img src={image.fluid.src} loading="lazy" alt="" key={index}/>
                 : ""
               )
             }
@@ -1247,7 +1247,7 @@ Early-stage Investor</h6>
             {
               images.map((image, index) =>
                 image.fluid.src.includes(`mask3.png`)
-                ?<img src={image.fluid.src} alt="" key={index}/>
+                ?<img src={image.fluid.src} loading="lazy" alt="" key={index}/>
                 : ""
               )
             }
@@ -1259,7 +1259,7 @@ Early-stage Investor</h6>
             {
               images.map((image, index) =>
                 image.fluid.src.includes(`mask4.png`)
-                ?<img src={image.fluid.src} alt="" key={index}/>
+                ?<img src={image.fluid.src} loading="lazy" alt="" key={index}/>
                 : ""
               )
             }
@@ -1271,7 +1271,7 @@ Early-stage Investor</h6>
             {
               images.map((image, index) =>
                 image.fluid.src.includes(`mask5.png`)
-                ?<img src={image.fluid.src} alt="" key={index}/>
+                ?<img src={image.fluid.src} loading="lazy" alt="" key={index}/>
                 : ""
               )
             }
@@ -1283,7 +1283,7 @@ Early-stage Investor</h6>
             {
               images.map((image, index) =>
                 image.fluid.src.includes(`mask6.png`)
-                ?<img src={image.fluid.src} alt="" key={index}/>
+                ?<img src={image.fluid.src} loading="lazy" alt="" key={index}/>
                 : ""
               )
             }
@@ -1295,7 +1295,7 @@ Early-stage Investor</h6>
             {
               images.map((image, index) =>
                 image.fluid.src.includes(`mask7.png`)
-                ?<img src={image.fluid.src} alt="" key={index}/>
+                ?<img src={image.fluid.src} loading="lazy" alt="" key={index}/>
                 : ""
               )
             }
@@ -1307,7 +1307,7 @@ Early-stage Investor</h6>
             {
               images.map((image, index) =>
                 image.fluid.src.includes(`mask8.png`)
-                ?<img src={image.fluid.src} alt="" key={index}/>
+                ?<img src={image.fluid.src} loading="lazy" alt="" key={index}/>
                 : ""
               )
             }
@@ -1319,7 +1319,7 @@ Early-stage Investor</h6>
             {
               images.map((image, index) =>
                 image.fluid.src.includes(`mask9.png`)
-                ?<img src={image.fluid.src} alt="" key={index}/>
+                ?<img src={image.fluid.src} loading="lazy" alt="" key={index}/>
                 : ""
               )
             }
@@ -1331,7 +1331,7 @@ Early-stage Investor</h6>
             {
               images.map((image, index) =>
                 image.fluid.src.includes(`mask10.png`)
-                ?<img src={image.fluid.src} alt="" key={index}/>
+                ?<img src={image.fluid.src} loading="lazy" alt="" key={index}/>
                 : ""
               )
             }
@@ -1382,7 +1382,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes(`phoneone.png`)
-                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      ?<img src={image.fluid.src} loading="lazy" alt="" key={index}/>
                       : ""
                     )
                   }
@@ -1391,7 +1391,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes(`phonetwo.png`)
-                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      ?<img src={image.fluid.src} loading="lazy" alt="" key={index}/>
                       : ""
                     )
                   }
@@ -1400,7 +1400,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes(`phonethree.png`)
-                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      ?<img src={image.fluid.src} loading="lazy" alt="" key={index}/>
                       : ""
                     )
                   }
@@ -1409,7 +1409,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes(`phonefour.png`)
-                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      ?<img src={image.fluid.src} loading="lazy" alt="" key={index}/>
                       : ""
                     )
                   }
@@ -1418,7 +1418,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes(`phonefive.png`)
-                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      ?<img src={image.fluid.src} loading="lazy" alt="" key={index}/>
                       : ""
                     )
                   }
@@ -1427,7 +1427,7 @@ Early-stage Investor</h6>
                   {
                     images.map((image, index) =>
                       image.fluid.src.includes(`phonesix.png`)
-                      ?<img src={image.fluid.src} alt="" key={index}/>
+                      ?<img src={image.fluid.src} loading="lazy" alt="" key={index}/>
                       : ""
                     ) 
                   }
