@@ -6,7 +6,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-anchor-links`,
-    'gatsby-plugin-remove-console',
+    "gatsby-plugin-remove-console",
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -34,9 +34,8 @@ module.exports = {
       options: {
         rule: {
           include: /images\/.*\.svg/,
-
-        }
-      }
+        },
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

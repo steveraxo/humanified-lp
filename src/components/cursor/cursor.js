@@ -11,7 +11,7 @@ export default class cursor extends Component {
     const videos = [...document.querySelectorAll("video")]
     const iframes = [...document.querySelectorAll("iframe")]
     const hoveredElements = [...document.querySelectorAll(".hover__transition")]
-    const slides = [...document.querySelectorAll(".feature__slide")] ;
+    const slides = [...document.querySelectorAll(".feature__slide")]
 
     const allElements = aLinks
       .concat(buttons)
@@ -22,12 +22,12 @@ export default class cursor extends Component {
       .concat(hoveredElements)
       .concat(slides)
 
-    allElements.forEach(function(element) {
-      element.addEventListener("mouseenter", function() {
+    allElements.forEach(function (element) {
+      element.addEventListener("mouseenter", function () {
         const theCursor = document.querySelector(".cursor")
         theCursor.classList.add("morphed--cursor")
       })
-      element.addEventListener("mouseleave", function() {
+      element.addEventListener("mouseleave", function () {
         const theCursor = document.querySelector(".cursor")
         theCursor.classList.remove("morphed--cursor")
       })
@@ -134,7 +134,7 @@ export default class cursor extends Component {
     return (
       <>
         <div className="cursor body__wrapper" id="cursor">
-        <div className="cursor__inner cursor__inner--outside"></div>
+          <div className="cursor__inner cursor__inner--outside"></div>
           <div className="cursor__inner cursor__inner--circle"></div>
           <div className="cursor__inner cursor__inner--dot">
             <p>

@@ -178,6 +178,8 @@ section{
     position: relative;
     
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: bold;
     font-size: 100px;
@@ -268,6 +270,8 @@ section{
 }
 .play__button{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -365,6 +369,8 @@ section{
 }
 .pre__mission__section h2{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: bold;
     font-size: 90px;
@@ -481,6 +487,8 @@ section{
   
 #mission__title h2{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: bold;
     font-size: 90px;
@@ -508,6 +516,8 @@ section{
     position: relative;
     top: 120px;
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -530,6 +540,8 @@ section{
 }
 .mission__title p{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -563,6 +575,8 @@ section{
 }
 .founder__info p{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -584,6 +598,8 @@ section{
     display: flex;
 
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: bold;
     font-size: 90px;
@@ -597,6 +613,8 @@ section{
 }
 .founder__info p.second{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -640,8 +658,10 @@ section{
         right: 1%;
     }
 }
-.founder__data h4{
+.founder__data h2{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -660,6 +680,8 @@ section{
 }
 .founder__data h5{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -716,6 +738,8 @@ section{
 }
 #meet-the-team .team__member__info h5{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -734,6 +758,8 @@ section{
 }
 #meet-the-team .team__member__info h6{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -808,6 +834,8 @@ section{
 }
 #what-we-do h2{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: bold;
     font-size: 100px;
@@ -829,6 +857,8 @@ section{
 #what-we-do h5{
     margin-top: 200px;
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -961,6 +991,8 @@ section{
 }
 #www__info h3{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: bold;
     font-size: 65px;
@@ -1000,6 +1032,8 @@ section{
 }
 #download h3{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -1018,6 +1052,8 @@ section{
 }
 #download h3 span{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: bold;
     font-size: 100px;
@@ -1034,6 +1070,8 @@ section{
 }
 #download p{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
@@ -1055,6 +1093,8 @@ section{
 }
 #contact h3{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -1077,6 +1117,8 @@ section{
 }
 #contact .social__links h5{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -1105,6 +1147,8 @@ section{
 }
 #contact h4{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: bold;
     font-size: 60px;
@@ -1118,6 +1162,8 @@ section{
 }
 #contact p{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -1130,6 +1176,8 @@ section{
 }
 .contact__right h6{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -1150,6 +1198,8 @@ section{
     border: none;
     border-bottom: 1px solid  #FFC4DD;
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -1165,6 +1215,8 @@ section{
     background: transparent;
     border: 1px solid  #FFC4DD;
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -1182,6 +1234,8 @@ section{
 }
 .contact__right label{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1204,6 +1258,8 @@ section{
 }
 #footer .left p {
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -1222,6 +1278,8 @@ section{
 }
 #footer .right p{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1269,6 +1327,8 @@ section{
 }
 .feature__slide .feature__title h3{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -1288,6 +1348,8 @@ section{
 }
 .feature__slide .feature__description p{
     font-family: Montserrat;
+      font-display: swap;
+
     font-style: normal;
     font-weight: normal;
     font-size: 18px;

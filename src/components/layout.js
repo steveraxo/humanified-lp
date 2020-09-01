@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Cursor  from "./cursor/cursor"
+import Cursor from "./cursor/cursor"
 import AOS from "aos"
 import Header from "./header"
 import { Link } from "gatsby"
@@ -10,21 +10,16 @@ import "./layout.css"
 import "aos/dist/aos.css"
 
 const Layout = ({ children }) => {
-
   // ENDS SMOOTH SCROLLING //
   useEffect(() => {
-
-    setTimeout(function(){ 
-      var linkMont = document.createElement('link');
-      linkMont.id = 'montserrat__font';
-      linkMont.rel = 'stylesheet';
-      linkMont.href = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap';
-      document.head.appendChild(linkMont);
-
-    }, 100);
-  
-
-
+    setTimeout(function () {
+      var linkMont = document.createElement("link")
+      linkMont.id = "montserrat__font"
+      linkMont.rel = "stylesheet"
+      linkMont.href =
+        "https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      document.head.appendChild(linkMont)
+    }, 100)
   })
 
   const data = useStaticQuery(graphql`
@@ -39,7 +34,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-
       <script>
         {`
           var _ss = _ss || [];
@@ -61,14 +55,12 @@ const Layout = ({ children }) => {
             }
           };
           _ss.push(['_setResponseCallback', callThisOnReturn]); 
-        `
-        }
+        `}
       </script>
       <script>
         {`
         <!-- Global site tag (gtag.js) - Google Ads: 598312411 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-598312411"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-598312411'); </script>
-        `
-        }
+        `}
       </script>
       <script>
         {`
@@ -82,12 +74,15 @@ const Layout = ({ children }) => {
           'https://connect.facebook.net/en_US/fbevents.js');
           fbq('init', '624158401859448');
           fbq('track', 'PageView');
-          `
-        }
+          `}
       </script>
       <Header siteTitle={data.site.siteMetadata.title} />
       <noscript>
-        <img height="1" width="1" src="https://www.facebook.com/tr?id=624158401859448&ev=PageView&noscript=1"/>
+        <img
+          height="1"
+          width="1"
+          src="https://www.facebook.com/tr?id=624158401859448&ev=PageView&noscript=1"
+        />
       </noscript>
       <main>{children}</main>
       <Cursor></Cursor>
@@ -95,20 +90,23 @@ const Layout = ({ children }) => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-12 col-lg-3 left">
-            <a
-                    href="/"
-                    style={{
-                      color: `white`,
-                      textDecoration: `none`,
-                    }}
-                  >
-                  <p>humanified</p>
-                  </a> 
+              <a
+                href="/"
+                style={{
+                  color: `white`,
+                  textDecoration: `none`,
+                }}
+              >
+                <p>humanified</p>
+              </a>
             </div>
             <div className="col-sm-12 col-lg-9 right ">
-              <p>© Humanified 2020.  Trademarks and brands are the property of their respective owners. &nbsp;   
-                &nbsp;  <a href="/privacy-policy"> Privacy Policy</a> &nbsp;  | <a href="/terms-and-conditions"> &nbsp; Terms of Use </a>
-</p>
+              <p>
+                © Humanified 2020. Trademarks and brands are the property of
+                their respective owners. &nbsp; &nbsp;{" "}
+                <a href="/privacy-policy"> Privacy Policy</a> &nbsp; |{" "}
+                <a href="/terms-and-conditions"> &nbsp; Terms of Use </a>
+              </p>
             </div>
           </div>
         </div>
