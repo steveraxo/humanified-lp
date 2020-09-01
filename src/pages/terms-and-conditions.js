@@ -6,7 +6,7 @@ export default class Terms extends Component {
     render() {
         return (
             <Layout>
-                <SEO title="Humanified | Privacy Policy" />
+                <SEO title="Humanified | Terms and conditions" />
                 <section className={"privacy__wrapper"}>
                     <div className="container ">
                         <div className="col-lg-12">
