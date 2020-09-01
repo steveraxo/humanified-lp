@@ -239,7 +239,6 @@ class Index extends Component {
 
     [...document.querySelectorAll(".navigation__header.mobile")].map((navItem) => (
       navItem.addEventListener("click", function(){
-        console.log("test");
         document.getElementById("opened__toggle").classList.remove("show");
         document.getElementById("closed__toggle").classList.add("show");
         document.getElementById("mobile__menu").classList.remove("show");
@@ -248,7 +247,6 @@ class Index extends Component {
     ))
 
     window.addEventListener("resize", function(){
-      console.log("resize");
       if(window.innerWidth < 1280){
         [...document.querySelectorAll(".floating__ww__image")].map((image, index) => {
             
@@ -1431,7 +1429,7 @@ Early-stage Investor</h6>
                       image.fluid.src.includes(`phonesix.png`)
                       ?<img src={image.fluid.src} alt="" key={index}/>
                       : ""
-                    )
+                    ) 
                   }
                 </div>
             </div>
@@ -1526,7 +1524,7 @@ Early-stage Investor</h6>
 
             <div className=" slider__mobile"> 
               <Slider {...settings} ref={c => (this.slider = c)}>
-                  <div className="feature__slide active"  id="slide__one">
+                  <div className="feature__slide active"  id="slide__one__mobile">
                   <div className="feature__title">
                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M41.6803 9.21974C40.6588 8.19775 39.4459 7.38704 38.111 6.83391C36.7761 6.28079 35.3453 5.99609 33.9003 5.99609C32.4553 5.99609 31.0245 6.28079 29.6896 6.83391C28.3547 7.38704 27.1418 8.19775 26.1203 9.21974L24.0003 11.3397L21.8803 9.21974C19.8169 7.15636 17.0184 5.99716 14.1003 5.99716C11.1822 5.99716 8.38368 7.15636 6.3203 9.21974C4.25691 11.2831 3.09772 14.0817 3.09772 16.9997C3.09772 19.9178 4.25691 22.7164 6.3203 24.7797L8.4403 26.8997L24.0003 42.4597L39.5603 26.8997L41.6803 24.7797C42.7023 23.7582 43.513 22.5454 44.0661 21.2105C44.6193 19.8755 44.904 18.4447 44.904 16.9997C44.904 15.5548 44.6193 14.124 44.0661 12.789C43.513 11.4541 42.7023 10.2413 41.6803 9.21974V9.21974Z" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
@@ -1538,7 +1536,7 @@ Early-stage Investor</h6>
                       <p>Create a “Cause” page, post and share content, and engage with people and ideas that support what you care about.</p>
                     </div>
                   </div>
-                  <div className="feature__slide active"  id="slide__two">
+                  <div className="feature__slide active"  id="slide__two__mobile">
                     <div className="feature__title">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M22 38C30.8366 38 38 30.8366 38 22C38 13.1634 30.8366 6 22 6C13.1634 6 6 13.1634 6 22C6 30.8366 13.1634 38 22 38Z" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
@@ -1552,7 +1550,7 @@ Early-stage Investor</h6>
 </p>
                     </div>
                   </div>
-                  <div className="feature__slide active"  id="slide__three">
+                  <div className="feature__slide active"  id="slide__three__mobile">
                     <div className="feature__title">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M14 46L6 38L14 30" stroke="#F0EEFF" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
@@ -1571,7 +1569,7 @@ Early-stage Investor</h6>
 </p>
                     </div>
                   </div>
-                  {/* <div className="feature__slide active"  id="slide__four">
+                  {/* <div className="feature__slide active"  id="slide__four__mobile">
                     <div className="feature__title">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="1">
@@ -1585,7 +1583,7 @@ Early-stage Investor</h6>
                       <p>Feel closer to the causes that you care about with the people that you love.</p>
                     </div>
                   </div> */}
-                  <div className="feature__slide active"  id="slide__five">
+                  <div className="feature__slide active"  id="slide__five__mobile">
                     <div className="feature__title">
                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M41.6803 9.21974C40.6588 8.19775 39.4459 7.38704 38.111 6.83391C36.7761 6.28079 35.3453 5.99609 33.9003 5.99609C32.4553 5.99609 31.0245 6.28079 29.6896 6.83391C28.3547 7.38704 27.1418 8.19775 26.1203 9.21974L24.0003 11.3397L21.8803 9.21974C19.8169 7.15636 17.0184 5.99716 14.1003 5.99716C11.1822 5.99716 8.38368 7.15636 6.3203 9.21974C4.25691 11.2831 3.09772 14.0817 3.09772 16.9997C3.09772 19.9178 4.25691 22.7164 6.3203 24.7797L8.4403 26.8997L24.0003 42.4597L39.5603 26.8997L41.6803 24.7797C42.7023 23.7582 43.513 22.5454 44.0661 21.2105C44.6193 19.8755 44.904 18.4447 44.904 16.9997C44.904 15.5548 44.6193 14.124 44.0661 12.789C43.513 11.4541 42.7023 10.2413 41.6803 9.21974V9.21974Z" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
@@ -1596,7 +1594,7 @@ Early-stage Investor</h6>
                       <p>Connect with your community—find new ways to volunteer or share a special skill. And coming soon, “Cause Groups.” Meet and chat directly with other mission-aligned Humanifiers.</p>
                     </div>
                   </div>
-                  <div className="feature__slide active"  id="slide__six">
+                  <div className="feature__slide active"  id="slide__six__mobile">
                     <div className="feature__title">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M26 4L6 28H24L22 44L42 20H24L26 4Z" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
