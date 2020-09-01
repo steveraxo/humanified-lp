@@ -13,7 +13,6 @@ import ATeamTitle from "../images/advisoryboard.svg"
 
 
 import TeamTitleMobile from "../images/TheTeam.svg"
-import scrollLock from 'scroll-lock';
 import Form from '../components/form/form'
 import MouseTooltip from 'react-sticky-mouse-tooltip';
 import Tilt from 'react-parallax-tilt';
