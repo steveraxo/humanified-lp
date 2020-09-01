@@ -14,12 +14,17 @@ const Layout = ({ children }) => {
   // ENDS SMOOTH SCROLLING //
   useEffect(() => {
 
+    setTimeout(function(){ 
+      var linkMont = document.createElement('link');
+      linkMont.id = 'montserrat__font';
+      linkMont.rel = 'stylesheet';
+      linkMont.href = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap';
+      document.head.appendChild(linkMont);
 
-    AOS.init({
-      disable: "mobile",
-      once: true, // whether animation should happen only once - while scrolling down
-      mirror: true, // whether elements should animate out while scrolling past them
-    })
+    }, 100);
+  
+
+
   })
 
   const data = useStaticQuery(graphql`
@@ -34,7 +39,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></link>
+
       <script>
         {`
           var _ss = _ss || [];

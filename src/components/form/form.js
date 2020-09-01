@@ -18,6 +18,7 @@ export default class form extends Component {
           messageStatus: "",
           status: "invalid",
           formStatus: false, 
+          recaptchaField: false,
         };
     
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -135,6 +136,12 @@ export default class form extends Component {
     }
     componentDidMount(){
       document.getElementById('submit__form').disabled = true;
+
+      setTimeout(function(){
+        this.setState({
+          recaptchaField: true, 
+        });
+      }.bind(this), 400)
     }
     render() {
         return (
@@ -175,12 +182,17 @@ export default class form extends Component {
                 : ""
               }
             </div> */}
-            <div className="g__recaptcha">
-              <ReCAPTCHA
-                sitekey="6LcS6MUZAAAAALJ1rm0gaUXxEnIY6k1EHidCmIwx"
-                onChange={this.captchaCallback}
-              />
-            </div>
+            {
+              this.state.recaptchaField
+              ?<div className="g__recaptcha">
+                  <ReCAPTCHA
+                    sitekey="6LcS6MUZAAAAALJ1rm0gaUXxEnIY6k1EHidCmIwx"
+                    onChange={this.captchaCallback}
+                  />
+                </div>
+              :""
+            }
+
             <div>
              {
                 this.state.formStatus
