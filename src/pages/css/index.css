@@ -20,6 +20,15 @@ body{
     line-height: 28px;
     margin-top: 20px;
 }
+.not__found__page{
+    background: #1C1A1B;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 #close__video{
     color: white;
     background: #2C13DD;
@@ -53,7 +62,7 @@ body{
 .privacy__wrapper h2{
     line-height: 18px;
 }
-.privacy__wrapper a, #footer a{
+.privacy__wrapper a, #footer a, .not__found__page a{
     color: #FFC4DD;
     text-decoration:none;
     font-weight: bold;
@@ -678,7 +687,7 @@ section{
     display: flex;
     flex-direction: column;
 }
-.founder__data h5{
+.founder__data h3{
     font-family: Montserrat;
       font-display: swap;
 

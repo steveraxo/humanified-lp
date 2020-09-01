@@ -594,7 +594,7 @@ class Index extends Component {
                     <span>Marla</span>
                     <span>González</span>
                   </h2>
-                  <h5>FOUNDER &amp; CEO</h5>
+                  <h3>FOUNDER &amp; CEO</h3>
                 </div>
               </div>
               <div className="col-sm-12 col-md-12 col-lg-6 founder__info">
