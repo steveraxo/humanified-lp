@@ -745,7 +745,7 @@ section{
 #meet-the-team .team__member__info.show{
     opacity: 1;
 }
-#meet-the-team .team__member__info h5{
+#meet-the-team .team__member__info h2{
     font-family: Montserrat;
       font-display: swap;
 
@@ -765,7 +765,7 @@ section{
     color: #FFC4DD;
     margin: 0;
 }
-#meet-the-team .team__member__info h6{
+#meet-the-team .team__member__info h3{
     font-family: Montserrat;
       font-display: swap;
 
@@ -2532,11 +2532,11 @@ section{
     #meet-the-team .team__member__info.show{
         opacity: 1!important;
     }
-    #meet-the-team .team__member__info h5{
+    #meet-the-team .team__member__info h2{
         font-size: 16px;
         line-height: 104.9%;
     }
-    #meet-the-team .team__member__info h6{
+    #meet-the-team .team__member__info h3{
         font-size: 11px;
         line-height: 104.9%;
     }
@@ -3432,11 +3432,11 @@ section{
     #meet-the-team .team__member__info.show{
         opacity: 1!important;
     }
-    #meet-the-team .team__member__info h5{
+    #meet-the-team .team__member__info h2{
         font-size: 16px;
         line-height: 104.9%;
     }
-    #meet-the-team .team__member__info h6{
+    #meet-the-team .team__member__info h3{
         font-size: 11px;
         line-height: 104.9%;
     }

@@ -6,7 +6,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-anchor-links`,
-    "gatsby-plugin-remove-console",
+    `gatsby-plugin-remove-console`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

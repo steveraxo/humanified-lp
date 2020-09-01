@@ -655,14 +655,14 @@ class Index extends Component {
                     >
                       <div className="team__member__info " id="team__aone-member">
                         <div className="team__member__info__name">
-                          <h5>
+                          <h2>
                             <span>Alison </span>
                             <span>Wyatt</span>
-                          </h5>
-                          <h6>
+                          </h2>
+                          <h3>
                             Angel Investor, <br />
                             Former President, <br /> Girlboss
-                          </h6>
+                          </h3>
                         </div>
                       </div>
                     </MouseTooltip>
@@ -698,14 +698,14 @@ class Index extends Component {
                     >
                       <div className="team__member__info " id="team__atwo-member">
                         <div className="team__member__info__name">
-                          <h5>
+                          <h2>
                             <span>Hitha </span>
                             <span>Palepu</span>
-                          </h5>
-                          <h6>
+                          </h2>
+                          <h3>
                             CEO Rhoshan <br /> Pharmaceuticals, <br />
                             Early-stage Investor
-                          </h6>
+                          </h3>
                         </div>
                       </div>
                     </MouseTooltip>
@@ -744,14 +744,14 @@ class Index extends Component {
                         id="team__athree-member"
                       >
                         <div className="team__member__info__name">
-                          <h5>
+                          <h2>
                             <span>Steve</span>
                             <span>Lubin</span>
-                          </h5>
-                          <h6>
+                          </h2>
+                          <h3>
                             Technology Executive <br /> (Multiple Exits), <br />{" "}
                             Venture Capitalist
-                          </h6>
+                          </h3>
                         </div>
                       </div>
                     </MouseTooltip>
@@ -923,13 +923,13 @@ class Index extends Component {
                         id="team__oneone-member"
                       >
                         <div className="team__member__info__name">
-                          <h5>
+                          <h2>
                             <span>Neil </span>
                             <span>St. Clair</span>
-                          </h5>
-                          <h6>
+                          </h2>
+                          <h3>
                             Chief Operating <br /> Officer
-                          </h6>
+                          </h3>
                         </div>
                       </div>
                     </MouseTooltip>
@@ -968,13 +968,13 @@ class Index extends Component {
                         id="team__twoone-member"
                       >
                         <div className="team__member__info__name">
-                          <h5>
+                          <h2>
                             <span>Suren </span>
                             <span>Sahaydachny</span>
-                          </h5>
-                          <h6>
+                          </h2>
+                          <h3>
                             Chief Product <br /> Officer
-                          </h6>
+                          </h3>
                         </div>
                       </div>
                     </MouseTooltip>
@@ -1013,13 +1013,13 @@ class Index extends Component {
                         id="team__threeone-member"
                       >
                         <div className="team__member__info__name">
-                          <h5>
+                          <h2>
                             <span>Natalia</span>
                             <span>Cacheiro</span>
-                          </h5>
-                          <h6>
+                          </h2>
+                          <h3>
                             UX/UI <br /> Director
-                          </h6>
+                          </h3>
                         </div>
                       </div>
                     </MouseTooltip>
@@ -1055,13 +1055,13 @@ class Index extends Component {
                     >
                       <div className="team__member__info " id="team__four-member">
                         <div className="team__member__info__name">
-                          <h5>
+                          <h2>
                             <span>Gen</span>
                             <span>Keillor</span>
-                          </h5>
-                          <h6>
+                          </h2>
+                          <h3>
                             Associate <br /> Account <br /> Director
-                          </h6>
+                          </h3>
                         </div>
                       </div>
                     </MouseTooltip>
@@ -1102,14 +1102,14 @@ class Index extends Component {
                         id="team__eight-member"
                       >
                         <div className="team__member__info__name">
-                          <h5>
+                          <h2>
                             <span>Rachel </span>
                             <span>Chada</span>
-                          </h5>
-                          <h6>
+                          </h2>
+                          <h3>
                             Strategy <br />
                             Director
-                          </h6>
+                          </h3>
                         </div>
                       </div>
                     </MouseTooltip>
@@ -1145,13 +1145,13 @@ class Index extends Component {
                     >
                       <div className="team__member__info " id="team__five-member">
                         <div className="team__member__info__name">
-                          <h5>
+                          <h2>
                             <span>Ornella</span>
                             <span>Castellini</span>
-                          </h5>
-                          <h6>
+                          </h2>
+                          <h3>
                             UX/UI <br /> Designer
-                          </h6>
+                          </h3>
                         </div>
                       </div>
                     </MouseTooltip>
@@ -1190,14 +1190,14 @@ class Index extends Component {
                         id="team__eleven-member"
                       >
                         <div className="team__member__info__name">
-                          <h5>
+                          <h2>
                             <span>Oscar</span>
                             <span>Rivera</span>
-                          </h5>
-                          <h6>
+                          </h2>
+                          <h3>
                             Chief
                             <br /> Creative Officer
-                          </h6>
+                          </h3>
                         </div>
                       </div>
                     </MouseTooltip>
@@ -1235,13 +1235,13 @@ class Index extends Component {
                     >
                       <div className="team__member__info " id="team__six-member">
                         <div className="team__member__info__name">
-                          <h5>
+                          <h2>
                             <span>Lillinette </span>
                             <span>Díaz</span>
-                          </h5>
-                          <h6>
+                          </h2>
+                          <h3>
                             Content <br /> strategist
-                          </h6>
+                          </h3>
                         </div>
                       </div>
                     </MouseTooltip>
@@ -1280,13 +1280,13 @@ class Index extends Component {
                         id="team__seven-member"
                       >
                         <div className="team__member__info__name">
-                          <h5>
+                          <h2>
                             <span>Kike </span>
                             <span>Sanchez</span>
-                          </h5>
-                          <h6>
+                          </h2>
+                          <h3>
                             Content <br /> Manager
-                          </h6>
+                          </h3>
                         </div>
                       </div>
                     </MouseTooltip>
@@ -1322,13 +1322,13 @@ class Index extends Component {
                     >
                       <div className="team__member__info " id="team__nine-member">
                         <div className="team__member__info__name">
-                          <h5>
+                          <h2>
                             <span>Avaz </span>
                             <span>Bokiev</span>
-                          </h5>
-                          <h6>
+                          </h2>
+                          <h3>
                             Lead <br /> Developer
-                          </h6>
+                          </h3>
                         </div>
                       </div>
                     </MouseTooltip>
@@ -1364,11 +1364,11 @@ class Index extends Component {
                     >
                       <div className="team__member__info " id="team__ten-member">
                         <div className="team__member__info__name">
-                          <h5>
+                          <h2>
                             <span>Gabriela </span>
                             <span>Carde</span>
-                          </h5>
-                          <h6>Jr. Counsel </h6>
+                          </h2>
+                          <h3>Jr. Counsel </h3>
                         </div>
                       </div>
                     </MouseTooltip>
