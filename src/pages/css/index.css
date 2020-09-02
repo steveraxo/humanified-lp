@@ -4,6 +4,9 @@ body{
 .input__fields{
     position: relative;
 }
+#footer .right p{
+    margin: 0px;
+}
 .g__recaptcha{
     margin-bottom: 25px;
 }
@@ -1967,6 +1970,9 @@ section{
 
 @media (max-width: 815px){
     #footer .right p {
+        margin-top: 40px;
+    }
+    #footer .right p {
         font-size: 13px;
         display: flex;
         flex-direction: column;
@@ -2422,7 +2428,7 @@ section{
         background: #2C13DD;
     }
     .nav__button {
-        top: 35px;
+        top: 40px;
         right: 35px;
     }
     .top__shadow{

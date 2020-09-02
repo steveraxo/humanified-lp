@@ -3,6 +3,7 @@ import React, { Component } from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import "./header.css"
 import ArrowDown from "../images/arrow-down.svg"
+import HumanifiedLogo from "../images/humanifiedlogo.svg"
 
 export default class header extends Component {
   toggleMenu(event) {
@@ -90,7 +91,10 @@ export default class header extends Component {
                     textDecoration: `none`,
                   }}
                 >
-                  humanified
+                  <HumanifiedLogo style={{
+    
+    width: `230px`
+  }} />
                 </a>
               </div>
               <div className="col-lg-7 menu__column desktop">

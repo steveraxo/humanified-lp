@@ -2,9 +2,8 @@ import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Cursor from "./cursor/cursor"
-import AOS from "aos"
 import Header from "./header"
-import { Link } from "gatsby"
+import HumanifiedLogo from "../images/humanifiedlogo.svg"
 
 import "./layout.css"
 import "aos/dist/aos.css"
@@ -89,16 +88,21 @@ const Layout = ({ children }) => {
       <section id="footer">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-sm-12 col-md-12 col-lg-3 left">
-              <a
-                href="/"
-                style={{
-                  color: `white`,
-                  textDecoration: `none`,
-                }}
-              >
-                <p>humanified</p>
-              </a>
+            <div className="col-sm-12 col-md-12 col-lg-3 left" style={{
+                    padding: `0px`,
+                  }}>
+            <a
+                  href="/"
+                  style={{
+                    color: `white`,
+                    textDecoration: `none`,
+                  }}
+                >
+                  <HumanifiedLogo style={{
+    
+                    width: `230px`
+                  }} />
+                </a>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-9 right ">
               <p>
