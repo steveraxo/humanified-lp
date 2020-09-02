@@ -2270,22 +2270,18 @@ class Index extends Component {
                         </svg>
 
                         <h3>
-                          Challenge <br />
-                          Yourself
+                        Take <br/> Action
                         </h3>
                       </div>
                       <div className="feature__description">
                         <p>
-                          With the “Challenge” feature you can create or
-                          participate in different activism every day. Challenges
-                          are unique contests to get donations matched or to raise
-                          awareness through pass-it-along actions.
+                        With our “Challenge” feature you can create or participate in different activism every day. Challenges start online, but create change offline by raising awareness or donations.
                         </p>
                       </div>
                     </div>
                   </div>
                   <div className="slider__two">
-                    <div className="feature__slide" onFocus={this.showFeature} onClick={this.showFeature} onMouseOver={this.showFeature} id="slide__four">
+                    {/* <div className="feature__slide" onFocus={this.showFeature} onClick={this.showFeature} onMouseOver={this.showFeature} id="slide__four">
                       <div className="feature__title">
                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="1">
@@ -2299,7 +2295,7 @@ class Index extends Component {
                       <div className="feature__description">
                         <p>With our “Challenge” feature you can create or participate in different activism every day. Challenges start online, but create change offline by raising awareness or donations.</p>
                       </div>
-                    </div>
+                    </div> */}
                     <div
                       className="feature__slide"
                       tabIndex="0"
@@ -2491,20 +2487,18 @@ class Index extends Component {
                         </svg>
 
                         <h3>
-                          Challenge <br />
-                          Yourself
+                        Take <br/> Action
+
                         </h3>
                       </div>
                       <div className="feature__description">
                         <p>
-                          With the “Challenge” feature you can create or
-                          participate in different activism every day. Challenges
-                          are unique contests to get donations matched or to raise
-                          awareness through pass-it-along actions.
+                        With our “Challenge” feature you can create or participate in different activism every day. Challenges start online, but create change offline by raising awareness or donations.
+
                         </p>
                       </div>
                     </div>
-                    <div className="feature__slide active"  id="slide__four__mobile">
+                    {/* <div className="feature__slide active"  id="slide__four__mobile">
                       <div className="feature__title">
                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="1">
@@ -2518,7 +2512,7 @@ class Index extends Component {
                       <div className="feature__description">
                         <p>With our “Challenge” feature you can create or participate in different activism every day. Challenges start online, but create change offline by raising awareness or donations.</p>
                       </div>
-                    </div>
+                    </div> */}
                     <div
                       className="feature__slide active"
                       id="five"
@@ -2546,7 +2540,7 @@ class Index extends Component {
                       </div>
                       <div className="feature__description">
                         <p>
-                          Connect with your community–find new ways to volunteer or share a special skill. And coming soon, “Cause Groups” allow you to meet and chat directly with those who share your passions.
+                        Connect with your community–find new ways to volunteer or share a special skill. And coming soon, “Cause Groups” allow you to meet and chat directly with those who share your passions.
                         </p>
                       </div>
                     </div>

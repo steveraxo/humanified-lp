@@ -89,7 +89,7 @@ const Layout = ({ children }) => {
       <section id="footer">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-sm-12 col-lg-3 left">
+            <div className="col-sm-12 col-md-12 col-lg-3 left">
               <a
                 href="/"
                 style={{
@@ -100,12 +100,15 @@ const Layout = ({ children }) => {
                 <p>humanified</p>
               </a>
             </div>
-            <div className="col-sm-12 col-lg-9 right ">
+            <div className="col-sm-12 col-md-12 col-lg-9 right ">
               <p>
                 © Humanified 2020. Trademarks and brands are the property of
                 their respective owners. &nbsp; &nbsp;{" "}
+                <span>
                 <a href="/privacy-policy"> Privacy Policy</a> &nbsp; |{" "}
                 <a href="/terms-and-conditions"> &nbsp; Terms of Use </a>
+                </span>
+                
               </p>
             </div>
           </div>
