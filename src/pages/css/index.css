@@ -2884,6 +2884,13 @@ section{
     }
 }
 @media (max-width: 1024px) and (orientation: landscape) {
+    #mission__description {
+        margin-top: 0px;
+    }
+    .advisory #team__title {
+        margin-top: 0px;
+        position: relative!important;
+    }
     .feature__slide .feature__description p {
         font-size: 16px;
         line-height: 28px;
@@ -3279,6 +3286,9 @@ section{
     .phone__image {
         left: unset;
     }
+    .slider__mobile {
+        padding: 0 170px;
+    }
 }
 @media (max-width: 667px) and (orientation: landscape) {
     .slider__mobile {
@@ -3286,6 +3296,14 @@ section{
     }
     #features svg {
         left: -65%;
+    }
+    
+    
+}
+@media(max-width: 640px) and (orientation: landscape) {
+    #www__info h3 {
+        font-size: 35px;
+        line-height: 135%;
     }
 }
 @media(max-width: 600px) and (orientation: landscape) {
