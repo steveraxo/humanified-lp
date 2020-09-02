@@ -442,9 +442,10 @@ class Index extends Component {
                   </div>
                   <div className="wt-hero-header-blend">
                     <h1 id="home__hero__title">
+                      
                       <span>The Social</span>
-                      <span>Impact </span>
-                      <span>Network</span>
+                      <span>Impact Social</span>
+                      <span> Network</span>
                     </h1>
                     <div className="play__button">
                       <div
@@ -486,11 +487,10 @@ class Index extends Component {
               <div className="col-lg-12 pre__mission__wrapper">
                 <div className="pre__mission__title">
                   <h2 id="pre__mission__title">
-                    <span className="desktop">A social network, </span>
-                    <span className="desktop">for difference makers. </span>
+                    <span className="desktop">Make Change Happen</span>
 
                     <span className="mobile">
-                      A social network for difference makers.
+                      Make Change Happen
                     </span>
                   </h2>
                 </div>
@@ -538,21 +538,15 @@ class Index extends Component {
                   id="mission__description"
                 >
                   <p>
-                    Humanified is the social network for making change happen.
-                    We amplify online activism* and provide real ways to
-                    volunteer, donate, and advocate for verified causes and
-                    nonprofits.
+                  With our feeds flooded with stories of tragedies and injustices, it’s daunting to think about how one person can make a change in the world. At the same time, stories of advocacy and necessary resources get lost in the white noise of selfies, memes, and dance videos.  
                   </p>
                   <p>
-                    We eliminate traditional social media's white noise to make
-                    voices heard, to move beyond performative activism to
-                    action, and to lift up new movements and moments.
-                    #WhatDidYouDo?
+                  Humanified is the first social media network that is built for doing good.
+
                   </p>
-                  <p className="smaller__text">
-                    {" "}
-                    <strong>*64%</strong> of people are more likely to take real
-                    action after posting or following a cause or nonprofit.
+                  <p >
+                  Together, we empower people to show their compassionate side in real time, not just through online activism, but by providing real ways to volunteer, donate, and raise awareness. #WhatDidYouDo?
+
                   </p>
                 </div>
               </div>
@@ -2034,13 +2028,8 @@ class Index extends Component {
               <div className="row">
                 <div className="col-lg-12">
                   <h3 id="www__info__two">
-                    Humanified is the app for people, nonprofits, and even
-                    companies{" "}
-                    <span>
-                      {" "}
-                      to engage in creative advocacy, meet other mission-aligned
-                      individuals, and take real action.{" "}
-                    </span>
+                    Humanified is the first purpose-built social network for social impact that not only connects users and non-profits, <span>but creates a space for creative advocacy and meeting other mission-aligned individuals.</span> 
+
                   </h3>
                 </div>
               </div>
@@ -2296,7 +2285,7 @@ class Index extends Component {
                     </div>
                   </div>
                   <div className="slider__two">
-                    {/* <div className="feature__slide" onFocus={this.showFeature} onClick={this.showFeature} onMouseOver={this.showFeature} id="slide__four">
+                    <div className="feature__slide" onFocus={this.showFeature} onClick={this.showFeature} onMouseOver={this.showFeature} id="slide__four">
                       <div className="feature__title">
                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="1">
@@ -2304,12 +2293,13 @@ class Index extends Component {
                         </g>
                         </svg>
 
-                        <h3>Connect  <br/>More Deeply</h3>
+                        <h3>Take <br/> Action
+</h3>
                       </div>
                       <div className="feature__description">
-                        <p>Feel closer to the causes that you care about with the people that you love.</p>
+                        <p>With our “Challenge” feature you can create or participate in different activism every day. Challenges start online, but create change offline by raising awareness or donations.</p>
                       </div>
-                    </div> */}
+                    </div>
                     <div
                       className="feature__slide"
                       tabIndex="0"
@@ -2341,10 +2331,7 @@ class Index extends Component {
                       </div>
                       <div className="feature__description">
                         <p>
-                          Connect with your community—find new ways to volunteer
-                          or share a special skill. And coming soon, “Cause
-                          Groups.” Meet and chat directly with other
-                          mission-aligned Humanifiers.
+                          Connect with your community–find new ways to volunteer or share a special skill. And coming soon, “Cause Groups” allow you to meet and chat directly with those who share your passions.
                         </p>
                       </div>
                     </div>
@@ -2517,7 +2504,7 @@ class Index extends Component {
                         </p>
                       </div>
                     </div>
-                    {/* <div className="feature__slide active"  id="slide__four__mobile">
+                    <div className="feature__slide active"  id="slide__four__mobile">
                       <div className="feature__title">
                       <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="1">
@@ -2525,12 +2512,13 @@ class Index extends Component {
                         </g>
                         </svg>
 
-                        <h3>Connect  <br/>More Deeply</h3>
+                        <h3>Take <br/> Action
+</h3>
                       </div>
                       <div className="feature__description">
-                        <p>Feel closer to the causes that you care about with the people that you love.</p>
+                        <p>With our “Challenge” feature you can create or participate in different activism every day. Challenges start online, but create change offline by raising awareness or donations.</p>
                       </div>
-                    </div> */}
+                    </div>
                     <div
                       className="feature__slide active"
                       id="five"
@@ -2558,10 +2546,7 @@ class Index extends Component {
                       </div>
                       <div className="feature__description">
                         <p>
-                          Connect with your community—find new ways to volunteer
-                          or share a special skill. And coming soon, “Cause
-                          Groups.” Meet and chat directly with other
-                          mission-aligned Humanifiers.
+                          Connect with your community–find new ways to volunteer or share a special skill. And coming soon, “Cause Groups” allow you to meet and chat directly with those who share your passions.
                         </p>
                       </div>
                     </div>

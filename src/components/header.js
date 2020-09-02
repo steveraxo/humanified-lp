@@ -111,11 +111,11 @@ export default class header extends Component {
                         What we do
                       </AnchorLink>
                     </li>
-                    {/* <li>
-                        <AnchorLink to="/#contact" title="Contact">
-                          Contact
-                        </AnchorLink>
-                      </li> */}
+                    <li>
+                      <AnchorLink to="https://medium.com/@humanified" title="Blog">
+                        Blog
+                      </AnchorLink>
+                    </li>
                     <li>
                       <AnchorLink
                         to="/#contact"
@@ -153,11 +153,11 @@ export default class header extends Component {
                         What we do
                       </AnchorLink>
                     </li>
-                    {/* <li>
-                        <AnchorLink to="/#contact" title="Contact">
-                          Contact
-                        </AnchorLink>
-                      </li> */}
+                    <li>
+                      <AnchorLink to="https://medium.com/@humanified" title="Blog">
+                        Blog
+                      </AnchorLink>
+                    </li>
                     <li>
                       <AnchorLink
                         to="/#contact-us"

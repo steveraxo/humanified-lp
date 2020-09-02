@@ -1400,7 +1400,7 @@ section{
     opacity: 0;
     left: -100px;
     right: 0px;
-    top: 30px;
+    top: unset;
     bottom: 0px;
     transition: all 0.4s cubic-bezier(0.83, 0, 0.17, 1);
 
@@ -1675,6 +1675,9 @@ section{
     
 }
 @media (max-width: 1024px){
+    .founder__info h2 {
+        font-size: 50px;
+    }
     .privacy__wrapper {
         padding: 270px 130px 140px;
     }
