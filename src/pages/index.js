@@ -295,10 +295,23 @@ class Index extends Component {
         this.setState({
           pageLoaded: true,
         })
+
+        document.querySelectorAll(".team__advisory__title")[0].style.position = "absolute";
+
       }.bind(this),
       1000
     )
     
+    if (window.innerWidth < 650) {
+      setTimeout(
+        function () {
+          document.querySelectorAll(".team__advisory__title")[0].style.position = "relative";
+  
+        }.bind(this),
+        1300
+      )
+    }
+
     AOS.init()
 
     this.parallaxContainer()
@@ -613,7 +626,7 @@ class Index extends Component {
           ?
          <>
           <section className="advisory team__section" id="meet-the-team">
-            <ATeamTitle id="team__title" className={""} />
+            <ATeamTitle id="team__title" className={"team__advisory__title"} />
             <div className="container">
               <div className="row team__row">
                 {/* Team members for desktop */}
