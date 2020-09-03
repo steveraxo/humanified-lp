@@ -14,6 +14,7 @@ import TeamTitle from "../images/the_team.svg"
 import ATeamTitle from "../images/advisoryboard.svg"
 import AOS from "aos"
 import { Stream } from "@cloudflare/stream-react";
+import Helmet from "react-helmet"
 
 
 import TeamTitleMobile from "../images/TheTeam.svg"
@@ -414,45 +415,48 @@ class Index extends Component {
       swipeToSlide: true,
       swipe: true,
       afterChange: function (index) {
-        // document
-        //   .querySelectorAll(".phone__slide.active")[0]
-        //   .classList.remove("active")
+        document
+          .querySelectorAll(".phone__slide.active")[0]
+          .classList.remove("active")
 
-        // var currentSlideId = document.querySelectorAll(
-        //   ".slick-active .feature__slide"
-        // )[0].id
+        var currentSlideId = document.querySelectorAll(
+          ".slick-active .feature__slide"
+        )[0].id
 
-        // document
-        //   .querySelectorAll(`.${currentSlideId}`)[0]
-        //   .classList.add("active")
+        document
+          .querySelectorAll(`.${currentSlideId}`)[0]
+          .classList.add("active")
       },
     }
 
     return (
       <Layout>
-        <script>
-          {`
-            var _ss = _ss || [];
-            _ss.push(['_setDomain', 'https://koi-3QNMLPDA8K.marketingautomation.services/net']);
-            _ss.push(['_setAccount', 'KOI-4AUKC53J2G']);
-            _ss.push(['_trackPageView']);
-            (function() {
-                var ss = document.createElement('script');
-                ss.type = 'text/javascript'; ss.async = true;
-                ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-3QNMLPDA8K.marketingautomation.services/client/ss.js?ver=2.4.0';
-                var scr = document.getElementsByTagName('script')[0];
-                scr.parentNode.insertBefore(ss, scr);
-            })();
+        <Helmet>
+          <script>
+            {`
+              var _ss = _ss || [];
+              _ss.push(['_setDomain', 'https://koi-3QNMLPDA8K.marketingautomation.services/net']);
+              _ss.push(['_setAccount', 'KOI-4AUKC53J2G']);
+              _ss.push(['_trackPageView']);
+              (function() {
+                  var ss = document.createElement('script');
+                  ss.type = 'text/javascript'; ss.async = true;
+                  ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-3QNMLPDA8K.marketingautomation.services/client/ss.js?ver=2.4.0';
+                  var scr = document.getElementsByTagName('script')[0];
+                  scr.parentNode.insertBefore(ss, scr);
+              })();
 
 
-            var callThisOnReturn = function(resp) {
-              if (resp) {
-                  var SharpSpringTracking = resp.trackingID;
-              }
-            };
-            _ss.push(['_setResponseCallback', callThisOnReturn]); 
-          `}
-        </script>
+              var callThisOnReturn = function(resp) {
+                if (resp) {
+                    var SharpSpringTracking = resp.trackingID;
+                }
+              };
+              _ss.push(['_setResponseCallback', callThisOnReturn]); 
+            `}
+          </script>
+
+        </Helmet>
 
         <SEO title="Humanified | The Social Impact Network" />
         
@@ -2432,7 +2436,7 @@ class Index extends Component {
                   <Slider {...settings} ref={c => (this.slider = c)}>
                     <div
                       className="feature__slide active"
-                      id="one"
+                      id="slide__one"
                     >
                       <div className="feature__title">
                         <svg
@@ -2464,7 +2468,7 @@ class Index extends Component {
                     </div>
                     <div
                       className="feature__slide active"
-                      id="two"
+                      id="slide__two"
                     >
                       <div className="feature__title">
                         <svg
@@ -2504,7 +2508,7 @@ class Index extends Component {
                     </div>
                     <div
                       className="feature__slide active"
-                      id="three"
+                      id="slide__three"
                     >
                       <div className="feature__title">
                         <svg
@@ -2573,7 +2577,7 @@ class Index extends Component {
                     </div> */}
                     <div
                       className="feature__slide active"
-                      id="five"
+                      id="slide__five"
                     >
                       <div className="feature__title">
                         <svg
@@ -2604,7 +2608,7 @@ class Index extends Component {
                     </div>
                     <div
                       className="feature__slide active"
-                      id="six"
+                      id="slide__six"
                     >
                       <div className="feature__title">
                         <svg
@@ -2710,7 +2714,7 @@ class Index extends Component {
                       <ul>
                         <li className={"instagram"}>
                           <a
-                            href="https://www.instagram.com/humanified/?hl=en"
+                            href="https://koi-3qnmlpda8k.marketingautomation.services/net/m?md=HkEl1L3NrpRz6DVuxtZsNvVuxkvtvSrx"
                             target="_BLANK"
                           >
                             <svg
@@ -2730,7 +2734,7 @@ class Index extends Component {
                         </li>
                         <li className={"facebook"}>
                           <a
-                            href="https://www.facebook.com/humanified/"
+                            href="https://koi-3QNMLPDA8K.marketingautomation.services/net/m?md=m0BcSAUD00Vp8ovttR1hA99OwBpzZVY9"
                             target="_BLANK"
                           >
                             <svg
@@ -2750,7 +2754,7 @@ class Index extends Component {
                         </li>
                         <li className={"linkedin"}>
                           <a
-                            href="https://www.linkedin.com/company/humanified/"
+                            href="https://koi-3qnmlpda8k.marketingautomation.services/net/m?md=YBlCghapbIzm7KXhow0NyU1lhSW1cYI8"
                             target="_BLANK"
                           >
                             <svg
@@ -2767,7 +2771,7 @@ class Index extends Component {
                         </li>
                         <li className={"twitter"}>
                           <a
-                            href="https://twitter.com/humanifiedapp"
+                            href="https://koi-3QNMLPDA8K.marketingautomation.services/net/m?md=5JwCQMsuhXa14%2BSmy7hmYqPJHWdaNlzw"
                             target="_BLANK"
                           >
                             <svg
