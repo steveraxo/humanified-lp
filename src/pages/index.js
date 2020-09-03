@@ -440,7 +440,7 @@ class Index extends Component {
         <Helmet>
 
           <SEO title="Humanified | The Social Impact Network" />
-          
+          <title>Humanified | The Social Impact Network"</title>
           <meta name="viewport" content="width=device-width"></meta>
           <meta charset="utf-8"></meta>
           <meta http-equiv="Content-Language" content="en"></meta>
