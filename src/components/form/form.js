@@ -93,7 +93,7 @@ export default class form extends Component {
 
         if (typeof window !== "undefined") {
           if (window.fbq != null) {
-            window.fbq("track", "PageView")
+            window.fbq('track', 'CompleteRegistration');
           }
         }
       } else {
