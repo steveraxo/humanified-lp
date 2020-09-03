@@ -13,6 +13,8 @@ import DownArrow from "../images/downArrow.svg"
 import TeamTitle from "../images/the_team.svg"
 import ATeamTitle from "../images/advisoryboard.svg"
 import AOS from "aos"
+import { Stream } from "@cloudflare/stream-react";
+
 
 import TeamTitleMobile from "../images/TheTeam.svg"
 import Form from "../components/form/form"
@@ -30,8 +32,10 @@ class Index extends Component {
     this.state = {
       isMouseTooltipVisible: false,
       pageLoaded: false,
+      videoPlaying: false,
     }
 
+    this.playVideo = this.playVideo.bind(this)
     this.showInfo = this.showInfo.bind(this)
     this.hideInfo = this.hideInfo.bind(this)
   }
@@ -75,38 +79,47 @@ class Index extends Component {
     }
   }
   playVideo() {
-    var mediaVideo = document.getElementById("homepage__header__video")
-
-    mediaVideo.onended = function () {
-      mediaVideo.classList.remove("playing")
-      document
-        .querySelectorAll(".hero__wrapper")[0]
-        .classList.remove("fade__out")
-      document.getElementById("close__video").classList.remove("show")
+    if(!this.state.videoPlaying){
+      this.setState({
+        videoPlaying: true,
+      })
+    }else{
+      this.setState({
+        videoPlaying: false,
+      })
     }
+    // var mediaVideo = document.getElementById("homepage__header__video")
 
-    // if video status is changed to "paused", then change control button to "Continue Play"
-    mediaVideo.onpause = function () {
-      mediaVideo.classList.remove("playing")
-      document
-        .querySelectorAll(".hero__wrapper")[0]
-        .classList.remove("fade__out")
-      document.getElementById("close__video").classList.remove("show")
-    }
+    // mediaVideo.onended = function () {
+    //   mediaVideo.classList.remove("playing")
+    //   document
+    //     .querySelectorAll(".hero__wrapper")[0]
+    //     .classList.remove("fade__out")
+    //   document.getElementById("close__video").classList.remove("show")
+    // }
 
-    if (mediaVideo.paused) {
-      mediaVideo.play()
-      document.querySelectorAll(".hero__wrapper")[0].classList.add("fade__out")
-      mediaVideo.classList.add("playing")
-      document.getElementById("close__video").classList.add("show")
-    } else {
-      mediaVideo.pause()
-      document
-        .querySelectorAll(".hero__wrapper")[0]
-        .classList.remove("fade__out")
-      mediaVideo.classList.remove("playing")
-      document.getElementById("close__video").classList.remove("show")
-    }
+    // // if video status is changed to "paused", then change control button to "Continue Play"
+    // mediaVideo.onpause = function () {
+    //   mediaVideo.classList.remove("playing")
+    //   document
+    //     .querySelectorAll(".hero__wrapper")[0]
+    //     .classList.remove("fade__out")
+    //   document.getElementById("close__video").classList.remove("show")
+    // }
+
+    // if (mediaVideo.paused) {
+    //   mediaVideo.play()
+    //   document.querySelectorAll(".hero__wrapper")[0].classList.add("fade__out")
+    //   mediaVideo.classList.add("playing")
+    //   document.getElementById("close__video").classList.add("show")
+    // } else {
+    //   mediaVideo.pause()
+    //   document
+    //     .querySelectorAll(".hero__wrapper")[0]
+    //     .classList.remove("fade__out")
+    //   mediaVideo.classList.remove("playing")
+    //   document.getElementById("close__video").classList.remove("show")
+    // }
   }
   activatePulsing() {
     document
@@ -290,6 +303,10 @@ class Index extends Component {
   }
 
   componentDidMount() {
+    AOS.init()
+
+    this.parallaxContainer()
+
     setTimeout(
       function () {
         this.setState({
@@ -311,10 +328,6 @@ class Index extends Component {
         1300
       )
     }
-
-    AOS.init()
-
-    this.parallaxContainer()
 
     ;[...document.querySelectorAll(".navigation__header.mobile")].map(navItem =>
       navItem.addEventListener("click", function () {
@@ -388,7 +401,8 @@ class Index extends Component {
   render() {
     var images = this.props.data.allImageSharp.nodes
 
-    const isBrowser = typeof window !== `undefined`
+    const isBrowser = typeof window !== `undefined`;
+    const videoIdOrSignedUrl = "a7a2371893aad31b80e389ba7107825b";
 
     const settings = {
       dots: false,
@@ -425,14 +439,26 @@ class Index extends Component {
 
         <section className="homepage__header" id="home">
           <div className="top__shadow"> </div>
-          <div
-            className="close__video"
-            id={"close__video"}
-            onClick={this.playVideo}
-          >
-            ╳
-          </div>
-          <video
+          {
+            this.state.videoPlaying 
+            ?<div
+                className="close__video"
+                id={"close__video"}
+                onClick={this.playVideo}
+              >
+                ╳
+              </div>
+            :""
+          }
+          {
+            this.state.videoPlaying 
+            ?
+            <div id={"homepage__header__video"} >
+              <Stream controls src={videoIdOrSignedUrl} width="100%" height="100%" autoplay="true" controls="true" />
+            </div>
+            : ""
+          }
+          {/* <video
             playsInline=""
             controls=""
             preload="none"
@@ -443,7 +469,7 @@ class Index extends Component {
               src="https://rx.raxo.dev/wp-content/uploads/2020/05/Raxo-Reel-2019.mp4"
               type="video/mp4"
             />
-          </video>
+          </video> */}
           <div className="container hero__wrapper">
             <div className="row">
               <div className="col-lg-12">

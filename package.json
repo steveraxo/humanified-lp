@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@cloudflare/stream-react": "^0.1.5",
     "@loadable/component": "^5.13.1",
     "aos": "^2.3.4",
     "bootstrap": "^5.0.0-alpha1",
