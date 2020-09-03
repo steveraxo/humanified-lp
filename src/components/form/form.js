@@ -40,7 +40,7 @@ export default class form extends Component {
       })
     }
 
-    if (this.state.name.length === 0 && this.state.name.length < 4) {
+    if (this.state.name.length === 0 && this.state.name.length < 2) {
       this.setState({
         nameStatus: "invalid",
       })
@@ -71,7 +71,7 @@ export default class form extends Component {
         var xhr = new XMLHttpRequest()
         xhr.open(
           "POST",
-          `https://app-3QNMWRHCZE.marketingautomation.services/webforms/receivePostback/MzawMLEwMjM1BQA/960bba77-86d8-45e0-9e09-dcbc00b16c71/jsonp/?firstName=${sharpName}&lastName=${sharplName}&email=${this.state.email}&trackingid__sb=${SharpSpringTracking}`
+          `https://app-3QNMWRHCZE.marketingautomation.services/webforms/receivePostback/MzawMLEwMjQ0AgA/d1b0c5ce-5c39-4651-8a16-e4699dcd5d1a/jsonp/?firstName=${sharpName}&lastName=${sharplName}&email=${this.state.email}&trackingid__sb=${SharpSpringTracking}`
         )
         xhr.send()
 
@@ -165,7 +165,7 @@ export default class form extends Component {
             value={this.state.name}
           />
           {this.state.nameStatus === "invalid" ? (
-            <p className={"form__invalid"}>Please add your first name</p>
+            <p className={"form__invalid"}>Your first name is required</p>
           ) : (
             ""
           )}
@@ -180,7 +180,7 @@ export default class form extends Component {
             value={this.state.lname}
           />
           {this.state.lnameStatus === "invalid" ? (
-            <p className={"form__invalid"}>Please add your last name</p>
+            <p className={"form__invalid"}></p>
           ) : (
             ""
           )}
@@ -195,7 +195,7 @@ export default class form extends Component {
             value={this.state.email}
           />
           {this.state.emailStatus === "invalid" ? (
-            <p className={"form__invalid"}>Please add a valid email address</p>
+            <p className={"form__invalid"}>Your email address is required</p>
           ) : (
             ""
           )}

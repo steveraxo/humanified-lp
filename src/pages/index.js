@@ -158,11 +158,11 @@ class Index extends Component {
               "pre__mission__title"
             ).style.transform = `translateY(${finalX}px)`
           }
-          if (document.getElementById("home__hero__title") !== null) {
-            document.getElementById(
-              "home__hero__title"
-            ).style.transform = `translateY(${finalX}px)`
-          }
+          // if (document.getElementById("home__hero__title") !== null) {
+          //   document.getElementById(
+          //     "home__hero__title"
+          //   ).style.transform = `translateY(${finalX}px)`
+          // }
           if (document.querySelectorAll(".phone__image")[0] !== null) {
             document.querySelectorAll(
               ".phone__image"
@@ -240,9 +240,9 @@ class Index extends Component {
               document.getElementById(
                 "pre__mission__title"
               ).style.transform = `translateY(0px)`
-              document.getElementById(
-                "home__hero__title"
-              ).style.transform = `translateY(0px)`
+              // document.getElementById(
+              //   "home__hero__title"
+              // ).style.transform = `translateY(0px)`
               document.getElementById(
                 "phone__image"
               ).style.transform = `translateY(0px)`
@@ -356,9 +356,9 @@ class Index extends Component {
         document.getElementById(
           "pre__mission__title"
         ).style.transform = `translateY(0px)`
-        document.getElementById(
-          "home__hero__title"
-        ).style.transform = `translateY(0px)`
+        // document.getElementById(
+        //   "home__hero__title"
+        // ).style.transform = `translateY(0px)`
         document.getElementById(
           "phone__image"
         ).style.transform = `translateY(0px)`
@@ -1118,7 +1118,7 @@ class Index extends Component {
                             <span>Keillor</span>
                           </h2>
                           <h3>
-                            Associate <br /> Account <br /> Director
+                          Account <br/> director to <br/> Product 
                           </h3>
                         </div>
                       </div>
@@ -1581,7 +1581,7 @@ class Index extends Component {
                         <span>Keillor</span>
                       </h2>
                       <h3>
-                        Associate <br /> account <br /> director
+                      Account <br/> director to <br/> Product 
                       </h3>
                     </div>
                   </div>
