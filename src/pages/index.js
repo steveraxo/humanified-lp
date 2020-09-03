@@ -455,7 +455,9 @@ class Index extends Component {
               _ss.push(['_setResponseCallback', callThisOnReturn]); 
             `}
           </script>
-
+          <meta property="og:image" content="https://humanified.org/static/3963b21ac8def18531fe2bc85d40cb88/c5862/mask5.png"></meta>
+          <meta property="og:image:width" content="828"></meta>
+          <meta property="og:image:height" content="679"></meta>
         </Helmet>
 
         <SEO title="Humanified | The Social Impact Network" />
