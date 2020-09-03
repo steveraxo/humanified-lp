@@ -9,6 +9,12 @@ module.exports = {
     `gatsby-plugin-remove-console`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: '624158401859448',
+      },
+    },
+    {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-PGW75S8",
