@@ -1,0 +1,42 @@
+[[redirects]]
+from = "/terms/"
+to = "/terms-and-conditions/"
+status = 301
+force = false
+
+[[redirects]]
+from = "/humanified365/"
+to = "/"
+status = 301
+force = false
+
+[[redirects]]
+from = "/blog/"
+to = "https://medium.com/@humanified"
+status = 301
+force = false
+
+[[redirects]]
+from = "/terms/"
+to = "/project/allocaterite"
+status = 301
+force = false
+
+[[redirects]]
+from = "/contact/"
+to = "/#signup"
+status = 301
+force = false
+
+[[redirects]]
+from = "/change-makers/"
+to = "/#mission"
+status = 301
+force = false
+
+[[redirects]]
+from = "/about-us/"
+to = "/#mission"
+status = 301
+force = false
+
