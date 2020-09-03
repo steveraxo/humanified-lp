@@ -431,7 +431,7 @@ class Index extends Component {
     return (
       <Layout>
         <SEO title="Humanified | The Social Impact Network" />
-
+        
         <section className="homepage__header" id="home">
           <div className="top__shadow"> </div>
           {

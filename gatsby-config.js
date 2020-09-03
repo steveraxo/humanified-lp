@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Humanified`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `With our feeds flooded with stories of tragedies and injustices, it’s daunting to think about how one person can make a change in the world. At the same time, stories of advocacy and necessary resources get lost in the white noise of selfies, memes, and dance videos.`,
+    author: `Humanified`,
   },
   plugins: [
     `gatsby-plugin-anchor-links`,
