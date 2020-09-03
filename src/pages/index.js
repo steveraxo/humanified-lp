@@ -843,14 +843,14 @@ class Index extends Component {
                     id="team__one-membermobile"
                   >
                     <div className="team__member__info__name">
-                      <h5>
+                      <h2>
                         <span>Alison </span>
                         <span>Wyatt</span>
-                      </h5>
-                      <h6>
+                      </h2>
+                      <h3>
                         Angel Investor, <br />
                         Former President, <br /> Girlboss
-                      </h6>
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -883,14 +883,14 @@ class Index extends Component {
                     id="team__two-membermobile"
                   >
                     <div className="team__member__info__name">
-                      <h5>
+                      <h2>
                         <span>Hitha </span>
                         <span>Palepu</span>
-                      </h5>
-                      <h6>
+                      </h2>
+                      <h3>
                         CEO Rhoshan <br /> Pharmaceuticals, <br />
                         Early-stage Investor
-                      </h6>
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -923,14 +923,14 @@ class Index extends Component {
                     id="team__three-membermobile"
                   >
                     <div className="team__member__info__name">
-                      <h5>
+                      <h2>
                         <span>Steve</span>
                         <span>Lubin</span>
-                      </h5>
-                      <h6>
+                      </h2>
+                      <h3>
                         Technology Executive <br /> (Multiple Exits), <br />{" "}
                         Venture Capitalist
-                      </h6>
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -1460,13 +1460,13 @@ class Index extends Component {
                     id="team__onesix-membermobile"
                   >
                     <div className="team__member__info__name">
-                      <h5>
+                      <h2>
                         <span>Neil </span>
                         <span>St. Clair</span>
-                      </h5>
-                      <h6>
+                      </h2>
+                      <h3>
                         Chief Operating <br /> Officer
-                      </h6>
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -1498,13 +1498,13 @@ class Index extends Component {
                     id="team__twosix-membermobile"
                   >
                     <div className="team__member__info__name">
-                      <h5>
+                      <h2>
                         <span>Suren </span>
                         <span>Sahaydachny</span>
-                      </h5>
-                      <h6>
+                      </h2>
+                      <h3>
                         Chief Product <br /> Officer
-                      </h6>
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -1536,13 +1536,13 @@ class Index extends Component {
                     id="team__threesix-membermobile"
                   >
                     <div className="team__member__info__name">
-                      <h5>
+                      <h2>
                         <span>Natalia</span>
                         <span>Cacheiro</span>
-                      </h5>
-                      <h6>
+                      </h2>
+                      <h3>
                         UX/UI <br /> Directorr
-                      </h6>
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -1574,13 +1574,13 @@ class Index extends Component {
                     id="team__four-membermobile"
                   >
                     <div className="team__member__info__name">
-                      <h5>
+                      <h2>
                         <span>Gen</span>
                         <span>Keillor</span>
-                      </h5>
-                      <h6>
+                      </h2>
+                      <h3>
                         Associate <br /> account <br /> director
-                      </h6>
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -1612,14 +1612,14 @@ class Index extends Component {
                     id="team__eight-membermobile"
                   >
                     <div className="team__member__info__name">
-                      <h5>
+                      <h2>
                         <span>Rachel </span>
                         <span>Chada</span>
-                      </h5>
-                      <h6>
+                      </h2>
+                      <h3>
                         Strategy <br />
                         Director
-                      </h6>
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -1650,14 +1650,14 @@ class Index extends Component {
                     id="team__five-membermobile"
                   >
                     <div className="team__member__info__name">
-                      <h5>
+                      <h2>
                         <span>Ornella</span>
                         <span>Castellini</span>
-                      </h5>
-                      <h6>
+                      </h2>
+                      <h3>
                         UX/UI
                         <br /> Designer
-                      </h6>
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -1689,13 +1689,13 @@ class Index extends Component {
                     id="team__eleven-membermobile"
                   >
                     <div className="team__member__info__name">
-                      <h5>
+                      <h2>
                         <span>Oscar </span>
                         <span>Rivera</span>
-                      </h5>
-                      <h6>
+                      </h2>
+                      <h3>
                         Chief <br /> Creative Officer{" "}
-                      </h6>
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -1727,13 +1727,13 @@ class Index extends Component {
                     id="team__six-membermobile"
                   >
                     <div className="team__member__info__name">
-                      <h5>
+                      <h2>
                         <span>Lillinette </span>
                         <span>Díaz</span>
-                      </h5>
-                      <h6>
+                      </h2>
+                      <h3>
                         Content <br /> strategist
-                      </h6>
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -1765,13 +1765,13 @@ class Index extends Component {
                     id="team__seven-membermobile"
                   >
                     <div className="team__member__info__name">
-                      <h5>
+                      <h2>
                         <span>Kike </span>
                         <span>Sánchez</span>
-                      </h5>
-                      <h6>
+                      </h2>
+                      <h3>
                         Content <br /> Manager
-                      </h6>
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -1803,13 +1803,13 @@ class Index extends Component {
                     id="team__nine-membermobile"
                   >
                     <div className="team__member__info__name">
-                      <h5>
+                      <h2>
                         <span>Avaz </span>
                         <span>Bokiev</span>
-                      </h5>
-                      <h6>
+                      </h2>
+                      <h3>
                         Lead <br /> Developer
-                      </h6>
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -1841,13 +1841,13 @@ class Index extends Component {
                     id="team__ten-membermobile"
                   >
                     <div className="team__member__info__name">
-                      <h5>
+                      <h2>
                         <span>Gabriela </span>
                         <span>Carde</span>
-                      </h5>
-                      <h6>
+                      </h2>
+                      <h3>
                         Jr. <br /> Counsel{" "}
-                      </h6>
+                      </h3>
                     </div>
                   </div>
                 </div>
