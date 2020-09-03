@@ -4,6 +4,29 @@ body{
 .input__fields{
     position: relative;
 }
+.extra__footer p{
+    font-size: 12px!important;
+    margin: 0px 0 10px;
+    opacity: 1!important;
+
+}
+.g__recaptcha {
+    position: relative;
+}
+.g__recaptcha .form__invalid {
+    bottom: -40px;
+}
+.input__fields span{
+    color: #FFC4DD;
+    
+}
+.extra__footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
 .about__section  *, .team__row  *{
     outline: none!important;
 }
@@ -17,6 +40,10 @@ body{
     position: absolute;
     visibility: hidden;
     margin-top: -100px;
+}
+.header__wrapper{
+    transition: top 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+
 }
 .mobile__contact{
     margin-top: -200px;
@@ -1275,6 +1302,7 @@ section{
 .contact__right .form__submit{
     border: none;
     background: transparent;
+    margin-top: 50px;
 }
 #footer {
     background: #1C1A1B;
@@ -2356,6 +2384,12 @@ section{
 @media (max-width: 700px){
     .slider__mobile {
         padding: 0px 0px;
+    }
+    #footer .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media (max-width: 780px){

@@ -24,6 +24,8 @@ export default class form extends Component {
       recaptchaField: false,
     }
 
+    this.captchaCallback = this.captchaCallback.bind(this)
+
     this.handleSubmit = this.handleSubmit.bind(this)
     this.handleNameChange = this.handleNameChange.bind(this)
     this.handlelNameChange = this.handlelNameChange.bind(this)
@@ -33,12 +35,8 @@ export default class form extends Component {
     e.preventDefault()
 
     var SharpSpringTracking = this.getCookie("__ss_tk")
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
-    if (this.state.email.length === 0) {
-      this.setState({
-        emailStatus: "invalid",
-      })
-    }
 
     if (this.state.name.length === 0 && this.state.name.length < 2) {
       this.setState({
@@ -49,10 +47,14 @@ export default class form extends Component {
         nameStatus: "valid",
       })
     }
-
+    
     if (this.state.email.match(mailformat) && this.state.email.length > 5) {
       this.setState({
         emailStatus: "valid",
+      })
+    }else{
+      this.setState({
+        emailStatus: "invalid",
       })
     }
 
@@ -60,11 +62,13 @@ export default class form extends Component {
       this.state.email &&
       this.state.email.length > 0 &&
       this.state.name &&
-      this.state.name.length > 3
+      this.state.name.length > 3 &&
+      this.state.recaptchaField
     ) {
-      var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
       if (this.state.email.trim().match(mailformat)) {
+
+
         var sharpName = this.state.name
         var sharplName = this.state.lname
         // Add Lead to SharpSpring
@@ -75,21 +79,26 @@ export default class form extends Component {
         )
         xhr.send()
 
-        this.setState({
-          name: "",
-          lname: "",
-          nameStatus: "",
-          lnameStatus: "",
-          nameMessage: "",
-          lnameMessage: "",
-          email: "",
-          emailMessage: "",
-          emailStatus: "",
-          message: "",
-          messageStatus: "",
-          status: "success",
-          formStatus: true,
-        })
+        setTimeout(function(){
+          this.setState({
+            name: "",
+            lname: "",
+            nameStatus: "",
+            lnameStatus: "",
+            nameMessage: "",
+            lnameMessage: "",
+            email: "",
+            emailMessage: "",
+            emailStatus: "",
+            message: "",
+            messageStatus: "",
+            status: "success",
+            formStatus: true,
+          })
+
+          this.captcha.reset()
+
+        }.bind(this), 500)
 
         if (typeof window !== "undefined") {
           if (window.fbq != null) {
@@ -111,11 +120,34 @@ export default class form extends Component {
     this.setState({
       name: e.currentTarget.value,
     })
+
+    if (this.state.name.length === 0 && this.state.name.length < 2) {
+      this.setState({
+        nameStatus: "invalid",
+      })
+    } else {
+      this.setState({
+        nameStatus: "valid",
+      })
+    }
   }
   handleEmailChange(e) {
     this.setState({
       email: e.currentTarget.value,
     })
+
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+
+    
+    if (this.state.email.match(mailformat) && this.state.email.length > 5) {
+      this.setState({
+        emailStatus: "valid",
+      })
+    }else{
+      this.setState({
+        emailStatus: "invalid",
+      })
+    }
   }
   handlelNameChange(e) {
     this.setState({
@@ -138,30 +170,30 @@ export default class form extends Component {
     return ""
   }
   captchaCallback() {
-    document.getElementById("submit__form").disabled = false
-  }
-  componentDidMount() {
-    document.getElementById("submit__form").disabled = true
+    this.setState({
+      recaptchaField: true,
+    })
 
-    setTimeout(
-      function () {
-        this.setState({
-          recaptchaField: true,
-        })
-      }.bind(this),
-      1000
-    )
+    setTimeout(function(){
+      document.getElementById("submit__form").disabled = false
+
+      console.log("test");
+    }, 100)
+
   }
+ 
   render() {
     return (
       <form name="contact" id="signup">
         <div className={"input__fields"}>
-          <label htmlFor="name"> First Name: </label>
+          <label htmlFor="name"> First Name: <span>*</span> </label>
           <input
             type="text"
             id="name"
             name="name"
             onChange={this.handleNameChange}
+            onClick={this.handleNameChange}
+            onFocus={this.handleNameChange}
             value={this.state.name}
           />
           {this.state.nameStatus === "invalid" ? (
@@ -171,12 +203,14 @@ export default class form extends Component {
           )}
         </div>
         <div className={"input__fields"}>
-          <label htmlFor="lname"> Last Name: </label>
+          <label htmlFor="lname"> Last Name:  </label>
           <input
             type="text"
             id="lname"
             name="lname"
             onChange={this.handlelNameChange}
+            onClick={this.handlelNameChange}
+            onFocus={this.handlelNameChange}
             value={this.state.lname}
           />
           {this.state.lnameStatus === "invalid" ? (
@@ -186,12 +220,14 @@ export default class form extends Component {
           )}
         </div>
         <div className={"input__fields"}>
-          <label htmlFor="email">Email: </label>
+          <label htmlFor="email">Email: <span>*</span> </label>
           <input
             type="email"
             id="email"
             name="email"
             onChange={this.handleEmailChange}
+            onClick={this.handleEmailChange}
+            onFocus={this.handleEmailChange}
             value={this.state.email}
           />
           {this.state.emailStatus === "invalid" ? (
@@ -209,13 +245,20 @@ export default class form extends Component {
                 : ""
               }
             </div> */}
-        {this.state.recaptchaField ? (
-          <div className="g__recaptcha">
-            <ReCAPTCHA
-              sitekey="6LcS6MUZAAAAALJ1rm0gaUXxEnIY6k1EHidCmIwx"
-              onChange={this.captchaCallback}
-            />
-          </div>
+        <div className="g__recaptcha">
+          <ReCAPTCHA
+            sitekey="6LcS6MUZAAAAALJ1rm0gaUXxEnIY6k1EHidCmIwx"
+            onChange={this.captchaCallback}
+            ref={(r) => this.captcha = r}
+          />
+          {!this.state.recaptchaField ? (
+          <p className={"form__invalid"}>Recaptcha field it's required</p>
+          ) : (
+            ""
+          )}
+        </div>
+        {!this.state.recaptchaField ? (
+          <p className={"form__invalid"}>Recaptcha field it's required</p>
         ) : (
           ""
         )}

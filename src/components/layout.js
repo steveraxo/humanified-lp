@@ -61,6 +61,8 @@ const Layout = ({ children }) => {
     
                     width: `230px`
                   }} />
+                  
+
                 </a>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-9 right ">
@@ -73,6 +75,16 @@ const Layout = ({ children }) => {
                 </span>
                 
               </p>
+            </div>
+          </div>
+        </div>
+      
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-lg-12 text-center extra__footer">
+              <p style={{"color" : "white"}}> <span style={{"opacity" : "0.7"}}>Contact us at</span>   <a href="mailto:info@humanified.org" >info@humanified.org</a></p>
+
+              <p style={{"color" : "white"}} > <span style={{"opacity" : "0.7"}}>Designed by </span><a href="https://raxo.tv" target="_BLANK">Raxo</a></p>
             </div>
           </div>
         </div>
