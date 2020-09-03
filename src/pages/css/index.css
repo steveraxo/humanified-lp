@@ -4,6 +4,9 @@ body{
 .input__fields{
     position: relative;
 }
+.about__section > *{
+    outline: none!important;
+}
 #footer .right p{
     margin: 0px;
 }
@@ -2350,6 +2353,11 @@ section{
     }
 
 }
+@media (max-width: 700px){
+    .slider__mobile {
+        padding: 0px 0px;
+    }
+}
 @media (max-width: 780px){
     .app__links svg {
         width: 190px;
@@ -2401,7 +2409,7 @@ section{
         margin-top: -820px;
     }
     .slider__mobile {
-        padding: 10px 215px;
+        padding: 10px 0px;
         margin-top: -190px;
         margin-bottom: 90px;
     }
