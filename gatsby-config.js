@@ -8,6 +8,7 @@ module.exports = {
     `gatsby-plugin-anchor-links`,
     `gatsby-plugin-remove-console`,
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-next-seo',
     {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {
