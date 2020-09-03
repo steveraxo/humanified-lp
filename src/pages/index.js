@@ -449,7 +449,7 @@ class Index extends Component {
             this.state.videoPlaying 
             ?
             <div id={"homepage__header__video"} >
-              <Stream controls src={videoIdOrSignedUrl} width="100%" height="100%" autoplay="true" controls="true" />
+              <Stream controls src={videoIdOrSignedUrl} width="100%" height="100%" autoplay="true" preload="true" controls="true" />
             </div>
             : ""
           }

@@ -113,6 +113,9 @@ body{
     fill: #FFC4DD!important;
     stroke:#FFC4DD!important;
 }
+#submit__form > *{
+    pointer-events: none;
+}
 .form__submit:hover svg path{
     stroke:#1C1A1B!important;
 }
