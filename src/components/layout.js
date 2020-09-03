@@ -56,11 +56,7 @@ const Layout = ({ children }) => {
           _ss.push(['_setResponseCallback', callThisOnReturn]); 
         `}
       </script>
-      <script>
-        {`
-        <!-- Global site tag (gtag.js) - Google Ads: 598312411 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-598312411"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-598312411'); </script>
-        `}
-      </script>
+
       <script>
         {`
           !function(f,b,e,v,n,t,s)

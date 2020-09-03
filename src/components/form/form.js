@@ -262,7 +262,7 @@ export default class form extends Component {
           {this.state.formStatus ? (
             <p className={"form__invalid form__response"}>
               {" "}
-              Thanks for signing up to join the Humanified Beta Launch!
+              <span id="message__ga" className="form__success">Thanks for signing up to join the Humanified Beta Launch!</span>
             </p>
           ) : (
             ""
