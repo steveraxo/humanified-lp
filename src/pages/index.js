@@ -4,7 +4,8 @@ import loadable from '@loadable/component'
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
-import { GatsbySeo } from 'gatsby-plugin-next-seo';
+import SEO from "../components/seo"
+
 import "./css/index.css"
 import AppleDownload from "../images/apple.svg"
 import GoogleDownload from "../images/google.svg"
@@ -14,8 +15,7 @@ import TeamTitle from "../images/the_team.svg"
 import ATeamTitle from "../images/advisoryboard.svg"
 import AOS from "aos"
 import { Stream } from "@cloudflare/stream-react";
-import Helmet from "react-helmet"
-
+import Helmet from "react-helmet" 
 
 import TeamTitleMobile from "../images/TheTeam.svg"
 import Form from "../components/form/form"
@@ -438,6 +438,11 @@ class Index extends Component {
     return (
       <Layout>
         <Helmet>
+          <meta property="og:image" content="https://humanified.org/static/3963b21ac8def18531fe2bc85d40cb88/c5862/mask5.png"></meta>
+          <meta property="og:image:width" content="828"></meta>
+          <meta property="og:image:height" content="679"></meta>
+          <SEO title="Humanified | The Social Impact Network" />
+          
           <script>
             {`
               var _ss = _ss || [];
@@ -473,38 +478,6 @@ class Index extends Component {
               `
             }
           </script>
-          <GatsbySeo
-            title='The Social Impact Network'
-            description='With our feeds flooded with stories of tragedies and injustices, it’s daunting to think about how one person can make a change in the world. At the same time, stories of advocacy and necessary resources get lost in the white noise of selfies, memes, and dance videos.'
-            canonical='https://www.humanified.org/'
-            openGraph={{
-              url: 'https://www.humanified.org/',
-              title: 'The Social Impact Network',
-              description: 'With our feeds flooded with stories of tragedies and injustices, it’s daunting to think about how one person can make a change in the world. At the same time, stories of advocacy and necessary resources get lost in the white noise of selfies, memes, and dance videos.',
-              images: [
-                {
-                  url: 'https://humanified.org/static/3963b21ac8def18531fe2bc85d40cb88/c5862/mask5.png',
-                  width: 800,
-                  height: 600,
-                  alt: 'Og Image Alt',
-                },
-                {
-                  url: 'https://humanified.org/static/3963b21ac8def18531fe2bc85d40cb88/c5862/mask5.png',
-                  width: 900,
-                  height: 800,
-                  alt: 'Og Image Alt Second',
-                },
-                { url: 'https://humanified.org/static/3963b21ac8def18531fe2bc85d40cb88/c5862/mask5.png' },
-                { url: 'https://humanified.org/static/3963b21ac8def18531fe2bc85d40cb88/c5862/mask5.png' },
-              ],
-              site_name: 'SiteName',
-            }}
-            twitter={{
-              handle: '@humanifiedapp',
-              site: 'https://twitter.com/humanifiedapp',
-              cardType: 'summary_large_image',
-            }}
-          />
 
         </Helmet>
 

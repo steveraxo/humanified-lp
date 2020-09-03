@@ -1,8 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Humanified`,
-    description: `With our feeds flooded with stories of tragedies and injustices, it’s daunting to think about how one person can make a change in the world. At the same time, stories of advocacy and necessary resources get lost in the white noise of selfies, memes, and dance videos.`,
-    author: `Humanified`,
+
+      title: "Humanified",
+      description:
+        "`With our feeds flooded with stories of tragedies and injustices, it’s daunting to think about how one person can make a change in the world. At the same time, stories of advocacy and necessary resources get lost in the white noise of selfies, memes, and dance videos.",
+      url: "https://www.humanified.org", // No trailing slash allowed!
+      image: "/images/mask5.png", // Path to your image you placed in the 'static' folder
+      twitterUsername: "@humanifiedapp",
+      author: `Humanified`,
+
   },
   plugins: [
     `gatsby-plugin-anchor-links`,

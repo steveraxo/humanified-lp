@@ -52,6 +52,10 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
         {
+          property: `og:image`,
+          content: `https://humanified.org/static/3963b21ac8def18531fe2bc85d40cb88/c5862/mask5.png`,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
