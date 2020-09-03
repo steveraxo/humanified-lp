@@ -438,11 +438,35 @@ class Index extends Component {
     return (
       <Layout>
         <Helmet>
-          <meta property="og:image" content="https://humanified.org/static/3963b21ac8def18531fe2bc85d40cb88/c5862/mask5.png"></meta>
-          <meta property="og:image:width" content="828"></meta>
-          <meta property="og:image:height" content="679"></meta>
+
           <SEO title="Humanified | The Social Impact Network" />
           
+          <meta name="viewport" content="width=device-width"></meta>
+          <meta charset="utf-8"></meta>
+          <meta http-equiv="Content-Language" content="en"></meta>
+          <meta name="description" content="With our feeds flooded with stories of tragedies and injustices, it’s daunting to think about how one person can make a change in the world. At the same time, stories of advocacy and necessary resources get lost in the white noise of selfies, memes, and dance videos."></meta>
+          <meta name="robots" content="index, follow"></meta>
+          <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"></meta>
+          <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"></meta>
+          <meta property="og:locale" content="en_US"></meta>
+          <meta property="og:type" content="article"></meta>
+          <meta property="og:title" content="Humanified | The Social Impact Network"></meta>
+          <meta property="og:description" content="With our feeds flooded with stories of tragedies and injustices, it’s daunting to think about how one person can make a change in the world. At the same time, stories of advocacy and necessary resources get lost in the white noise of selfies, memes, and dance videos."></meta>
+          <meta property="og:url" content="https://humanified.org"></meta>
+          <meta property="og:site_name" content="Humanified"></meta>
+          <meta property="article:publisher" content="https://www.facebook.com/humanified/"></meta>
+          <meta property="article:modified_time" content="2020-09-02T17:58:32+00:00"></meta>
+          <meta property="og:image" content="https://humanified.org/static/3963b21ac8def18531fe2bc85d40cb88/c5862/mask5.png"></meta>
+          <meta property="og:image:width" content="2000"></meta>
+          <meta property="og:image:height" content="1333"></meta>
+          <meta name="twitter:card" content="summary_large_image"></meta>
+          <meta name="twitter:title" content="Humanified | The Social Impact Network"></meta>
+          <meta name="twitter:description" content="With our feeds flooded with stories of tragedies and injustices, it’s daunting to think about how one person can make a change in the world. At the same time, stories of advocacy and necessary resources get lost in the white noise of selfies, memes, and dance videos."></meta>
+          <meta name="twitter:image" content="https://humanified.org/static/3963b21ac8def18531fe2bc85d40cb88/c5862/mask5.png"></meta>
+          <meta name="twitter:creator" content="@humanifiedapp"></meta>
+          <meta name="twitter:site" content="@humanifiedapp"></meta>
+
+
           <script>
             {`
               var _ss = _ss || [];
