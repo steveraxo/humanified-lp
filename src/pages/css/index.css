@@ -4,7 +4,7 @@ body{
 .input__fields{
     position: relative;
 }
-.about__section > *, .team__row > *{
+.about__section  *, .team__row  *{
     outline: none!important;
 }
 #footer .right p{
