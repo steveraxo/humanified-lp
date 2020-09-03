@@ -260,9 +260,9 @@ export default class form extends Component {
         </div>
         <div className={"input__fields"}>
           {this.state.formStatus ? (
-            <p className={"form__invalid form__response"}>
+            <p className={"form__invalid form__response"} id="form__success">
               {" "}
-              <span id="message__ga" className="form__success">Thanks for signing up to join the Humanified Beta Launch!</span>
+              Thanks for signing up to join the Humanified Beta Launch!
             </p>
           ) : (
             ""

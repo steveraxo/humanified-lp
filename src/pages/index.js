@@ -402,7 +402,7 @@ class Index extends Component {
     var images = this.props.data.allImageSharp.nodes
 
     const isBrowser = typeof window !== `undefined`;
-    const videoIdOrSignedUrl = "a7a2371893aad31b80e389ba7107825b";
+    const videoIdOrSignedUrl = "d3a56948df6a4f0ef80e2960c10d6447";
 
     const settings = {
       dots: false,
