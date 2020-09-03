@@ -9,17 +9,6 @@ import "./layout.css"
 import "aos/dist/aos.css"
 
 const Layout = ({ children }) => {
-  // ENDS SMOOTH SCROLLING //
-  useEffect(() => {
-    setTimeout(function () {
-      var linkMont = document.createElement("link")
-      linkMont.id = "montserrat__font"
-      linkMont.rel = "stylesheet"
-      linkMont.href =
-        "https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      document.head.appendChild(linkMont)
-    }, 1)
-  })
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -33,7 +22,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
       <Header siteTitle={data.site.siteMetadata.title} />
       <noscript>
         <img
