@@ -1432,15 +1432,31 @@ section{
 }
 .phone__slide{
     position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
     align-items: center;
     flex-direction: column;
     opacity: 0;
     left: -100px;
     right: 0px;
-    top: 30px;
+    top: 45px;
     bottom: 0px;
-    transition: all 0.4s cubic-bezier(0.83, 0, 0.17, 1);
+    transition: all 0.4s ease-in-out;
 
+}
+.phone__slide.active{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    left: 170px;
+    right: 0px;
+    top: 45px;
+    bottom: 0px;
+    transition: all 0.4s ease-in-out;
 }
 .slider{
     padding: 0px;
@@ -1452,18 +1468,7 @@ section{
 #features__top{
     background: #FFC4DD;
 }
-.phone__slide.active{
-    position: absolute;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 170px;
-    opacity: 1;
-    right: 0px;
-    top: 40px;
-    bottom: 0px;
-}
+
 .slider__wrapper{
     position: relative;
     z-index: 9;
