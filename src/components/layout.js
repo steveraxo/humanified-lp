@@ -84,7 +84,7 @@ const Layout = ({ children }) => {
           </div>
         </div>
       </section>
-      {
+      {/* {
         !getCookieValue('consentGDPR')
         ?
           // <CookieConsent
@@ -103,7 +103,7 @@ const Layout = ({ children }) => {
           // </CookieConsent>
           ""
         : ""
-      }
+      } */}
     </>
   )
 }
