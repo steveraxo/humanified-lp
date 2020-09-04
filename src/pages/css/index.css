@@ -1351,6 +1351,7 @@ section{
     position: relative;
     top: 150px;
     left: 50px;
+    filter: contrast(1.05);
 }
 @keyframes float {
     0% {
