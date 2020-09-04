@@ -257,11 +257,7 @@ export default class form extends Component {
             ""
           )}
         </div>
-        {!this.state.recaptchaField ? (
-          <p className={"form__invalid"}>Recaptcha field it's required</p>
-        ) : (
-          ""
-        )}
+        
 
         <div>
           {this.state.formStatus ? (

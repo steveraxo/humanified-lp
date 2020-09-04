@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Cursor from "./cursor/cursor"
 import Header from "./header"
 import HumanifiedLogo from "../images/humanifiedlogo.svg"
+import CookieConsent from "react-cookie-consent";
 
 import "./layout.css"
 import "aos/dist/aos.css"
@@ -19,6 +20,11 @@ const Layout = ({ children }) => {
       }
     }
   `)
+
+  function getCookieValue(a) {
+    var b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
+    return b ? b.pop() : '';
+  }
 
   return (
     <>
@@ -78,6 +84,25 @@ const Layout = ({ children }) => {
           </div>
         </div>
       </section>
+      {
+        !getCookieValue('consentGDPR')
+        ?
+          // <CookieConsent
+          //     location="bottom"
+          //     buttonText="Accept"
+          //     declineButtonText="Decline"
+          //     onAccept={({ acceptedByScrolling }) => {
+          //       if (acceptedByScrolling) {
+          //         document.cookie = "consentGDPR=True";
+          //       } else {
+          //         document.cookie = "consentGDPR=True";
+          //       }
+          //     }}
+          // >
+          // This site uses cookies ...
+          // </CookieConsent>
+        : ""
+      }
     </>
   )
 }

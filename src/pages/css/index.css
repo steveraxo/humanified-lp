@@ -2374,12 +2374,12 @@ section{
     }
     .phone__slide.active{
         left: 0px;
-        bottom: -360px;
+        bottom: 0px;
+        top: -300px;
     }
-    .phone__slide{
-        
-        bottom: -360px;
-
+    .phone__slide {
+        bottom: 0;
+        top: -300px;
     }
     .feature__slide.active .feature__description p {
         max-width: 250px;
@@ -2433,11 +2433,12 @@ section{
     }
     .phone__slide.active{
         left: 0px;
-        bottom: -235px;
+        bottom: 0px;
+        top: -150px;
     }
     .phone__slide{
-        
-        bottom: -235px;
+        top: -150px;
+        bottom: 0;
 
     }
     .wwd__wrapper svg {
