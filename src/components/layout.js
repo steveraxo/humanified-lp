@@ -101,6 +101,7 @@ const Layout = ({ children }) => {
           // >
           // This site uses cookies ...
           // </CookieConsent>
+          ""
         : ""
       }
     </>
