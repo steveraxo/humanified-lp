@@ -21,10 +21,12 @@ const Layout = ({ children }) => {
     }
   `)
 
-  // function getCookieValue(a) {
-  //   var b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
-  //   return b ? b.pop() : '';
-  // }
+  function getCookieValue(a) {
+    if (typeof window !== "undefined") {
+      var b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
+      return b ? b.pop() : '';
+    }
+  }
 
   return (
     <>
@@ -84,26 +86,28 @@ const Layout = ({ children }) => {
           </div>
         </div>
       </section>
-      {/* {
+      {
         !getCookieValue('consentGDPR')
         ?
-          // <CookieConsent
-          //     location="bottom"
-          //     buttonText="Accept"
-          //     declineButtonText="Decline"
-          //     onAccept={({ acceptedByScrolling }) => {
-          //       if (acceptedByScrolling) {
-          //         document.cookie = "consentGDPR=True";
-          //       } else {
-          //         document.cookie = "consentGDPR=True";
-          //       }
-          //     }}
-          // >
-          // This site uses cookies ...
-          // </CookieConsent>
-          ""
+          <CookieConsent
+              containerClasses={"consent__cookies"}
+              buttonClasses={"consent__cookies__button"}
+              location="bottom"
+              buttonText="Yes, I accept cookies"
+              declineButtonText="Decline"
+              onAccept={({ acceptedByScrolling }) => {
+                if (acceptedByScrolling) {
+                  document.cookie = "consentGDPR=True";
+                } else {
+                  document.cookie = "consentGDPR=True";
+                }
+              }}
+          >
+          <strong>This website uses cookies</strong> <br/>
+          We use cookies to personalize content and ads and to analyze our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them.
+          </CookieConsent>
         : ""
-      } */}
+      }
     </>
   )
 }
