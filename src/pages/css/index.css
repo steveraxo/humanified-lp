@@ -2435,8 +2435,13 @@ section{
         width: 100%;
     }
     .consent__cookies {
-        font-size: 14px;
+        font-size: 11px;
     }
+
+.consent__cookies__button {
+
+    font-size: 11px!important;
+}
     .consent__cookies div:nth-child(2) {
         margin-bottom: 20px;
     }
