@@ -551,9 +551,8 @@ class Index extends Component {
                   <div className="wt-hero-header-blend">
                     <h1 id="home__hero__title">
                       
-                      <span>The Social</span>
-                      <span>Impact Social</span>
-                      <span> Network</span>
+                      <span>The <span className="pink__text">Social Impact</span> </span>
+                      <span> Social Network</span>
                     </h1>
                     <div className="play__button">
                       <div
@@ -2378,12 +2377,13 @@ class Index extends Component {
                         </svg>
 
                         <h3>
-                        Take <br/> Action
+                        Grab <br/>your Moment
+
                         </h3>
                       </div>
                       <div className="feature__description">
                         <p>
-                        With our “Challenge” feature you can create or participate in different activism every day. Challenges start online, but create change offline by raising awareness or donations.
+                        With our “Moments” feature, you can create or participate in activism every day. Gain traction and go from a Moment to a Movement.
                         </p>
                       </div>
                     </div>
@@ -2397,11 +2397,12 @@ class Index extends Component {
                         </g>
                         </svg>
 
-                        <h3>Take <br/> Action
+                        <h3>Grab <br/>your Moment
+
 </h3>
                       </div>
                       <div className="feature__description">
-                        <p>With our “Challenge” feature you can create or participate in different activism every day. Challenges start online, but create change offline by raising awareness or donations.</p>
+                        <p>With our “Moments” feature, you can create or participate in activism every day. Gain traction and go from a Moment to a Movement.</p>
                       </div>
                     </div> */}
                     <div
@@ -2595,13 +2596,14 @@ class Index extends Component {
                         </svg>
 
                         <h3>
-                        Take <br/> Action
+                        Grab <br/>your Moment
+
 
                         </h3>
                       </div>
                       <div className="feature__description">
                         <p>
-                        With our “Challenge” feature you can create or participate in different activism every day. Challenges start online, but create change offline by raising awareness or donations.
+                        With our “Moments” feature, you can create or participate in activism every day. Gain traction and go from a Moment to a Movement.
 
                         </p>
                       </div>
@@ -2614,11 +2616,12 @@ class Index extends Component {
                         </g>
                         </svg>
 
-                        <h3>Take <br/> Action
+                        <h3>Grab <br/>your Moment
+
 </h3>
                       </div>
                       <div className="feature__description">
-                        <p>With our “Challenge” feature you can create or participate in different activism every day. Challenges start online, but create change offline by raising awareness or donations.</p>
+                        <p>With our “Moments” feature, you can create or participate in activism every day. Gain traction and go from a Moment to a Movement.</p>
                       </div>
                     </div> */}
                     <div

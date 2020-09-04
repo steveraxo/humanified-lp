@@ -48,6 +48,10 @@ body{
     color: #FFC4DD;
     
 }
+.pink__text{
+    color: #FFC4DD;
+
+}
 .extra__footer{
     display: flex;
     flex-direction: column;
