@@ -4,6 +4,10 @@ body{
 .input__fields{
     position: relative;
 }
+.app__store *, .play__store * {
+    outline: none!important;
+    pointer-events: none;
+}
 .consent__cookies{
     background: #1C1A1B!important;
     color: #FFC4DD!important;

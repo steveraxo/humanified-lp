@@ -308,7 +308,6 @@ class Index extends Component {
     event.target.classList.add("active")
     document.querySelectorAll(`.${event.target.id}`)[0].classList.add("active")
   }
-
   componentDidMount() {
     AOS.init()
 
