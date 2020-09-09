@@ -438,8 +438,8 @@ class Index extends Component {
       <Layout>
         <Helmet>
 
-          <SEO title="The Humanified App" />
-          <title>The Humanified App</title>
+          <SEO title="The Humanified App: Sign Up Now" />
+          <title>The Humanified App: Sign Up Now</title>
           <meta name="viewport" content="width=device-width"></meta>
           <meta charset="utf-8"></meta>
           <meta http-equiv="Content-Language" content="en"></meta>
