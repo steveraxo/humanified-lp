@@ -5,6 +5,7 @@ module.exports = {
       description:
         "The social network for social impact. Make real change happen, one tap at a time.",
       url: "https://www.humanified.org", // No trailing slash allowed!
+      siteUrl: `https://www.humanified.org`,
       image: "/images/mask5.png", // Path to your image you placed in the 'static' folder
       twitterUsername: "@humanifiedapp",
       author: `Humanified`,
@@ -15,6 +16,7 @@ module.exports = {
     `gatsby-plugin-remove-console`,
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-next-seo',
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {

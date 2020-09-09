@@ -22,6 +22,7 @@
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-remove-console": "0.0.2",
     "gatsby-plugin-sharp": "^2.6.26",
+    "gatsby-plugin-sitemap": "^2.4.12",
     "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-source-filesystem": "^2.3.24",
     "gatsby-transformer-sharp": "^2.5.12",
