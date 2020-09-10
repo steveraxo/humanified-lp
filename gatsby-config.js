@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
 
-      title: "The Humanified App: Sign Up Now",
+      title: "The Humanified App - Sign up for our Beta!",
       description:
         "The social network for social impact. Make real change happen, one tap at a time.",
       url: "https://www.humanified.org", // No trailing slash allowed!
