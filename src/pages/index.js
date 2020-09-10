@@ -1160,7 +1160,7 @@ class Index extends Component {
                             <span>Keillor</span>
                           </h2>
                           <h3>
-                          Account <br/> director to <br/> Product 
+                         Product <br/> Manager
                           </h3>
                         </div>
                       </div>
@@ -1623,7 +1623,7 @@ class Index extends Component {
                         <span>Keillor</span>
                       </h2>
                       <h3>
-                      Account <br/> director to <br/> Product 
+                     Product <br/> Manager
                       </h3>
                     </div>
                   </div>
@@ -2323,7 +2323,7 @@ class Index extends Component {
                       </div>
                       <div className="feature__description">
                         <p>
-                          Use the “Explore” section to find new movements, new
+                          Use the “Discover” section to find new movements, new
                           places to volunteer, or to make new connections with
                           like-minded advocates.
                         </p>
@@ -2546,7 +2546,7 @@ class Index extends Component {
                       </div>
                       <div className="feature__description">
                         <p>
-                          Use the “Explore” section to find new movements, new
+                          Use the “Discover” section to find new movements, new
                           places to volunteer, or to make new connections with
                           like-minded advocates.
                         </p>
