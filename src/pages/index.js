@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import loadable from '@loadable/component'
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -568,20 +569,20 @@ class Index extends Component {
 
                     <div className="app__links d-flex justify-content-center align-items-center">
                         <div className="app__store">
-                        <a href="#contact" className="applink">
+                          <AnchorLink to="/#contact" className="applink">
                           <AppleDownload
                             tabIndex="0"
                             alt="Apple Store Badge - Coming Soon"
                           />
-                        </a>
+                          </AnchorLink>
                         </div>
                         <div className="play__store">
-                        <a href="#contact" className="applink">
+                        <AnchorLink to="/#contact" className="applink">
                           <GoogleDownload
                             tabIndex="0"
                             alt="Googla PlayStore Badge - Coming Soon"
                           />
-                        </a>
+                        </AnchorLink>
                         </div>
                     </div>
                   </div>
@@ -2709,20 +2710,20 @@ class Index extends Component {
                   </p>
                   <div className="app__links d-flex ">
                       <div className="app__store">
-                        <a href="#contact" className="applink">
+                        <AnchorLink to="/#contact" className="applink">
                           <AppleDownload
                             tabIndex="0"
                             alt="Apple Store Badge - Coming Soon"
                           />
-                        </a>
+                        </AnchorLink>
                       </div>
                       <div className="play__store">
-                        <a href="#contact" className="applink">
+                        <AnchorLink to="/#contact" className="applink">
                           <GoogleDownload
                             tabIndex="0"
                             alt="Google PlayStore Badge - Coming Soon"
                           />
-                        </a>
+                        </AnchorLink>
                       </div>
                   </div>
                 </div>
