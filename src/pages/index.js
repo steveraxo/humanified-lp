@@ -651,7 +651,7 @@ class Index extends Component {
                   The social network for social impact. Make real change happen, one tap at a time.  
                   </p>
                   <p>
-                  Humanified is the first social media network that is built for doing good.
+                  Humanified is the social media network that is built for doing good.
 
                   </p>
                   <p >
@@ -2138,7 +2138,7 @@ class Index extends Component {
               <div className="row">
                 <div className="col-lg-12">
                   <h3 id="www__info__two">
-                    Humanified is the first purpose-built social network for social impact that not only connects users and non-profits, <span>but creates a space for creative advocacy and meeting other mission-aligned individuals.</span> 
+                    Humanified is the purpose-built social network for social impact that not only connects users and non-profits, <span>but creates a space for creative advocacy and meeting other mission-aligned individuals.</span> 
 
                   </h3>
                 </div>
