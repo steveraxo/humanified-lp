@@ -17,11 +17,30 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-next-seo',
     `gatsby-plugin-sitemap`,
+    // {
+    //   resolve: `gatsby-plugin-facebook-pixel`,
+    //   options: {
+    //     pixelId: '624158401859448',
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-facebook-pixel`,
-      options: {
-        pixelId: '624158401859448',
-      },
+      resolve: `gatsby-plugin-facebook-multi-pixels`,
+      options: [
+        {
+          dev: true,
+          alias: 'pixelA',
+          pixelId: '624158401859448',
+          viewContent: true,
+          pageView: true,
+        },
+        {
+          dev: true,
+          alias: 'pixelB',
+          pixelId: '246839569912365',
+          viewContent: true,
+          pageView: true,
+        },
+      ],
     },
     {
       resolve: "gatsby-plugin-google-tagmanager",

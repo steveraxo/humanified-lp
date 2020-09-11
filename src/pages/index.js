@@ -490,7 +490,6 @@ class Index extends Component {
               _ss.push(['_setResponseCallback', callThisOnReturn]); 
             `}
           </script>
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177238353-1"></script>
           <script>
             {
               `
