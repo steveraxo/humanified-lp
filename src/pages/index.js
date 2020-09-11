@@ -567,18 +567,22 @@ class Index extends Component {
                     </div>
 
                     <div className="app__links d-flex justify-content-center align-items-center">
-                      <div className="app__store">
-                        <AppleDownload
-                          tabIndex="0"
-                          alt="Apple Store Badge - Coming Soon"
-                        />
-                      </div>
-                      <div className="play__store">
-                        <GoogleDownload
-                          tabIndex="0"
-                          alt="Googla PlayStore Badge - Coming Soon"
-                        />
-                      </div>
+                        <div className="app__store">
+                        <a href="#contact" className="applink">
+                          <AppleDownload
+                            tabIndex="0"
+                            alt="Apple Store Badge - Coming Soon"
+                          />
+                        </a>
+                        </div>
+                        <div className="play__store">
+                        <a href="#contact" className="applink">
+                          <GoogleDownload
+                            tabIndex="0"
+                            alt="Googla PlayStore Badge - Coming Soon"
+                          />
+                        </a>
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -2704,18 +2708,22 @@ class Index extends Component {
                     change the world <br /> around you today.{" "}
                   </p>
                   <div className="app__links d-flex ">
-                    <div className="app__store">
-                      <AppleDownload
-                        tabIndex="0"
-                        alt="Apple Store Badge - Coming Soon"
-                      />
-                    </div>
-                    <div className="play__store">
-                      <GoogleDownload
-                        tabIndex="0"
-                        alt="Google PlayStore Badge - Coming Soon"
-                      />
-                    </div>
+                      <div className="app__store">
+                        <a href="#contact" className="applink">
+                          <AppleDownload
+                            tabIndex="0"
+                            alt="Apple Store Badge - Coming Soon"
+                          />
+                        </a>
+                      </div>
+                      <div className="play__store">
+                        <a href="#contact" className="applink">
+                          <GoogleDownload
+                            tabIndex="0"
+                            alt="Google PlayStore Badge - Coming Soon"
+                          />
+                        </a>
+                      </div>
                   </div>
                 </div>
                 <div className="col-sm-12 col-md-12 col-lg-6 right">

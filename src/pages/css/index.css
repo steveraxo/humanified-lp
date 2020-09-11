@@ -6,12 +6,16 @@ body{
 }
 .app__store *, .play__store * {
     outline: none!important;
+}
+.app__store svg, .play__store svg {
+    outline: none!important;
     pointer-events: none;
 }
 *{
     outline: none!important;
 
 }
+
 .consent__cookies{
     background: #1C1A1B!important;
     color: #FFC4DD!important;
