@@ -2140,7 +2140,7 @@ class Index extends Component {
             </div>
           </section>
 
-          <section id="features">
+          {/* <section id="features">
             <svg
               width="1763"
               height="1761"
@@ -2658,7 +2658,8 @@ class Index extends Component {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
+
           <div className="mobile__contact mobile__anchor" id="contact-us"></div>
           <section className="download__section" id="download">
             <div className="container-fluid">
