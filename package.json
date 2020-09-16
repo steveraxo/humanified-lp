@@ -36,7 +36,7 @@
     "react-helmet-async": "^1.0.6",
     "react-parallax-tilt": "^1.4.63",
     "react-recaptcha": "^2.3.10",
-    "react-slick": "^0.27.10",
+    "react-slick": "^0.26.1",
     "react-sticky-mouse-tooltip": "0.0.1",
     "scroll-lock": "^2.1.4",
     "slick-carousel": "^1.8.1"
