@@ -285,7 +285,7 @@ section{
     align-items: center;
     text-align: center;
     max-width: 950px;
-    margin: 150px auto auto;
+    margin: 0px auto 70px;
     flex-direction: column;
     color: white;
     text-rendering: optimizeSpeed;
@@ -1124,7 +1124,7 @@ section{
 #download{
     background: #1C1A1B;
     position: relative;
-    padding: 270px 160px 200px;
+    padding: 270px 80px 200px;
 }
 #download h3{
     font-family: Montserrat;
@@ -2486,6 +2486,10 @@ section{
     }
 }
 @media(max-width: 600px){
+    .coming-soon-button svg{
+        width: 190px;
+        margin-top: 40px;
+    }
     #footer .right p span{
         margin-top: 20px;
     }
@@ -2920,8 +2924,19 @@ section{
     .slider__mobile {
         padding: 0 0px;
     }
+    .homepage__header h1 {
+        font-size: 32px;
+        line-height: 108.9%;
+    }
 }
 @media (max-width: 360px){
+    .logo__column svg{
+        width: 170px!important;
+    }
+    .nav__button {
+        top: 35px;
+         right: 25px;
+     }
     #what-we-do h2 {
         font-size: 38px;
     }
@@ -2963,7 +2978,7 @@ section{
         padding: 120px 20px 80px!important;
     }
     .homepage__header h1 {
-        margin: 95px auto auto;
+        margin: 45px auto auto;
     }
     @supports (-webkit-touch-callout: none) {
         .navigation__header.mobile ul .download__button {
@@ -3006,9 +3021,13 @@ section{
     }
     .homepage__header h1 {
         font-size: 27px;
-        margin: 95px auto auto;
+        margin: 15px auto auto;
     }
-   
+    .hero__wrapper {
+        position: relative;
+        top: 25px;
+    }
+  
 }
 @media (max-width: 1366px) and (orientation: landscape) {
     .feature__slide .feature__description p {
@@ -3112,7 +3131,14 @@ section{
     .homepage__header h1 {
         font-size: 27px;
         line-height: 108.9%;
-        margin: 70px auto auto;
+        margin: 20px auto 10px;
+    }
+    .hero__wrapper{
+        position: relative;
+        top: 20px;
+    }
+    .coming-soon-button svg{
+        width: 190px;
     }
     .app__links>div {
         margin: 0 10px;

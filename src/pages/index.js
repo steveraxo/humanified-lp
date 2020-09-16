@@ -11,6 +11,7 @@ import "./css/index.css"
 import AppleDownload from "../images/apple.svg"
 import GoogleDownload from "../images/google.svg"
 import PlayButton from "../images/playButton.svg"
+import SignButton from "../images/signButton.svg"
 import DownArrow from "../images/downArrow.svg"
 import TeamTitle from "../images/the_team.svg"
 import ATeamTitle from "../images/advisoryboard.svg"
@@ -548,11 +549,7 @@ class Index extends Component {
                     <div className="wt-hero-header-shape-item -v3"></div>
                   </div>
                   <div className="wt-hero-header-blend">
-                    <h1 id="home__hero__title">
-                      
-                      <span>The <span className="pink__text">Social Impact</span> </span>
-                      <span> Social Network</span>
-                    </h1>
+                    
                     <div className="play__button">
                       <div
                         className="hover__transition"
@@ -565,9 +562,22 @@ class Index extends Component {
                         <p data-text="#WhatDidYouDo">#WhatDidYouDo</p>
                       </div>
                     </div>
-
-                    <div className="app__links d-flex justify-content-center align-items-center">
-                        <div className="app__store">
+                    <h1 id="home__hero__title">
+                      
+                      <span>The Social Impact </span>
+                      <span> <span className="pink__text">Social Network </span></span>
+                    </h1>
+                    <div className="coming-soon-button d-flex justify-content-center align-items-center">
+                    
+                        <div className="">
+                          <AnchorLink to="/#contact" className="applink">
+                          <SignButton
+                            tabIndex="0"
+                            alt="Sign Up Button - Coming Soon"
+                          />
+                          </AnchorLink>
+                        </div>
+                        {/* <div className="app__store">
                           <AnchorLink to="/#contact" className="applink">
                           <AppleDownload
                             tabIndex="0"
@@ -582,7 +592,7 @@ class Index extends Component {
                             alt="Googla PlayStore Badge - Coming Soon"
                           />
                         </AnchorLink>
-                        </div>
+                        </div> */}
                     </div>
                   </div>
                 </div>
@@ -2702,7 +2712,7 @@ class Index extends Component {
                 <div className="col-sm-12 col-md-12 col-lg-6 left">
                   <h3 id="down__title">
                     Available for download
-                    <span>Fall 2020 </span>
+                    <span>Coming Soon </span>
                   </h3>
                   <p id="down__subtitle">
                     change the world <br /> around you today.{" "}
