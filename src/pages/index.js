@@ -34,7 +34,7 @@ class Index extends Component {
     super(props)
     this.state = {
       isMouseTooltipVisible: false,
-      pageLoaded: false,
+      pageLoaded: true,
       videoPlaying: false,
     }
 
@@ -577,22 +577,6 @@ class Index extends Component {
                           />
                           </AnchorLink>
                         </div>
-                        {/* <div className="app__store">
-                          <AnchorLink to="/#contact" className="applink">
-                          <AppleDownload
-                            tabIndex="0"
-                            alt="Apple Store Badge - Coming Soon"
-                          />
-                          </AnchorLink>
-                        </div>
-                        <div className="play__store">
-                        <AnchorLink to="/#contact" className="applink">
-                          <GoogleDownload
-                            tabIndex="0"
-                            alt="Googla PlayStore Badge - Coming Soon"
-                          />
-                        </AnchorLink>
-                        </div> */}
                     </div>
                   </div>
                 </div>
@@ -2402,22 +2386,7 @@ class Index extends Component {
                     </div>
                   </div>
                   <div className="slider__two">
-                    {/* <div className="feature__slide" onFocus={this.showFeature} onClick={this.showFeature} onMouseOver={this.showFeature} id="slide__four">
-                      <div className="feature__title">
-                      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g opacity="1">
-                        <path d="M42 30C42 31.0609 41.5786 32.0783 40.8284 32.8284C40.0783 33.5786 39.0609 34 38 34H14L6 42V10C6 8.93913 6.42143 7.92172 7.17157 7.17157C7.92172 6.42143 8.93913 6 10 6H38C39.0609 6 40.0783 6.42143 40.8284 7.17157C41.5786 7.92172 42 8.93913 42 10V30Z" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-                        </g>
-                        </svg>
-
-                        <h3>Grab <br/>your Moment
-
-</h3>
-                      </div>
-                      <div className="feature__description">
-                        <p>With our “Moments” feature, you can create or participate in activism every day. Gain traction and go from a Moment to a Movement.</p>
-                      </div>
-                    </div> */}
+           
                     <div
                       className="feature__slide"
                       tabIndex="0"
@@ -2621,22 +2590,7 @@ class Index extends Component {
                         </p>
                       </div>
                     </div>
-                    {/* <div className="feature__slide active"  id="slide__four__mobile">
-                      <div className="feature__title">
-                      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g opacity="1">
-                        <path d="M42 30C42 31.0609 41.5786 32.0783 40.8284 32.8284C40.0783 33.5786 39.0609 34 38 34H14L6 42V10C6 8.93913 6.42143 7.92172 7.17157 7.17157C7.92172 6.42143 8.93913 6 10 6H38C39.0609 6 40.0783 6.42143 40.8284 7.17157C41.5786 7.92172 42 8.93913 42 10V30Z" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-                        </g>
-                        </svg>
-
-                        <h3>Grab <br/>your Moment
-
-</h3>
-                      </div>
-                      <div className="feature__description">
-                        <p>With our “Moments” feature, you can create or participate in activism every day. Gain traction and go from a Moment to a Movement.</p>
-                      </div>
-                    </div> */}
+            
                     <div
                       className="feature__slide active"
                       id="slide__five"
@@ -2855,11 +2809,7 @@ class Index extends Component {
                             </svg>
                           </a>
                         </li>
-                        {/* <li className={"youtube"} >
-                        <a href="https://" target="_BLANK">
-                          <svg title="Youtube icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
-                        </a>
-                      </li> */}
+                        
                       </ul>
                     </nav>
                   </div>
