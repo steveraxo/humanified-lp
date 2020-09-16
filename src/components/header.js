@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React, { Component } from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import "./header.css"

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Cursor from "./cursor/cursor"
@@ -37,6 +37,7 @@ const Layout = ({ children }) => {
           height="1"
           width="1"
           src="https://www.facebook.com/tr?id=624158401859448&ev=PageView&noscript=1"
+          alt="facebook pixel"
         />
       </noscript>
       <main>{children}</main>
@@ -81,7 +82,7 @@ const Layout = ({ children }) => {
             <div className="col-lg-12 text-center extra__footer">
               <p style={{"color" : "white"}}> <span style={{"opacity" : "0.7"}}>Contact us at</span>   <a href="mailto:info@humanified.org" >info@humanified.org</a></p>
 
-              <p style={{"color" : "white"}} > <span style={{"opacity" : "0.7"}}>Designed by </span><a href="https://raxo.tv" target="_BLANK">Raxo</a></p>
+              <p style={{"color" : "white"}} > <span style={{"opacity" : "0.7"}}>Designed by </span><a href="https://raxo.tv" target="_BLANK" rel="noreferrer">Raxo</a></p>
             </div>
           </div>
         </div>
