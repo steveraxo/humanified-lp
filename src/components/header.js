@@ -116,9 +116,9 @@ export default class header extends Component {
                       </AnchorLink>
                     </li>
                     <li>
-                      <AnchorLink to="https://medium.com/@humanified" title="Blog">
+                      <a href="https://medium.com/@humanified" title="Blog">
                         Blog
-                      </AnchorLink>
+                      </a>
                     </li>
                     <li>
                       <AnchorLink
@@ -158,9 +158,9 @@ export default class header extends Component {
                       </AnchorLink>
                     </li>
                     <li>
-                      <AnchorLink to="https://medium.com/@humanified" title="Blog">
+                      <a href="https://medium.com/@humanified" title="Blog">
                         Blog
-                      </AnchorLink>
+                      </a>
                     </li>
                     <li>
                       <AnchorLink
